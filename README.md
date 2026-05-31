@@ -91,15 +91,33 @@ Current stack includes:
 
 ## Project Structure
 
+## Project Structure
+
 ```bash
-project-os/
-├── apps/
-├── packages/
-├── components/
-├── features/
-├── lib/
-├── services/
-├── database/
-├── config/
-├── scripts/
-└── docs/
+src/
+├── app/          # Next.js App Router
+├── components/   # Reusable UI and layout components
+├── contexts/     # React contexts and providers
+├── features/     # Feature-based modules
+├── hooks/        # Custom React hooks
+├── lib/          # Third-party integrations and shared libraries
+├── helpers/      # Utility functions
+├── styles/       # Global styles, themes, SCSS architecture
+├── types/        # Shared TypeScript types
+├── constants/    # Application constants
+└── messages/     # Internationalization resources
+```
+
+### Folder Responsibilities
+
+- **app** → Routes, layouts, pages, server components.
+- **components** → Reusable UI and layout building blocks.
+- **contexts** → Theme, language, auth and other providers.
+- **features** → Business features grouped by domain.
+- **hooks** → Reusable custom hooks.
+- **lib** → API clients, external integrations, shared libraries.
+- **helpers** → Pure utility functions.
+- **styles** → Design system, themes, global styles.
+- **types** → Shared TypeScript interfaces and types.
+- **constants** → Static configuration values.
+- **messages** → Translation dictionaries.
