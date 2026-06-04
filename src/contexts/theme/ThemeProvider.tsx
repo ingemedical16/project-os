@@ -57,13 +57,13 @@ export function ThemeProvider({
     );
   }, [colorMode]);
 
-  const toggleColorMode = (): void => {
-    setColorMode(
-      colorMode === COLOR_MODES.DARK
-        ? COLOR_MODES.LIGHT
-        : COLOR_MODES.DARK,
-    );
-  };
+const toggleColorMode = (): void => {
+  setColorMode((currentColorMode) =>
+    currentColorMode === COLOR_MODES.DARK
+      ? COLOR_MODES.LIGHT
+      : COLOR_MODES.DARK,
+  );
+};
 
   const value = useMemo(
     () => ({
