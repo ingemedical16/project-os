@@ -121,3 +121,7 @@ src/
 - **types** → Shared TypeScript interfaces and types.
 - **constants** → Static configuration values.
 - **messages** → Translation dictionaries.
+
+## Documentation
+
+- Responsive System → `docs/responsive-system.md`
