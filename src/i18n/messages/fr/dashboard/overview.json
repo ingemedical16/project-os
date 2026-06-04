@@ -1,6 +1,7 @@
 {
-  "title": "Test du thème Project OS",
+  "title": "Système de Design Project OS",
   "theme": "Thème",
   "mode": "Mode",
+  "language": "Langue",
   "toggleMode": "Changer le mode"
 }

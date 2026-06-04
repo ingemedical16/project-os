@@ -1,6 +1,7 @@
 {
-  "title": "اختبار سمة Project OS",
+  "title": "نظام التصميم Project OS",
   "theme": "السمة",
   "mode": "الوضع",
-  "toggleMode": "تغيير الوضع"
+  "language": "اللغة",
+  "toggleMode": "تبديل الوضع"
 }
