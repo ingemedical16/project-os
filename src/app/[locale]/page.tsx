@@ -2,6 +2,7 @@ import {
   ButtonShowcase,
   InputShowcase,
   LanguageShowcase,
+  SelectShowcase,
   TextareaShowcase,
   ThemeShowcase,
 } from '@/features/design-system/ index';
@@ -18,6 +19,7 @@ export default function HomePage() {
         <ButtonShowcase />
         <InputShowcase />
         <TextareaShowcase />
+        <SelectShowcase />
       </div>
     </main>
   );

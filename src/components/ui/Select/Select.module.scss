@@ -1,0 +1,77 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: 100%;
+}
+
+.label {
+  color: var(--text);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.select {
+  width: 100%;
+  min-height: 4rem;
+  padding-inline: 1.2rem 3.6rem;
+
+  appearance: none;
+
+  background:
+    linear-gradient(45deg, transparent 50%, var(--text-muted) 50%)
+      calc(100% - 2rem) 50% / 0.6rem 0.6rem no-repeat,
+    linear-gradient(135deg, var(--text-muted) 50%, transparent 50%)
+      calc(100% - 1.6rem) 50% / 0.6rem 0.6rem no-repeat,
+    var(--surface);
+
+  color: var(--text);
+
+  border: 0.1rem solid var(--border);
+  border-radius: 0.8rem;
+
+  font: inherit;
+  font-size: 1.6rem;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease,
+    outline-color 0.2s ease;
+
+  &:hover:not(:disabled) {
+    border-color: var(--border-hover);
+  }
+
+  &:focus {
+    outline: 0.2rem solid var(--accent);
+    outline-offset: 0.2rem;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
+
+.error {
+  border-color: var(--danger);
+
+  &:focus {
+    outline-color: var(--danger);
+  }
+}
+
+.helperText {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 1.3rem;
+}
+
+.errorMessage {
+  margin: 0;
+  color: var(--danger);
+  font-size: 1.3rem;
+}

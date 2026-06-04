@@ -11,5 +11,11 @@ export type {
   InputVariant,
 } from './Input';
 
+export { Select } from './Select';
+export type {
+  SelectOption,
+  SelectProps,
+} from './Select';
+
 export { Textarea } from './Textarea';
 export type { TextareaProps } from './Textarea';
