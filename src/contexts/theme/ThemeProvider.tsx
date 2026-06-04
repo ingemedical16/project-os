@@ -22,16 +22,36 @@ interface ThemeProviderProps {
   defaultColorMode?: ColorMode;
 }
 
+const THEME_STORAGE_KEY = 'project-os-theme';
+const COLOR_MODE_STORAGE_KEY = 'project-os-color-mode';
+
 export function ThemeProvider({
   children,
   defaultTheme = DEFAULT_THEME,
   defaultColorMode = DEFAULT_COLOR_MODE,
 }: ThemeProviderProps): ReactNode {
-  const [theme, setTheme] =
-    useState<Theme>(defaultTheme);
+  const [theme, setTheme] = useState<Theme>(defaultTheme);
 
   const [colorMode, setColorMode] =
     useState<ColorMode>(defaultColorMode);
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem(
+      THEME_STORAGE_KEY,
+    ) as Theme | null;
+
+    const storedColorMode = localStorage.getItem(
+      COLOR_MODE_STORAGE_KEY,
+    ) as ColorMode | null;
+
+    if (storedTheme) {
+      setTheme(storedTheme);
+    }
+
+    if (storedColorMode) {
+      setColorMode(storedColorMode);
+    }
+  }, []);
 
   useEffect(() => {
     document.documentElement.setAttribute(
@@ -39,11 +59,20 @@ export function ThemeProvider({
       theme,
     );
 
+    localStorage.setItem(THEME_STORAGE_KEY, theme);
+  }, [theme]);
+
+  useEffect(() => {
     document.documentElement.setAttribute(
       'data-color-mode',
       colorMode,
     );
-  }, [theme, colorMode]);
+
+    localStorage.setItem(
+      COLOR_MODE_STORAGE_KEY,
+      colorMode,
+    );
+  }, [colorMode]);
 
   const toggleColorMode = (): void => {
     setColorMode((currentColorMode) =>
