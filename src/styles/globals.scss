@@ -3,14 +3,26 @@
 @use './abstracts/mixins';
 
 @use './themes';
+
 html {
   font-size: 62.5%;
+}
+
+html[dir='ltr'] {
+  direction: ltr;
+}
+
+html[dir='rtl'] {
+  direction: rtl;
 }
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: var(--bg);
+  color: var(--text);
+  text-align: start;
 }
 
 *,

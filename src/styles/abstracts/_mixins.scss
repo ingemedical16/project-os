@@ -9,3 +9,15 @@
     @error "Unknown breakpoint: #{$breakpoint}";
   }
 }
+
+@mixin ltr {
+  [dir='ltr'] & {
+    @content;
+  }
+}
+
+@mixin rtl {
+  [dir='rtl'] & {
+    @content;
+  }
+}
