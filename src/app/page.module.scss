@@ -1,0 +1,45 @@
+.page {
+  min-height: 100vh;
+  padding: 4rem;
+
+  background: var(--bg);
+  color: var(--text);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 60rem;
+
+  padding: 2rem;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1.2rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.buttons button {
+  padding: 1rem 1.6rem;
+
+  background: var(--accent);
+  color: var(--accent-text);
+
+  border: none;
+  border-radius: 0.8rem;
+
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background: var(--accent-hover);
+}
