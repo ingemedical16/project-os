@@ -4,8 +4,9 @@ import {
   ReactNode,
   useEffect,
   useMemo,
-  useState,
 } from 'react';
+
+import { useLocalStorage } from '@/hooks/ui';
 
 import { ThemeContext } from './ThemeContext';
 import {
@@ -30,36 +31,23 @@ export function ThemeProvider({
   defaultTheme = DEFAULT_THEME,
   defaultColorMode = DEFAULT_COLOR_MODE,
 }: ThemeProviderProps): ReactNode {
-  const [theme, setTheme] = useState<Theme>(defaultTheme);
+  const [theme, setTheme] =
+    useLocalStorage<Theme>(
+      THEME_STORAGE_KEY,
+      defaultTheme,
+    );
 
   const [colorMode, setColorMode] =
-    useState<ColorMode>(defaultColorMode);
-
-  useEffect(() => {
-    const storedTheme = localStorage.getItem(
-      THEME_STORAGE_KEY,
-    ) as Theme | null;
-
-    const storedColorMode = localStorage.getItem(
+    useLocalStorage<ColorMode>(
       COLOR_MODE_STORAGE_KEY,
-    ) as ColorMode | null;
-
-    if (storedTheme) {
-      setTheme(storedTheme);
-    }
-
-    if (storedColorMode) {
-      setColorMode(storedColorMode);
-    }
-  }, []);
+      defaultColorMode,
+    );
 
   useEffect(() => {
     document.documentElement.setAttribute(
       'data-theme',
       theme,
     );
-
-    localStorage.setItem(THEME_STORAGE_KEY, theme);
   }, [theme]);
 
   useEffect(() => {
@@ -67,16 +55,11 @@ export function ThemeProvider({
       'data-color-mode',
       colorMode,
     );
-
-    localStorage.setItem(
-      COLOR_MODE_STORAGE_KEY,
-      colorMode,
-    );
   }, [colorMode]);
 
   const toggleColorMode = (): void => {
-    setColorMode((currentColorMode) =>
-      currentColorMode === COLOR_MODES.DARK
+    setColorMode(
+      colorMode === COLOR_MODES.DARK
         ? COLOR_MODES.LIGHT
         : COLOR_MODES.DARK,
     );
