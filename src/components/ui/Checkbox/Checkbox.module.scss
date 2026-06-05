@@ -1,0 +1,86 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.checkboxWrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+
+  cursor: pointer;
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.checkmark {
+  width: 2rem;
+  height: 2rem;
+
+  flex-shrink: 0;
+
+  border: 0.1rem solid var(--border);
+  border-radius: 0.4rem;
+
+  background: var(--surface);
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+
+  position: relative;
+}
+
+.checkbox:checked + .checkmark {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.checkbox:checked + .checkmark::after {
+  content: '';
+
+  position: absolute;
+
+  left: 0.65rem;
+  top: 0.25rem;
+
+  width: 0.4rem;
+  height: 0.9rem;
+
+  border: solid var(--accent-text);
+  border-width: 0 0.2rem 0.2rem 0;
+
+  transform: rotate(45deg);
+}
+
+.checkbox:focus-visible + .checkmark {
+  outline: 0.2rem solid var(--accent);
+  outline-offset: 0.2rem;
+}
+
+.checkbox:disabled + .checkmark {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.label {
+  color: var(--text);
+  font-size: 1.4rem;
+}
+
+.helperText {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 1.3rem;
+}
+
+.errorMessage {
+  margin: 0;
+  color: var(--danger);
+  font-size: 1.3rem;
+}

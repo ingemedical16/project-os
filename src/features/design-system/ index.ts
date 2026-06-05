@@ -4,3 +4,4 @@ export { LanguageShowcase } from './LanguageShowcase';
 export { SelectShowcase } from './SelectShowcase';
 export { TextareaShowcase } from './TextareaShowcase';
 export { ThemeShowcase } from './ThemeShowcase';
+export { CheckboxShowcase } from './CheckboxShowcase';

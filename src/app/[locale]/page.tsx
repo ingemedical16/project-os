@@ -1,5 +1,6 @@
 import {
   ButtonShowcase,
+  CheckboxShowcase,
   InputShowcase,
   LanguageShowcase,
   SelectShowcase,
@@ -20,6 +21,7 @@ export default function HomePage() {
         <InputShowcase />
         <TextareaShowcase />
         <SelectShowcase />
+        <CheckboxShowcase />
       </div>
     </main>
   );
