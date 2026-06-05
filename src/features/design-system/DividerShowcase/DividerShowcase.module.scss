@@ -1,0 +1,13 @@
+.showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.verticalExample {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+  min-height: 4rem;
+}
