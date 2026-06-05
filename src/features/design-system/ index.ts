@@ -7,3 +7,4 @@ export { ThemeShowcase } from './ThemeShowcase';
 export { CheckboxShowcase } from './CheckboxShowcase';
 export { RadioShowcase } from './RadioShowcase';
 export { SwitchShowcase } from './SwitchShowcase';
+export { FormShowcase } from './FormShowcase';
