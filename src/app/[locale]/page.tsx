@@ -9,6 +9,7 @@ import {
   FormShowcase,
   InputShowcase,
   LanguageShowcase,
+  ModalShowcase,
   RadioShowcase,
   SelectShowcase,
   SpinnerShowcase,
@@ -40,6 +41,7 @@ export default function HomePage() {
         <DividerShowcase />
         <AvatarShowcase />
         <AlertShowcase />
+        <ModalShowcase />
       </div>
     </main>
   );

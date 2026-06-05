@@ -82,3 +82,7 @@ export type {
   AlertProps,
   AlertVariant,
 } from './Alert';
+
+export { Modal } from './Modal';
+
+export type { ModalProps } from './Modal';
