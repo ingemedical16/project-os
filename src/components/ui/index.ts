@@ -75,3 +75,10 @@ export type {
   AvatarProps,
   AvatarSize,
 } from './Avatar';
+
+export { Alert } from './Alert';
+
+export type {
+  AlertProps,
+  AlertVariant,
+} from './Alert';
