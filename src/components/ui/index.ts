@@ -31,3 +31,6 @@ export type {
   RadioGroupOption,
   RadioGroupProps,
 } from './RadioGroup';
+
+export { Switch } from './Switch';
+export type { SwitchProps } from './Switch';

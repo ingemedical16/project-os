@@ -6,3 +6,4 @@ export { TextareaShowcase } from './TextareaShowcase';
 export { ThemeShowcase } from './ThemeShowcase';
 export { CheckboxShowcase } from './CheckboxShowcase';
 export { RadioShowcase } from './RadioShowcase';
+export { SwitchShowcase } from './SwitchShowcase';

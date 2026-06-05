@@ -1,0 +1,86 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.switchWrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+
+  cursor: pointer;
+}
+
+.switch {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.track {
+  position: relative;
+
+  width: 4.8rem;
+  height: 2.6rem;
+
+  flex-shrink: 0;
+
+  border-radius: 999rem;
+
+  background: var(--border);
+
+  transition: background-color 0.2s ease;
+}
+
+.thumb {
+  position: absolute;
+
+  top: 0.3rem;
+  left: 0.3rem;
+
+  width: 2rem;
+  height: 2rem;
+
+  border-radius: 50%;
+
+  background: var(--surface);
+
+  transition: transform 0.2s ease;
+}
+
+.switch:checked + .track {
+  background: var(--accent);
+}
+
+.switch:checked + .track .thumb {
+  transform: translateX(2.2rem);
+}
+
+.switch:focus-visible + .track {
+  outline: 0.2rem solid var(--accent);
+  outline-offset: 0.2rem;
+}
+
+.switch:disabled + .track,
+.switch:disabled ~ .label {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.label {
+  color: var(--text);
+  font-size: 1.4rem;
+}
+
+.helperText {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 1.3rem;
+}
+
+.errorMessage {
+  margin: 0;
+  color: var(--danger);
+  font-size: 1.3rem;
+}

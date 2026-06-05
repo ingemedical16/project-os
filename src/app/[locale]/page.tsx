@@ -5,6 +5,7 @@ import {
   LanguageShowcase,
   RadioShowcase,
   SelectShowcase,
+  SwitchShowcase,
   TextareaShowcase,
   ThemeShowcase,
 } from '@/features/design-system/ index';
@@ -24,6 +25,7 @@ export default function HomePage() {
         <SelectShowcase />
         <CheckboxShowcase />
         <RadioShowcase />
+        <SwitchShowcase />
       </div>
     </main>
   );
