@@ -1,0 +1,17 @@
+.showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}

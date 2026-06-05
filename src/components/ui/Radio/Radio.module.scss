@@ -1,0 +1,61 @@
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+
+  color: var(--text);
+  cursor: pointer;
+}
+
+.radio {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mark {
+  width: 2rem;
+  height: 2rem;
+
+  flex-shrink: 0;
+
+  border: 0.1rem solid var(--border);
+  border-radius: 50%;
+
+  background: var(--surface);
+
+  position: relative;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.radio:checked + .mark {
+  border-color: var(--accent);
+}
+
+.radio:checked + .mark::after {
+  content: '';
+
+  position: absolute;
+  inset: 0.45rem;
+
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.radio:focus-visible + .mark {
+  outline: 0.2rem solid var(--accent);
+  outline-offset: 0.2rem;
+}
+
+.radio:disabled + .mark,
+.radio:disabled ~ .label {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.label {
+  font-size: 1.4rem;
+}
