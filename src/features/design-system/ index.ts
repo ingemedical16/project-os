@@ -10,3 +10,4 @@ export { SwitchShowcase } from './SwitchShowcase';
 export { FormShowcase } from './FormShowcase';
 export { BadgeShowcase } from './BadgeShowcase';
 export { SpinnerShowcase } from './SpinnerShowcase';
+export { CardShowcase } from './CardShowcase';

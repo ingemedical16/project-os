@@ -1,0 +1,19 @@
+.showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.6rem;
+
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(24rem, 1fr)
+  );
+}
+
+.grid > * {
+  gap: 1.2rem;
+}

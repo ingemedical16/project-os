@@ -1,6 +1,7 @@
 import {
   BadgeShowcase,
   ButtonShowcase,
+  CardShowcase,
   CheckboxShowcase,
   FormShowcase,
   InputShowcase,
@@ -32,6 +33,7 @@ export default function HomePage() {
         <FormShowcase />
         <BadgeShowcase />
         <SpinnerShowcase />
+        <CardShowcase />
       </div>
     </main>
   );

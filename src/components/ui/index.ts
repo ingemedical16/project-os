@@ -57,3 +57,7 @@ export type {
   SpinnerProps,
   SpinnerSize,
 } from './Spinner';
+
+export { Card } from './Card';
+
+export type { CardProps } from './Card';
