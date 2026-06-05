@@ -68,3 +68,10 @@ export type {
   DividerOrientation,
   DividerProps,
 } from './Divider';
+
+export { Avatar } from './Avatar';
+
+export type {
+  AvatarProps,
+  AvatarSize,
+} from './Avatar';

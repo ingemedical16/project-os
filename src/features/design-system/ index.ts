@@ -12,3 +12,4 @@ export { BadgeShowcase } from './BadgeShowcase';
 export { SpinnerShowcase } from './SpinnerShowcase';
 export { CardShowcase } from './CardShowcase';
 export { DividerShowcase } from './DividerShowcase';
+export { AvatarShowcase } from './AvatarShowcase';

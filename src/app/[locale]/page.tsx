@@ -1,4 +1,5 @@
 import {
+  AvatarShowcase,
   BadgeShowcase,
   ButtonShowcase,
   CardShowcase,
@@ -36,6 +37,7 @@ export default function HomePage() {
         <SpinnerShowcase />
         <CardShowcase />
         <DividerShowcase />
+        <AvatarShowcase />
       </div>
     </main>
   );
