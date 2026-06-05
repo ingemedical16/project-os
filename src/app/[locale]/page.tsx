@@ -7,6 +7,7 @@ import {
   LanguageShowcase,
   RadioShowcase,
   SelectShowcase,
+  SpinnerShowcase,
   SwitchShowcase,
   TextareaShowcase,
   ThemeShowcase,
@@ -30,6 +31,7 @@ export default function HomePage() {
         <SwitchShowcase />
         <FormShowcase />
         <BadgeShowcase />
+        <SpinnerShowcase />
       </div>
     </main>
   );

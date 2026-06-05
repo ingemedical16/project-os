@@ -50,3 +50,10 @@ export type {
   BadgeProps,
   BadgeVariant,
 } from './Badge';
+
+export { Spinner } from './Spinner';
+
+export type {
+  SpinnerProps,
+  SpinnerSize,
+} from './Spinner';
