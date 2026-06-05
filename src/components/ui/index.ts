@@ -44,3 +44,9 @@ export type {
   FormFieldProps,
   FormProps,
 } from './Form';
+
+export { Badge } from './Badge';
+export type {
+  BadgeProps,
+  BadgeVariant,
+} from './Badge';

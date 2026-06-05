@@ -1,0 +1,11 @@
+.showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
