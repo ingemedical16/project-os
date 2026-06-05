@@ -86,3 +86,7 @@ export type {
 export { Modal } from './Modal';
 
 export type { ModalProps } from './Modal';
+
+export { Tooltip } from './Tooltip';
+
+export type { TooltipProps } from './Tooltip';

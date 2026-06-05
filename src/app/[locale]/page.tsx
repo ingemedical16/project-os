@@ -16,6 +16,7 @@ import {
   SwitchShowcase,
   TextareaShowcase,
   ThemeShowcase,
+  TooltipShowcase,
 } from '@/features/design-system/ index';
 import styles from './page.module.scss';
 
@@ -42,6 +43,7 @@ export default function HomePage() {
         <AvatarShowcase />
         <AlertShowcase />
         <ModalShowcase />
+        <TooltipShowcase />
       </div>
     </main>
   );

@@ -15,3 +15,4 @@ export { DividerShowcase } from './DividerShowcase';
 export { AvatarShowcase } from './AvatarShowcase';
 export { AlertShowcase } from './AlertShowcase';
 export { ModalShowcase } from './ModalShowcase';
+export { TooltipShowcase } from './TooltipShowcase';

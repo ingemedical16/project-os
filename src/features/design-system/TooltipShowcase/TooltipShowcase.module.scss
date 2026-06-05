@@ -1,0 +1,29 @@
+.showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 3.2rem;
+  height: 3.2rem;
+
+  border-radius: 50%;
+
+  background: var(--surface-hover);
+
+  color: var(--text);
+
+  cursor: pointer;
+}
