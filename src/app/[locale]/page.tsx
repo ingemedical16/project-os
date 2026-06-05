@@ -1,4 +1,5 @@
 import {
+  AccordionShowcase,
   AlertShowcase,
   AvatarShowcase,
   BadgeShowcase,
@@ -44,6 +45,7 @@ export default function HomePage() {
         <AlertShowcase />
         <ModalShowcase />
         <TooltipShowcase />
+        <AccordionShowcase />
       </div>
     </main>
   );

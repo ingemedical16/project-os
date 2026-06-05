@@ -90,3 +90,11 @@ export type { ModalProps } from './Modal';
 export { Tooltip } from './Tooltip';
 
 export type { TooltipProps } from './Tooltip';
+
+export { Accordion } from './Accordion';
+export { AccordionItem } from './Accordion';
+
+export type {
+  AccordionItemProps,
+  AccordionProps,
+} from './Accordion';
