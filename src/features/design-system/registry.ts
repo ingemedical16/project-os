@@ -1,5 +1,6 @@
 import type { ComponentType } from 'react';
 
+import { AppearanceShowcase } from './AppearanceShowcase';
 import { AccordionShowcase } from './AccordionShowcase';
 import { AlertShowcase } from './AlertShowcase';
 import { AvatarShowcase } from './AvatarShowcase';
@@ -11,7 +12,6 @@ import { DividerShowcase } from './DividerShowcase';
 import { DrawerShowcase } from './DrawerShowcase';
 import { FormShowcase } from './FormShowcase';
 import { InputShowcase } from './InputShowcase';
-import { LanguageShowcase } from './LanguageShowcase';
 import { ModalShowcase } from './ModalShowcase';
 import { RadioShowcase } from './RadioShowcase';
 import { SelectShowcase } from './SelectShowcase';
@@ -19,7 +19,6 @@ import { SpinnerShowcase } from './SpinnerShowcase';
 import { SwitchShowcase } from './SwitchShowcase';
 import { TabsShowcase } from './TabsShowcase';
 import { TextareaShowcase } from './TextareaShowcase';
-import { ThemeShowcase } from './ThemeShowcase';
 import { ToastShowcase } from './ToastShowcase';
 import { TooltipShowcase } from './TooltipShowcase';
 
@@ -37,21 +36,16 @@ export interface DesignSystemShowcaseGroup {
 
 export const DESIGN_SYSTEM_SHOWCASES: DesignSystemShowcaseGroup[] = [
   {
-    id: 'system',
-    title: 'System',
-    items: [
-      {
-        id: 'theme',
-        title: 'Theme',
-        component: ThemeShowcase,
-      },
-      {
-        id: 'language',
-        title: 'Language',
-        component: LanguageShowcase,
-      },
-    ],
-  },
+  id: 'system',
+  title: 'System',
+  items: [
+    {
+      id: 'appearance',
+      title: 'Appearance',
+      component: AppearanceShowcase,
+    },
+  ],
+},
   {
     id: 'forms',
     title: 'Forms',

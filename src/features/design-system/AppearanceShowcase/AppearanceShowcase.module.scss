@@ -45,44 +45,15 @@
   color: var(--text-muted);
 }
 
-.tokens {
+.rtlPreview {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem;
 
-.tokenSurface,
-.tokenAccent,
-.tokenSuccess,
-.tokenWarning,
-.tokenDanger {
-  padding: 1rem 1.2rem;
-  border-radius: 0.8rem;
-  font-weight: 600;
-}
+  padding: 1.6rem;
 
-.tokenSurface {
   background: var(--surface-hover);
-  color: var(--text);
   border: 0.1rem solid var(--border);
-}
-
-.tokenAccent {
-  background: var(--accent);
-  color: var(--accent-text);
-}
-
-.tokenSuccess {
-  background: var(--success);
-  color: #ffffff;
-}
-
-.tokenWarning {
-  background: var(--warning);
-  color: #111827;
-}
-
-.tokenDanger {
-  background: var(--danger);
-  color: #ffffff;
+  border-radius: 0.8rem;
 }
