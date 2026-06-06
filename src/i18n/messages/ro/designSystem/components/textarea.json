@@ -1,0 +1,17 @@
+{
+  "title": "Zonă text",
+  "description": "Zonele text permit utilizatorilor să introducă un conținut mai lung pe mai multe rânduri, cum ar fi comentarii, descrieri și mesaje.",
+  "usage": "Utilizare",
+  "preview": "Previzualizare",
+  "basic": "Utilizare de bază",
+  "states": "Stări",
+  "messageLabel": "Mesaj",
+  "messagePlaceholder": "Scrie mesajul tău...",
+  "messageHelper": "Zona text acceptă conținut pe mai multe rânduri.",
+  "errorLabel": "Stare de eroare",
+  "errorPlaceholder": "Scrie ceva...",
+  "errorMessage": "Această zonă text conține o eroare.",
+  "disabledLabel": "Stare dezactivată",
+  "disabledPlaceholder": "Zonă text dezactivată",
+  "submit": "Trimite mesajul"
+}

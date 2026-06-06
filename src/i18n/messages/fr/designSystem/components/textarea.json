@@ -1,0 +1,17 @@
+{
+  "title": "Zone de texte",
+  "description": "Les zones de texte permettent aux utilisateurs d’entrer un contenu long sur plusieurs lignes, comme des commentaires, descriptions ou messages.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "basic": "Utilisation simple",
+  "states": "États",
+  "messageLabel": "Message",
+  "messagePlaceholder": "Écrivez votre message...",
+  "messageHelper": "La zone de texte prend en charge le contenu sur plusieurs lignes.",
+  "errorLabel": "État d’erreur",
+  "errorPlaceholder": "Écrivez quelque chose...",
+  "errorMessage": "Cette zone de texte contient une erreur.",
+  "disabledLabel": "État désactivé",
+  "disabledPlaceholder": "Zone de texte désactivée",
+  "submit": "Envoyer le message"
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Textarea",
+  "description": "Textareas allow users to enter longer multiline content such as comments, descriptions, and messages.",
+  "usage": "Usage",
+  "preview": "Preview",
+  "basic": "Basic usage",
+  "states": "States",
+  "messageLabel": "Message",
+  "messagePlaceholder": "Write your message...",
+  "messageHelper": "Textarea supports multiline content.",
+  "errorLabel": "Error state",
+  "errorPlaceholder": "Write something...",
+  "errorMessage": "This textarea contains an error.",
+  "disabledLabel": "Disabled state",
+  "disabledPlaceholder": "Disabled textarea",
+  "submit": "Submit message"
+}

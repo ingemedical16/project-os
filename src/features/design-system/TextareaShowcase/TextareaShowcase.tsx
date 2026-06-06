@@ -1,39 +1,72 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 
-import { Button, Textarea } from '@/components/ui';
+import {
+  Button,
+  Textarea,
+} from '@/components/ui';
+
+import { ShowcaseSection } from '../ShowcaseSection';
 
 import styles from './TextareaShowcase.module.scss';
 
 export function TextareaShowcase() {
+  const t = useTranslations(
+    'designSystem.components.textarea'
+  );
+
   const [message, setMessage] = useState('');
 
+  const usage = `<Textarea
+  label="Message"
+  placeholder="Write your message..."
+/>`;
+
   return (
-    <section className={styles.showcase}>
-      <h2>Textarea Primitive</h2>
+    <ShowcaseSection
+      title={t('title')}
+      description={t('description')}
+      usageTitle={t('usage')}
+      previewTitle={t('preview')}
+      usage={
+        <pre className={styles.code}>
+          <code>{usage}</code>
+        </pre>
+      }
+    >
+      <div className={styles.section}>
+        <h3>{t('basic')}</h3>
 
-      <Textarea
-        label="Message"
-        placeholder="Write your message..."
-        value={message}
-        onChange={(event) => setMessage(event.target.value)}
-        helperText="Textarea supports multiline content."
-      />
+        <Textarea
+          label={t('messageLabel')}
+          placeholder={t('messagePlaceholder')}
+          value={message}
+          onChange={(event) =>
+            setMessage(event.target.value)
+          }
+          helperText={t('messageHelper')}
+        />
+      </div>
 
-      <Textarea
-        label="Error state"
-        placeholder="Write something..."
-        error="This textarea contains an error."
-      />
+      <div className={styles.section}>
+        <h3>{t('states')}</h3>
 
-      <Textarea
-        label="Disabled state"
-        placeholder="Disabled textarea"
-        disabled
-      />
+        <Textarea
+          label={t('errorLabel')}
+          placeholder={t('errorPlaceholder')}
+          error={t('errorMessage')}
+        />
 
-      <Button>Submit message</Button>
-    </section>
+        <Textarea
+          label={t('disabledLabel')}
+          placeholder={t('disabledPlaceholder')}
+          disabled
+        />
+      </div>
+
+      <Button>{t('submit')}</Button>
+    </ShowcaseSection>
   );
 }

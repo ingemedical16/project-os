@@ -25,6 +25,7 @@ export async function loadMessages(
     designSystemPage,
     designSystemButton,
     designSystemInput,
+    designSystemTextarea,
 
     settingsProfile,
     settingsPreferences,
@@ -48,6 +49,7 @@ export async function loadMessages(
     import(`./messages/${locale}/designSystem/page.json`),
     import(`./messages/${locale}/designSystem/components/button.json`),
     import(`./messages/${locale}/designSystem/components/input.json`),
+    import(`./messages/${locale}/designSystem/components/textarea.json`),
 
     import(`./messages/${locale}/settings/profile.json`),
     import(`./messages/${locale}/settings/preferences.json`),
@@ -79,6 +81,7 @@ export async function loadMessages(
       components: {
         button: designSystemButton.default,
         input: designSystemInput.default,
+        textarea: designSystemTextarea.default,
       },
     },
     settings: {
