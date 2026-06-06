@@ -1,0 +1,62 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  display: flex;
+
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.drawer {
+  width: min(100%, 36rem);
+  height: 100%;
+
+  background: var(--surface);
+  color: var(--text);
+
+  border-color: var(--surface-border);
+  border-style: solid;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  margin-right: auto;
+  border-width: 0 0.1rem 0 0;
+}
+
+.right {
+  margin-left: auto;
+  border-width: 0 0 0 0.1rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.6rem;
+
+  border-bottom: 0.1rem solid var(--border);
+}
+
+.title {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.closeButton {
+  border: 0;
+  background: transparent;
+  color: var(--text);
+
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.content {
+  padding: 1.6rem;
+  overflow-y: auto;
+}

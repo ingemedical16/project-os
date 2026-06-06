@@ -105,3 +105,10 @@ export type {
   TabItem,
   TabsProps,
 } from './Tabs';
+
+export { Drawer } from './Drawer';
+
+export type {
+  DrawerPosition,
+  DrawerProps,
+} from './Drawer';

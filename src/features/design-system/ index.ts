@@ -18,3 +18,4 @@ export { ModalShowcase } from './ModalShowcase';
 export { TooltipShowcase } from './TooltipShowcase';
 export { AccordionShowcase } from './AccordionShowcase';
 export { TabsShowcase } from './TabsShowcase';
+export { DrawerShowcase } from './DrawerShowcase';

@@ -7,6 +7,7 @@ import {
   CardShowcase,
   CheckboxShowcase,
   DividerShowcase,
+  DrawerShowcase,
   FormShowcase,
   InputShowcase,
   LanguageShowcase,
@@ -48,6 +49,7 @@ export default function HomePage() {
         <TooltipShowcase />
         <AccordionShowcase />
         <TabsShowcase />
+        <DrawerShowcase />
       </div>
     </main>
   );
