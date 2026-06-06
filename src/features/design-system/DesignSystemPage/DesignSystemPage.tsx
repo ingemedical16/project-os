@@ -1,5 +1,6 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { useMemo, useState } from 'react';
 
 import { DESIGN_SYSTEM_SHOWCASES } from '../registry';
@@ -10,6 +11,8 @@ const firstShowcaseId =
   DESIGN_SYSTEM_SHOWCASES[0]?.items[0]?.id ?? '';
 
 export function DesignSystemPage() {
+  const t = useTranslations('designSystem.page');
+
   const [activeId, setActiveId] = useState(firstShowcaseId);
 
   const activeShowcase = useMemo(() => {
@@ -24,14 +27,19 @@ export function DesignSystemPage() {
     <main className={styles.page}>
       <aside className={styles.sidebar}>
         <div className={styles.sidebarHeader}>
-          <h1 className={styles.title}>Project OS</h1>
-          <p className={styles.subtitle}>Design System</p>
+          <h1 className={styles.title}>{t('title')}</h1>
+          <p className={styles.subtitle}>{t('subtitle')}</p>
         </div>
 
-        <nav className={styles.navigation}>
+        <nav
+          className={styles.navigation}
+          aria-label={t('navigationLabel')}
+        >
           {DESIGN_SYSTEM_SHOWCASES.map((group) => (
             <div key={group.id} className={styles.group}>
-              <h2 className={styles.groupTitle}>{group.title}</h2>
+              <h2 className={styles.groupTitle}>
+                {t(`groups.${group.id}`)}
+              </h2>
 
               <div className={styles.items}>
                 {group.items.map((item) => (
@@ -45,7 +53,7 @@ export function DesignSystemPage() {
                     }
                     onClick={() => setActiveId(item.id)}
                   >
-                    {item.title}
+                    {t(`items.${item.id}`)}
                   </button>
                 ))}
               </div>
