@@ -1,0 +1,10 @@
+{
+  "title": "Button",
+  "description": "Buttons allow users to trigger actions such as submitting forms, opening dialogs, or navigating through the application.",
+  "usage": "Usage",
+  "preview": "Preview",
+  "variants": "Variants",
+  "sizes": "Sizes",
+  "states": "States",
+  "fullWidth": "Full Width"
+}

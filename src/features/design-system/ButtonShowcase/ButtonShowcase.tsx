@@ -1,40 +1,85 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
+
 import { Button } from '@/components/ui';
+
+import { ShowcaseSection } from '../ShowcaseSection';
 
 import styles from './ButtonShowcase.module.scss';
 
 export function ButtonShowcase() {
+  const t = useTranslations(
+    'designSystem.components.button'
+  );
+
+  const commonUsage = `<Button variant="primary">
+  Submit
+</Button>`;
+
   return (
-    <section className={styles.showcase}>
-      <h2>Button Primitive</h2>
+    <ShowcaseSection
+      title={t('title')}
+      description={t('description')}
+      usageTitle={t('usage')}
+      previewTitle={t('preview')}
+      usage={
+        <pre className={styles.code}>
+          <code>{commonUsage}</code>
+        </pre>
+      }
+    >
+      <div className={styles.section}>
+        <h3>{t('variants')}</h3>
 
-      <h3>Variants</h3>
+        <div className={styles.actions}>
+          <Button variant="primary">
+            Primary
+          </Button>
 
-      <div className={styles.actions}>
-        <Button variant="primary">Primary</Button>
-        <Button variant="secondary">Secondary</Button>
-        <Button variant="ghost">Ghost</Button>
+          <Button variant="secondary">
+            Secondary
+          </Button>
+
+          <Button variant="ghost">
+            Ghost
+          </Button>
+        </div>
       </div>
 
-      <h3>Sizes</h3>
+      <div className={styles.section}>
+        <h3>{t('sizes')}</h3>
 
-      <div className={styles.actions}>
-        <Button size="sm">Small</Button>
-        <Button size="md">Medium</Button>
-        <Button size="lg">Large</Button>
+        <div className={styles.actions}>
+          <Button size="sm">Small</Button>
+
+          <Button size="md">Medium</Button>
+
+          <Button size="lg">Large</Button>
+        </div>
       </div>
 
-      <h3>Full Width</h3>
+      <div className={styles.section}>
+        <h3>{t('states')}</h3>
 
-      <Button fullWidth>Full Width Button</Button>
+        <div className={styles.actions}>
+          <Button>
+            Default
+          </Button>
 
-      <h3>Disabled</h3>
+          <Button disabled>
+            Disabled
+          </Button>
+        </div>
+      </div>
 
-      <div className={styles.actions}>
-        <Button disabled>Disabled</Button>
-        <Button variant="secondary" disabled>
-          Disabled Secondary
+      <div className={styles.section}>
+        <h3>{t('fullWidth')}</h3>
+
+        <Button fullWidth>
+          Full Width Button
         </Button>
       </div>
-    </section>
+    </ShowcaseSection>
   );
 }

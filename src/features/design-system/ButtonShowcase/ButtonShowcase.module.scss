@@ -1,11 +1,40 @@
-.showcase {
+@use '@/styles/abstracts/variables' as *;
+@use '@/styles/abstracts/mixins' as *;
+
+.code {
+  margin: 0;
+
+  padding: $space-4;
+
+  overflow-x: auto;
+
+  border-radius: $radius-md;
+
+  background: var(--surface-hover);
+
+  color: var(--text);
+
+  font-family: $font-family-mono;
+  font-size: $font-size-sm;
+}
+
+.section {
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: $space-3;
+}
+
+.section h3 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
 }
 
 .actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: $space-3;
 }

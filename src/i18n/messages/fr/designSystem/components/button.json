@@ -1,0 +1,10 @@
+{
+  "title": "Bouton",
+  "description": "Les boutons permettent aux utilisateurs de déclencher des actions telles que l'envoi de formulaires, l'ouverture de fenêtres ou la navigation dans l'application.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "variants": "Variantes",
+  "sizes": "Tailles",
+  "states": "États",
+  "fullWidth": "Pleine largeur"
+}
