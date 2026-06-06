@@ -1,0 +1,15 @@
+{
+  "title": "Checkbox",
+  "description": "Checkboxes allow users to select one or more options, confirm agreements, or enable optional settings.",
+  "usage": "Usage",
+  "preview": "Preview",
+  "basic": "Basic usage",
+  "controlled": "Controlled usage",
+  "states": "States",
+  "termsLabel": "Accept terms and conditions",
+  "termsHelper": "Required before submitting.",
+  "newsletterLabel": "Subscribe to newsletter",
+  "errorLabel": "Error state",
+  "errorMessage": "You must accept terms.",
+  "disabledLabel": "Disabled state"
+}

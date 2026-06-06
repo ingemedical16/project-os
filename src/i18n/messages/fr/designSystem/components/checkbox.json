@@ -1,0 +1,15 @@
+{
+  "title": "Case à cocher",
+  "description": "Les cases à cocher permettent aux utilisateurs de sélectionner une ou plusieurs options, confirmer un accord ou activer des paramètres optionnels.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "basic": "Utilisation simple",
+  "controlled": "Utilisation contrôlée",
+  "states": "États",
+  "termsLabel": "Accepter les conditions générales",
+  "termsHelper": "Obligatoire avant l’envoi.",
+  "newsletterLabel": "S’abonner à la newsletter",
+  "errorLabel": "État d’erreur",
+  "errorMessage": "Vous devez accepter les conditions.",
+  "disabledLabel": "État désactivé"
+}

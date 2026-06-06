@@ -1,0 +1,15 @@
+{
+  "title": "Casetă de bifare",
+  "description": "Casetele de bifare permit utilizatorilor să selecteze una sau mai multe opțiuni, să confirme acorduri sau să activeze setări opționale.",
+  "usage": "Utilizare",
+  "preview": "Previzualizare",
+  "basic": "Utilizare de bază",
+  "controlled": "Utilizare controlată",
+  "states": "Stări",
+  "termsLabel": "Acceptă termenii și condițiile",
+  "termsHelper": "Necesar înainte de trimitere.",
+  "newsletterLabel": "Abonează-te la newsletter",
+  "errorLabel": "Stare de eroare",
+  "errorMessage": "Trebuie să accepți termenii.",
+  "disabledLabel": "Stare dezactivată"
+}
