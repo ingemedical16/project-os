@@ -34,19 +34,25 @@
 .navigation {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.6rem;
+
+  margin-block-start: 2rem;
 }
 
 .group {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 1rem;
+
+  padding-block: 1rem;
 }
 
 .groupTitle {
   margin: 0;
+  padding-inline: 0.4rem;
 
   color: var(--text-muted);
+
   font-size: 1.2rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -57,34 +63,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
-}
-
-.item,
-.activeItem {
-  width: auto;
-
-  padding-block: 0.9rem;
-  padding-inline: 1rem;
-
-  border: 0;
-  border-radius: 0.8rem;
-
-  background: transparent;
-  color: var(--text);
-
-  font: inherit;
-  text-align: start;
-
-  cursor: pointer;
-}
-
-.item:hover {
-  background: var(--bg-hover);
-}
-
-.activeItem {
-  background: var(--accent);
-  color: var(--accent-text);
 }
 
 .content {
@@ -102,6 +80,8 @@
     inset-block-start: 0;
 
     height: 100vh;
+
+    overflow-x: hidden;
     overflow-y: auto;
 
     border-block-end: 0;
@@ -110,11 +90,6 @@
 
   .items {
     flex-direction: column;
-  }
-
-  .item,
-  .activeItem {
-    width: 100%;
   }
 
   .content {
