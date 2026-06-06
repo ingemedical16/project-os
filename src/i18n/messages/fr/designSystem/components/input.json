@@ -1,0 +1,20 @@
+{
+  "title": "Champ de saisie",
+  "description": "Les champs de saisie permettent aux utilisateurs d’entrer des valeurs courtes comme un nom, un email, un mot de passe ou une recherche.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "basic": "Utilisation simple",
+  "types": "Types de champs",
+  "states": "États",
+  "nameLabel": "Nom",
+  "namePlaceholder": "Entrez votre nom",
+  "nameHelper": "Ce texte d’aide donne une information supplémentaire.",
+  "emailLabel": "Email",
+  "emailPlaceholder": "john@example.com",
+  "errorLabel": "État d’erreur",
+  "errorPlaceholder": "Valeur invalide",
+  "errorMessage": "Ce champ contient une erreur.",
+  "disabledLabel": "État désactivé",
+  "disabledPlaceholder": "Champ désactivé",
+  "submit": "Envoyer"
+}

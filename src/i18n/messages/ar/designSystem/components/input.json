@@ -1,0 +1,20 @@
+{
+  "title": "حقل إدخال",
+  "description": "تسمح حقول الإدخال للمستخدمين بإدخال نصوص قصيرة مثل الاسم أو البريد الإلكتروني أو كلمة المرور أو البحث.",
+  "usage": "الاستخدام",
+  "preview": "المعاينة",
+  "basic": "استخدام بسيط",
+  "types": "أنواع الحقول",
+  "states": "الحالات",
+  "nameLabel": "الاسم",
+  "namePlaceholder": "أدخل اسمك",
+  "nameHelper": "هذا النص يساعد المستخدم بمعلومة إضافية.",
+  "emailLabel": "البريد الإلكتروني",
+  "emailPlaceholder": "john@example.com",
+  "errorLabel": "حالة الخطأ",
+  "errorPlaceholder": "قيمة غير صحيحة",
+  "errorMessage": "هذا الحقل يحتوي على خطأ.",
+  "disabledLabel": "حالة التعطيل",
+  "disabledPlaceholder": "حقل معطل",
+  "submit": "إرسال"
+}

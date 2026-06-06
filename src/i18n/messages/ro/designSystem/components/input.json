@@ -1,0 +1,20 @@
+{
+  "title": "Câmp text",
+  "description": "Câmpurile text permit utilizatorilor să introducă valori scurte, cum ar fi nume, emailuri, parole sau căutări.",
+  "usage": "Utilizare",
+  "preview": "Previzualizare",
+  "basic": "Utilizare de bază",
+  "types": "Tipuri de câmpuri",
+  "states": "Stări",
+  "nameLabel": "Nume",
+  "namePlaceholder": "Introdu numele tău",
+  "nameHelper": "Acest text oferă informații suplimentare.",
+  "emailLabel": "Email",
+  "emailPlaceholder": "john@example.com",
+  "errorLabel": "Stare de eroare",
+  "errorPlaceholder": "Valoare invalidă",
+  "errorMessage": "Acest câmp conține o eroare.",
+  "disabledLabel": "Stare dezactivată",
+  "disabledPlaceholder": "Câmp dezactivat",
+  "submit": "Trimite"
+}

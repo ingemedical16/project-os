@@ -1,0 +1,20 @@
+{
+  "title": "Input",
+  "description": "Inputs allow users to enter short text values such as names, emails, passwords, and search queries.",
+  "usage": "Usage",
+  "preview": "Preview",
+  "basic": "Basic usage",
+  "types": "Input types",
+  "states": "States",
+  "nameLabel": "Name",
+  "namePlaceholder": "Enter your name",
+  "nameHelper": "This helper text gives extra information.",
+  "emailLabel": "Email",
+  "emailPlaceholder": "john@example.com",
+  "errorLabel": "Error state",
+  "errorPlaceholder": "Invalid value",
+  "errorMessage": "This field contains an error.",
+  "disabledLabel": "Disabled state",
+  "disabledPlaceholder": "Disabled input",
+  "submit": "Submit"
+}

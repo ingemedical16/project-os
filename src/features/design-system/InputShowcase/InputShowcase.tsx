@@ -1,48 +1,88 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 
-import { Button, Input } from '@/components/ui';
+import {
+  Button,
+  Input,
+} from '@/components/ui';
+
+import { ShowcaseSection } from '../ShowcaseSection';
 
 import styles from './InputShowcase.module.scss';
 
 export function InputShowcase() {
+  const t = useTranslations(
+    'designSystem.components.input'
+  );
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
 
+  const usage = `<Input
+  label="Email"
+  type="email"
+  placeholder="john@example.com"
+/>`;
+
   return (
-    <section className={styles.showcase}>
-      <h2>Input Primitive</h2>
+    <ShowcaseSection
+      title={t('title')}
+      description={t('description')}
+      usageTitle={t('usage')}
+      previewTitle={t('preview')}
+      usage={
+        <pre className={styles.code}>
+          <code>{usage}</code>
+        </pre>
+      }
+    >
+      <div className={styles.section}>
+        <h3>{t('basic')}</h3>
 
-      <Input
-        label="Name"
-        placeholder="Enter your name"
-        value={name}
-        onChange={(event) => setName(event.target.value)}
-        helperText="This input uses helper text."
-      />
+        <Input
+          label={t('nameLabel')}
+          placeholder={t('namePlaceholder')}
+          value={name}
+          onChange={(event) =>
+            setName(event.target.value)
+          }
+          helperText={t('nameHelper')}
+        />
+      </div>
 
-      <Input
-        label="Email"
-        type="email"
-        placeholder="john@example.com"
-        value={email}
-        onChange={(event) => setEmail(event.target.value)}
-      />
+      <div className={styles.section}>
+        <h3>{t('types')}</h3>
 
-      <Input
-        label="Error state"
-        placeholder="Invalid value"
-        error="This field contains an error."
-      />
+        <Input
+          label={t('emailLabel')}
+          type="email"
+          placeholder={t('emailPlaceholder')}
+          value={email}
+          onChange={(event) =>
+            setEmail(event.target.value)
+          }
+        />
+      </div>
 
-      <Input
-        label="Disabled state"
-        placeholder="Disabled input"
-        disabled
-      />
+      <div className={styles.section}>
+        <h3>{t('states')}</h3>
 
-      <Button>Submit</Button>
-    </section>
+        <Input
+          label={t('errorLabel')}
+          placeholder={t('errorPlaceholder')}
+          error={t('errorMessage')}
+        />
+
+        <Input
+          label={t('disabledLabel')}
+          placeholder={t('disabledPlaceholder')}
+          disabled
+        />
+      </div>
+
+      <Button>{t('submit')}</Button>
+    </ShowcaseSection>
   );
 }
