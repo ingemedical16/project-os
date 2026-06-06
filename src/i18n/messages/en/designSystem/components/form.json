@@ -1,0 +1,18 @@
+{
+  "title": "Form",
+  "description": "Forms combine multiple input controls to collect structured user information.",
+  "usage": "Usage",
+  "preview": "Preview",
+  "name": "Name",
+  "email": "Email",
+  "country": "Country",
+  "selectCountry": "Select country",
+  "role": "Role",
+  "user": "User",
+  "admin": "Admin",
+  "bio": "Biography",
+  "newsletter": "Subscribe to newsletter",
+  "terms": "Accept terms and conditions",
+  "cancel": "Cancel",
+  "submit": "Submit"
+}

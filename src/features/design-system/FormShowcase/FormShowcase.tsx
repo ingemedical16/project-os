@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 import {
   Button,
@@ -9,138 +10,186 @@ import {
   FormActions,
   FormField,
   Input,
+  RadioGroup,
   Select,
+  Switch,
   Textarea,
 } from '@/components/ui';
 
+import { ShowcaseSection } from '../ShowcaseSection';
+
 import styles from './FormShowcase.module.scss';
 
-const categoryOptions = [
-  {
-    value: '',
-    label: 'Select a category',
-    disabled: true,
-  },
-  {
-    value: 'frontend',
-    label: 'Frontend',
-  },
-  {
-    value: 'backend',
-    label: 'Backend',
-  },
-  {
-    value: 'fullstack',
-    label: 'Full Stack',
-  },
-];
-
 export function FormShowcase() {
-  const [formData, setFormData] = useState({
-    firstName: '',
+  const t = useTranslations(
+    'designSystem.components.form'
+  );
+
+  const [data, setData] = useState({
+    name: '',
     email: '',
-    category: '',
-    message: '',
-    acceptedTerms: false,
+    role: 'user',
+    country: '',
+    bio: '',
+    newsletter: true,
+    terms: false,
   });
 
-  function handleSubmit(
-    event: React.FormEvent<HTMLFormElement>
-  ) {
-    event.preventDefault();
+  const usage = `<Form>
+  <FormField>
+    <Input />
+  </FormField>
 
-    console.log(formData);
-  }
+  <FormActions>
+    <Button />
+  </FormActions>
+</Form>`;
 
   return (
-    <section className={styles.showcase}>
-      <h2>Form Primitive</h2>
-
-      <Form onSubmit={handleSubmit}>
+    <ShowcaseSection
+      title={t('title')}
+      description={t('description')}
+      usageTitle={t('usage')}
+      previewTitle={t('preview')}
+      usage={
+        <pre className={styles.code}>
+          <code>{usage}</code>
+        </pre>
+      }
+    >
+      <Form>
         <FormField>
           <Input
-            label="First Name"
-            placeholder="John"
-            value={formData.firstName}
+            label={t('name')}
+            value={data.name}
             onChange={(event) =>
-              setFormData((previous) => ({
-                ...previous,
-                firstName: event.target.value,
-              }))
+              setData({
+                ...data,
+                name: event.target.value,
+              })
             }
           />
         </FormField>
 
         <FormField>
           <Input
-            label="Email"
+            label={t('email')}
             type="email"
-            placeholder="john@example.com"
-            value={formData.email}
+            value={data.email}
             onChange={(event) =>
-              setFormData((previous) => ({
-                ...previous,
+              setData({
+                ...data,
                 email: event.target.value,
-              }))
+              })
             }
           />
         </FormField>
 
         <FormField>
           <Select
-            label="Category"
-            value={formData.category}
+            label={t('country')}
+            value={data.country}
             onChange={(event) =>
-              setFormData((previous) => ({
-                ...previous,
-                category: event.target.value,
-              }))
+              setData({
+                ...data,
+                country: event.target.value,
+              })
             }
-            options={categoryOptions}
+            options={[
+              {
+                value: '',
+                label: t('selectCountry'),
+              },
+              {
+                value: 'fr',
+                label: 'France',
+              },
+              {
+                value: 'ro',
+                label: 'Romania',
+              },
+              {
+                value: 'ma',
+                label: 'Morocco',
+              },
+            ]}
+          />
+        </FormField>
+
+        <FormField>
+          <RadioGroup
+            name="role"
+            label={t('role')}
+            value={data.role}
+            options={[
+              {
+                value: 'user',
+                label: t('user'),
+              },
+              {
+                value: 'admin',
+                label: t('admin'),
+              },
+            ]}
+            onChange={(value) =>
+              setData({
+                ...data,
+                role: value,
+              })
+            }
           />
         </FormField>
 
         <FormField>
           <Textarea
-            label="Message"
-            placeholder="Write your message..."
-            value={formData.message}
+            label={t('bio')}
+            value={data.bio}
             onChange={(event) =>
-              setFormData((previous) => ({
-                ...previous,
-                message: event.target.value,
-              }))
+              setData({
+                ...data,
+                bio: event.target.value,
+              })
+            }
+          />
+        </FormField>
+
+        <FormField>
+          <Switch
+            label={t('newsletter')}
+            checked={data.newsletter}
+            onChange={(event) =>
+              setData({
+                ...data,
+                newsletter:
+                  event.target.checked,
+              })
             }
           />
         </FormField>
 
         <FormField>
           <Checkbox
-            label="I accept terms and conditions"
-            checked={formData.acceptedTerms}
+            label={t('terms')}
+            checked={data.terms}
             onChange={(event) =>
-              setFormData((previous) => ({
-                ...previous,
-                acceptedTerms:
-                  event.target.checked,
-              }))
+              setData({
+                ...data,
+                terms: event.target.checked,
+              })
             }
           />
         </FormField>
 
         <FormActions>
-          <Button
-            type="button"
-            variant="ghost"
-          >
-            Cancel
+          <Button variant="secondary">
+            {t('cancel')}
           </Button>
 
-          <Button type="submit">
-            Submit
+          <Button>
+            {t('submit')}
           </Button>
         </FormActions>
       </Form>
-    </section>
+    </ShowcaseSection>
   );
 }

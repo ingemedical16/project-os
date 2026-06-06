@@ -1,0 +1,18 @@
+{
+  "title": "Formular",
+  "description": "Formularele combină mai multe controale pentru a colecta informații structurate de la utilizatori.",
+  "usage": "Utilizare",
+  "preview": "Previzualizare",
+  "name": "Nume",
+  "email": "Email",
+  "country": "Țară",
+  "selectCountry": "Selectează țara",
+  "role": "Rol",
+  "user": "Utilizator",
+  "admin": "Administrator",
+  "bio": "Biografie",
+  "newsletter": "Abonare la newsletter",
+  "terms": "Accept termenii și condițiile",
+  "cancel": "Anulează",
+  "submit": "Trimite"
+}

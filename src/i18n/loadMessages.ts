@@ -30,6 +30,7 @@ export async function loadMessages(
     designSystemCheckbox,
     designSystemRadio,
     designSystemSwitch,
+    designSystemForm,
 
     settingsProfile,
     settingsPreferences,
@@ -58,6 +59,7 @@ export async function loadMessages(
     import(`./messages/${locale}/designSystem/components/checkbox.json`),
     import(`./messages/${locale}/designSystem/components/radio.json`),
     import(`./messages/${locale}/designSystem/components/switch.json`),
+    import(`./messages/${locale}/designSystem/components/form.json`),
 
     import(`./messages/${locale}/settings/profile.json`),
     import(`./messages/${locale}/settings/preferences.json`),
@@ -94,6 +96,7 @@ export async function loadMessages(
         checkbox: designSystemCheckbox.default,
         radio: designSystemRadio.default,
         switch: designSystemSwitch.default,
+        form: designSystemForm.default,
       },
     },
     settings: {

@@ -1,0 +1,18 @@
+{
+  "title": "Formulaire",
+  "description": "Les formulaires combinent plusieurs contrôles afin de collecter des informations structurées.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "name": "Nom",
+  "email": "Email",
+  "country": "Pays",
+  "selectCountry": "Sélectionner un pays",
+  "role": "Rôle",
+  "user": "Utilisateur",
+  "admin": "Administrateur",
+  "bio": "Biographie",
+  "newsletter": "S’abonner à la newsletter",
+  "terms": "Accepter les conditions générales",
+  "cancel": "Annuler",
+  "submit": "Envoyer"
+}
