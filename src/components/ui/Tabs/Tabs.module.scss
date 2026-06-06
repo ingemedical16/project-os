@@ -1,0 +1,61 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+
+  border-bottom: 0.1rem solid var(--border);
+}
+
+.trigger,
+.activeTrigger {
+  padding: 1rem 1.4rem;
+
+  border: 0;
+  border-bottom: 0.2rem solid transparent;
+
+  background: transparent;
+  color: var(--text-muted);
+
+  font: inherit;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.trigger:hover:not(:disabled) {
+  color: var(--text);
+  background: var(--surface-hover);
+}
+
+.activeTrigger {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.trigger:focus-visible,
+.activeTrigger:focus-visible {
+  outline: 0.2rem solid var(--accent);
+  outline-offset: 0.2rem;
+}
+
+.trigger:disabled,
+.activeTrigger:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.panel {
+  color: var(--text);
+}

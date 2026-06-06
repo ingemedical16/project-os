@@ -15,6 +15,7 @@ import {
   SelectShowcase,
   SpinnerShowcase,
   SwitchShowcase,
+  TabsShowcase,
   TextareaShowcase,
   ThemeShowcase,
   TooltipShowcase,
@@ -46,6 +47,7 @@ export default function HomePage() {
         <ModalShowcase />
         <TooltipShowcase />
         <AccordionShowcase />
+        <TabsShowcase />
       </div>
     </main>
   );

@@ -17,3 +17,4 @@ export { AlertShowcase } from './AlertShowcase';
 export { ModalShowcase } from './ModalShowcase';
 export { TooltipShowcase } from './TooltipShowcase';
 export { AccordionShowcase } from './AccordionShowcase';
+export { TabsShowcase } from './TabsShowcase';

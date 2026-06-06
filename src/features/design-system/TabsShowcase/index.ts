@@ -1,0 +1,1 @@
+export { TabsShowcase } from './TabsShowcase';
