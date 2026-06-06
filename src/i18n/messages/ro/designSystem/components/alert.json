@@ -1,0 +1,15 @@
+{
+  "title": "Alertă",
+  "description": "Alertele comunică mesaje contextuale importante, precum informații, succes, avertisment sau eroare.",
+  "usage": "Utilizare",
+  "preview": "Previzualizare",
+  "variants": "Variante",
+  "infoTitle": "Informație",
+  "infoMessage": "Aceasta este o alertă informativă.",
+  "successTitle": "Succes",
+  "successMessage": "Acțiunea ta a fost finalizată cu succes.",
+  "warningTitle": "Avertisment",
+  "warningMessage": "Te rugăm să verifici cu atenție această informație.",
+  "dangerTitle": "Eroare",
+  "dangerMessage": "Ceva nu a funcționat. Te rugăm să încerci din nou."
+}

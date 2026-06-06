@@ -1,0 +1,15 @@
+{
+  "title": "Alerte",
+  "description": "Les alertes communiquent des messages contextuels importants comme une information, un succès, un avertissement ou une erreur.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "variants": "Variantes",
+  "infoTitle": "Information",
+  "infoMessage": "Ceci est une alerte informative.",
+  "successTitle": "Succès",
+  "successMessage": "Votre action a été effectuée avec succès.",
+  "warningTitle": "Avertissement",
+  "warningMessage": "Veuillez vérifier attentivement cette information.",
+  "dangerTitle": "Erreur",
+  "dangerMessage": "Une erreur est survenue. Veuillez réessayer."
+}

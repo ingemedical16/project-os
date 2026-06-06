@@ -1,0 +1,15 @@
+{
+  "title": "Alert",
+  "description": "Alerts communicate important contextual messages such as information, success, warning, or error states.",
+  "usage": "Usage",
+  "preview": "Preview",
+  "variants": "Variants",
+  "infoTitle": "Information",
+  "infoMessage": "This is an informational alert.",
+  "successTitle": "Success",
+  "successMessage": "Your action was completed successfully.",
+  "warningTitle": "Warning",
+  "warningMessage": "Please review this information carefully.",
+  "dangerTitle": "Error",
+  "dangerMessage": "Something went wrong. Please try again."
+}

@@ -31,6 +31,7 @@ export async function loadMessages(
     designSystemRadio,
     designSystemSwitch,
     designSystemForm,
+    designSystemAlert,
 
     settingsProfile,
     settingsPreferences,
@@ -60,6 +61,7 @@ export async function loadMessages(
     import(`./messages/${locale}/designSystem/components/radio.json`),
     import(`./messages/${locale}/designSystem/components/switch.json`),
     import(`./messages/${locale}/designSystem/components/form.json`),
+    import(`./messages/${locale}/designSystem/components/alert.json`),
 
     import(`./messages/${locale}/settings/profile.json`),
     import(`./messages/${locale}/settings/preferences.json`),
@@ -97,6 +99,7 @@ export async function loadMessages(
         radio: designSystemRadio.default,
         switch: designSystemSwitch.default,
         form: designSystemForm.default,
+        alert: designSystemAlert.default,
       },
     },
     settings: {
