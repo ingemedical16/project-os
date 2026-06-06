@@ -56,6 +56,15 @@
   }
 }
 
+html[dir='rtl'] .select {
+  padding-inline: 3.6rem 1.2rem;
+
+  background-position:
+    2rem 50%,
+    1.6rem 50%,
+    0 0;
+}
+
 .error {
   border-color: var(--danger);
 
