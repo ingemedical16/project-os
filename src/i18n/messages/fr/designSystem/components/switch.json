@@ -1,0 +1,17 @@
+{
+  "title": "Interrupteur",
+  "description": "Les interrupteurs permettent aux utilisateurs d’activer ou de désactiver immédiatement un paramètre.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "basic": "Utilisation simple",
+  "settings": "Exemples de paramètres",
+  "states": "États",
+  "darkModeLabel": "Mode sombre",
+  "darkModeHelper": "Changer le thème de l’application.",
+  "notificationsLabel": "Notifications",
+  "marketingEmailsLabel": "Emails marketing",
+  "autoSaveLabel": "Sauvegarde automatique",
+  "errorLabel": "État d’erreur",
+  "errorMessage": "Ce paramètre est obligatoire.",
+  "disabledLabel": "État désactivé"
+}

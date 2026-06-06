@@ -1,0 +1,17 @@
+{
+  "title": "Switch",
+  "description": "Switches allow users to turn a setting on or off immediately.",
+  "usage": "Usage",
+  "preview": "Preview",
+  "basic": "Basic usage",
+  "settings": "Settings examples",
+  "states": "States",
+  "darkModeLabel": "Dark Mode",
+  "darkModeHelper": "Toggle application theme.",
+  "notificationsLabel": "Notifications",
+  "marketingEmailsLabel": "Marketing emails",
+  "autoSaveLabel": "Auto save",
+  "errorLabel": "Error state",
+  "errorMessage": "This setting is required.",
+  "disabledLabel": "Disabled state"
+}

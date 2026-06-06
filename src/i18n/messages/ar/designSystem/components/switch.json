@@ -1,0 +1,17 @@
+{
+  "title": "مفتاح تبديل",
+  "description": "تسمح مفاتيح التبديل للمستخدمين بتفعيل أو تعطيل إعداد مباشرة.",
+  "usage": "الاستخدام",
+  "preview": "المعاينة",
+  "basic": "استخدام بسيط",
+  "settings": "أمثلة الإعدادات",
+  "states": "الحالات",
+  "darkModeLabel": "الوضع الداكن",
+  "darkModeHelper": "تبديل سمة التطبيق.",
+  "notificationsLabel": "الإشعارات",
+  "marketingEmailsLabel": "رسائل التسويق",
+  "autoSaveLabel": "الحفظ التلقائي",
+  "errorLabel": "حالة الخطأ",
+  "errorMessage": "هذا الإعداد مطلوب.",
+  "disabledLabel": "حالة التعطيل"
+}

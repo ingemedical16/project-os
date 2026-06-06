@@ -1,0 +1,17 @@
+{
+  "title": "Comutator",
+  "description": "Comutatoarele permit utilizatorilor să activeze sau să dezactiveze imediat o setare.",
+  "usage": "Utilizare",
+  "preview": "Previzualizare",
+  "basic": "Utilizare de bază",
+  "settings": "Exemple de setări",
+  "states": "Stări",
+  "darkModeLabel": "Mod întunecat",
+  "darkModeHelper": "Comută tema aplicației.",
+  "notificationsLabel": "Notificări",
+  "marketingEmailsLabel": "Emailuri de marketing",
+  "autoSaveLabel": "Salvare automată",
+  "errorLabel": "Stare de eroare",
+  "errorMessage": "Această setare este obligatorie.",
+  "disabledLabel": "Stare dezactivată"
+}
