@@ -1,0 +1,17 @@
+{
+  "title": "Selector",
+  "description": "Selectoarele permit utilizatorilor să aleagă o opțiune dintr-o listă predefinită.",
+  "usage": "Utilizare",
+  "preview": "Previzualizare",
+  "basic": "Utilizare de bază",
+  "controlled": "Utilizare controlată",
+  "states": "Stări",
+  "themeLabel": "Temă",
+  "themePlaceholder": "Selectează o temă",
+  "themeHelper": "Selectorul acceptă opțiuni de tip placeholder dezactivate.",
+  "languageLabel": "Limbă",
+  "languagePlaceholder": "Selectează o limbă",
+  "errorLabel": "Stare de eroare",
+  "errorMessage": "Te rugăm să selectezi o opțiune validă.",
+  "disabledLabel": "Stare dezactivată"
+}

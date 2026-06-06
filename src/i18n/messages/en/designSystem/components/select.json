@@ -1,0 +1,17 @@
+{
+  "title": "Select",
+  "description": "Selects allow users to choose one option from a predefined list.",
+  "usage": "Usage",
+  "preview": "Preview",
+  "basic": "Basic usage",
+  "controlled": "Controlled usage",
+  "states": "States",
+  "themeLabel": "Theme",
+  "themePlaceholder": "Select a theme",
+  "themeHelper": "Select supports disabled placeholder options.",
+  "languageLabel": "Language",
+  "languagePlaceholder": "Select a language",
+  "errorLabel": "Error state",
+  "errorMessage": "Please select a valid option.",
+  "disabledLabel": "Disabled state"
+}

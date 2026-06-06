@@ -1,0 +1,17 @@
+{
+  "title": "Sélecteur",
+  "description": "Les sélecteurs permettent aux utilisateurs de choisir une option dans une liste prédéfinie.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "basic": "Utilisation simple",
+  "controlled": "Utilisation contrôlée",
+  "states": "États",
+  "themeLabel": "Thème",
+  "themePlaceholder": "Sélectionnez un thème",
+  "themeHelper": "Le sélecteur prend en charge les options de placeholder désactivées.",
+  "languageLabel": "Langue",
+  "languagePlaceholder": "Sélectionnez une langue",
+  "errorLabel": "État d’erreur",
+  "errorMessage": "Veuillez sélectionner une option valide.",
+  "disabledLabel": "État désactivé"
+}

@@ -1,0 +1,17 @@
+{
+  "title": "قائمة اختيار",
+  "description": "تسمح قوائم الاختيار للمستخدمين باختيار خيار واحد من قائمة محددة مسبقًا.",
+  "usage": "الاستخدام",
+  "preview": "المعاينة",
+  "basic": "استخدام بسيط",
+  "controlled": "استخدام متحكم به",
+  "states": "الحالات",
+  "themeLabel": "السمة",
+  "themePlaceholder": "اختر سمة",
+  "themeHelper": "تدعم قائمة الاختيار خيارات مؤقتة معطلة.",
+  "languageLabel": "اللغة",
+  "languagePlaceholder": "اختر لغة",
+  "errorLabel": "حالة الخطأ",
+  "errorMessage": "يرجى اختيار خيار صالح.",
+  "disabledLabel": "حالة التعطيل"
+}
