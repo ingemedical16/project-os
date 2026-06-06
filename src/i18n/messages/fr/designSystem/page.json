@@ -41,5 +41,9 @@
     "emptyState": "État vide",
     "table": "Tableau",
     "dataTable": "Tableau de données"
+  },
+   "shared": {
+    "usage": "Utilisation",
+    "preview": "Aperçu"
   }
 }

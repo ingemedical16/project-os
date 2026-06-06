@@ -41,5 +41,9 @@
     "emptyState": "حالة فارغة",
     "table": "جدول",
     "dataTable": "جدول بيانات"
+  },
+   "shared": {
+    "usage": "الاستخدام",
+    "preview": "معاينة"
   }
 }

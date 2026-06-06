@@ -41,5 +41,9 @@
     "emptyState": "Stare goală",
     "table": "Tabel",
     "dataTable": "Tabel de date"
+  },
+   "shared": {
+    "usage": "Utilizare",
+    "preview": "Previzualizare"
   }
 }

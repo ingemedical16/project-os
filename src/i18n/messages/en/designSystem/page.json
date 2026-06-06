@@ -41,5 +41,9 @@
     "emptyState": "Empty State",
     "table": "Table",
     "dataTable": "Data Table"
+  },
+   "shared": {
+    "usage": "Usage",
+    "preview": "Preview"
   }
 }

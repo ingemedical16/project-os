@@ -1,12 +1,17 @@
 import type { ReactNode } from 'react';
 
-import { Card, Divider } from '@/components/ui';
+import {
+  Card,
+  Divider,
+} from '@/components/ui';
 
 import styles from './ShowcaseSection.module.scss';
 
 interface ShowcaseSectionProps {
   title: string;
   description: string;
+  usageTitle: string;
+  previewTitle: string;
   usage?: ReactNode;
   children: ReactNode;
 }
@@ -14,6 +19,8 @@ interface ShowcaseSectionProps {
 export function ShowcaseSection({
   title,
   description,
+  usageTitle,
+  previewTitle,
   usage,
   children,
 }: ShowcaseSectionProps) {
@@ -21,21 +28,36 @@ export function ShowcaseSection({
     <section className={styles.section}>
       <header className={styles.header}>
         <h1 className={styles.title}>{title}</h1>
-        <p className={styles.description}>{description}</p>
+
+        <p className={styles.description}>
+          {description}
+        </p>
       </header>
 
       {usage ? (
-        <Card className={styles.usage}>
-          <h2 className={styles.usageTitle}>Usage</h2>
+        <Card className={styles.card}>
+          <h2 className={styles.cardTitle}>
+            {usageTitle}
+          </h2>
+
           <Divider />
-          {usage}
+
+          <div className={styles.usage}>
+            {usage}
+          </div>
         </Card>
       ) : null}
 
-      <Card className={styles.preview}>
-        <h2 className={styles.previewTitle}>Preview</h2>
+      <Card className={styles.card}>
+        <h2 className={styles.cardTitle}>
+          {previewTitle}
+        </h2>
+
         <Divider />
-        {children}
+
+        <div className={styles.preview}>
+          {children}
+        </div>
       </Card>
     </section>
   );
