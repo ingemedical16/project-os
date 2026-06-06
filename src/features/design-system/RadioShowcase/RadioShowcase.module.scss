@@ -1,17 +1,37 @@
-.showcase {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+@use '@/styles/abstracts/variables' as *;
+
+.code {
+  margin: 0;
+  padding: $space-4;
+
+  overflow-x: auto;
+
+  border-radius: $radius-md;
+
+  background: var(--surface-hover);
+  color: var(--text);
+
+  font-family: $font-family-mono;
+  font-size: $font-size-sm;
 }
 
-.block {
+.section {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: $space-3;
+}
+
+.section h3 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
 }
 
 .options {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.2rem;
+  gap: $space-3;
 }

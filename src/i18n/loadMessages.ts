@@ -28,6 +28,7 @@ export async function loadMessages(
     designSystemTextarea,
     designSystemSelect,
     designSystemCheckbox,
+    designSystemRadio,
 
     settingsProfile,
     settingsPreferences,
@@ -54,6 +55,7 @@ export async function loadMessages(
     import(`./messages/${locale}/designSystem/components/textarea.json`),
     import(`./messages/${locale}/designSystem/components/select.json`),
     import(`./messages/${locale}/designSystem/components/checkbox.json`),
+    import(`./messages/${locale}/designSystem/components/radio.json`),
 
     import(`./messages/${locale}/settings/profile.json`),
     import(`./messages/${locale}/settings/preferences.json`),
@@ -88,6 +90,7 @@ export async function loadMessages(
         textarea: designSystemTextarea.default,
         select: designSystemSelect.default,
         checkbox: designSystemCheckbox.default,
+        radio: designSystemRadio.default,
       },
     },
     settings: {
