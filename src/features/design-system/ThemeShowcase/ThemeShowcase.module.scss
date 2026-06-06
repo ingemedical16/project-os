@@ -1,11 +1,88 @@
 .showcase {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.title {
+  margin: 0;
+  color: var(--text);
+}
+
+.description {
+  margin: 0.8rem 0 0;
+  color: var(--text-muted);
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.controls {
   gap: 1.6rem;
 }
 
-.actions {
+.preview {
+  gap: 1.6rem;
+}
+
+.previewTitle {
+  margin: 0;
+  color: var(--accent);
+}
+
+.previewText {
+  margin: 0.8rem 0 0;
+  color: var(--text-muted);
+}
+
+.tokens {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.tokenSurface,
+.tokenAccent,
+.tokenSuccess,
+.tokenWarning,
+.tokenDanger {
+  padding: 1rem 1.2rem;
+  border-radius: 0.8rem;
+  font-weight: 600;
+}
+
+.tokenSurface {
+  background: var(--surface-hover);
+  color: var(--text);
+  border: 0.1rem solid var(--border);
+}
+
+.tokenAccent {
+  background: var(--accent);
+  color: var(--accent-text);
+}
+
+.tokenSuccess {
+  background: var(--success);
+  color: #ffffff;
+}
+
+.tokenWarning {
+  background: var(--warning);
+  color: #111827;
+}
+
+.tokenDanger {
+  background: var(--danger);
+  color: #ffffff;
 }
