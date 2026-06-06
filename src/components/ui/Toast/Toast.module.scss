@@ -1,0 +1,43 @@
+.toast {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  min-width: 28rem;
+  max-width: 40rem;
+
+  padding: 1.6rem;
+
+  border-radius: 0.8rem;
+  border: 0.1rem solid transparent;
+
+  background: var(--surface);
+
+  box-shadow:
+    0 0.4rem 1.2rem rgba(0, 0, 0, 0.12);
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.content {
+  font-size: 1.4rem;
+}
+
+.info {
+  border-color: var(--accent);
+}
+
+.success {
+  border-color: var(--success);
+}
+
+.warning {
+  border-color: var(--warning);
+}
+
+.danger {
+  border-color: var(--danger);
+}

@@ -112,3 +112,10 @@ export type {
   DrawerPosition,
   DrawerProps,
 } from './Drawer';
+
+export { Toast } from './Toast';
+
+export type {
+  ToastProps,
+  ToastVariant,
+} from './Toast';

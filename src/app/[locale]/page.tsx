@@ -19,6 +19,7 @@ import {
   TabsShowcase,
   TextareaShowcase,
   ThemeShowcase,
+  ToastShowcase,
   TooltipShowcase,
 } from '@/features/design-system/ index';
 import styles from './page.module.scss';
@@ -50,6 +51,7 @@ export default function HomePage() {
         <AccordionShowcase />
         <TabsShowcase />
         <DrawerShowcase />
+        <ToastShowcase />
       </div>
     </main>
   );

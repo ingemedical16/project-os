@@ -19,3 +19,4 @@ export { TooltipShowcase } from './TooltipShowcase';
 export { AccordionShowcase } from './AccordionShowcase';
 export { TabsShowcase } from './TabsShowcase';
 export { DrawerShowcase } from './DrawerShowcase';
+export { ToastShowcase } from './ToastShowcase';
