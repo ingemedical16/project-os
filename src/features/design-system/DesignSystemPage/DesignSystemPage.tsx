@@ -3,6 +3,11 @@
 import { useTranslations } from 'next-intl';
 import { useMemo, useState } from 'react';
 
+import {
+  Button,
+  Divider,
+} from '@/components/ui';
+
 import { DESIGN_SYSTEM_SHOWCASES } from '../registry';
 
 import styles from './DesignSystemPage.module.scss';
@@ -31,30 +36,35 @@ export function DesignSystemPage() {
           <p className={styles.subtitle}>{t('subtitle')}</p>
         </div>
 
+        <Divider />
+
         <nav
           className={styles.navigation}
           aria-label={t('navigationLabel')}
         >
-          {DESIGN_SYSTEM_SHOWCASES.map((group) => (
+          {DESIGN_SYSTEM_SHOWCASES.map((group, groupIndex) => (
             <div key={group.id} className={styles.group}>
+              {groupIndex > 0 ? <Divider /> : null}
+
               <h2 className={styles.groupTitle}>
                 {t(`groups.${group.id}`)}
               </h2>
 
               <div className={styles.items}>
                 {group.items.map((item) => (
-                  <button
+                  <Button
                     key={item.id}
                     type="button"
-                    className={
+                    variant={
                       item.id === activeId
-                        ? styles.activeItem
-                        : styles.item
+                        ? 'primary'
+                        : 'ghost'
                     }
+                    fullWidth
                     onClick={() => setActiveId(item.id)}
                   >
                     {t(`items.${item.id}`)}
-                  </button>
+                  </Button>
                 ))}
               </div>
             </div>
