@@ -22,6 +22,8 @@ export async function loadMessages(
     dashboardOverview,
     dashboardAnalytics,
 
+    designSystemPage,
+
     settingsProfile,
     settingsPreferences,
   ] = await Promise.all([
@@ -40,6 +42,8 @@ export async function loadMessages(
 
     import(`./messages/${locale}/dashboard/overview.json`),
     import(`./messages/${locale}/dashboard/analytics.json`),
+
+    import(`./messages/${locale}/designSystem/page.json`),
 
     import(`./messages/${locale}/settings/profile.json`),
     import(`./messages/${locale}/settings/preferences.json`),
@@ -65,6 +69,9 @@ export async function loadMessages(
     dashboard: {
       overview: dashboardOverview.default,
       analytics: dashboardAnalytics.default,
+    },
+    designSystem: {
+      page: designSystemPage.default,
     },
     settings: {
       profile: settingsProfile.default,
