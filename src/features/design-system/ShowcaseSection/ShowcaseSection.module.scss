@@ -1,0 +1,36 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.title {
+  margin: 0;
+  color: var(--text);
+  font-size: 2.4rem;
+}
+
+.description {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.usage,
+.preview {
+  gap: 1.6rem;
+}
+
+.usageTitle,
+.previewTitle {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.8rem;
+}
