@@ -1,0 +1,11 @@
+{
+  "title": "Avatar",
+  "description": "Les avatars représentent des utilisateurs ou des entités avec une image, des initiales ou un symbole de remplacement.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "sizes": "Tailles",
+  "profile": "Exemple de profil",
+  "fallbacks": "Valeurs de remplacement",
+  "profileName": "Mohammed EL-IDRISSI",
+  "profileRole": "Développeur Full Stack JavaScript"
+}
