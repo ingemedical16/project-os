@@ -1,0 +1,15 @@
+{
+  "title": "إشعار",
+  "description": "تعرض الإشعارات رسائل مؤقتة بعد إجراءات المستخدم، مثل التأكيدات أو التحذيرات أو الأخطاء.",
+  "usage": "الاستخدام",
+  "preview": "المعاينة",
+  "variants": "الأنواع",
+  "infoTitle": "معلومة",
+  "infoMessage": "تمت مشاهدة ملفك الشخصي.",
+  "successTitle": "نجاح",
+  "successMessage": "تم حفظ التغييرات بنجاح.",
+  "warningTitle": "تحذير",
+  "warningMessage": "مساحة التخزين ممتلئة تقريبًا.",
+  "dangerTitle": "خطأ",
+  "dangerMessage": "حدث خطأ ما."
+}

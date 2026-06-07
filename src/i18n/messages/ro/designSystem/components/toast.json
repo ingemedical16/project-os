@@ -1,0 +1,15 @@
+{
+  "title": "Notificare",
+  "description": "Notificările oferă mesaje temporare de feedback după acțiunile utilizatorului, cum ar fi confirmări, avertismente sau erori.",
+  "usage": "Utilizare",
+  "preview": "Previzualizare",
+  "variants": "Variante",
+  "infoTitle": "Informație",
+  "infoMessage": "Profilul tău a fost vizualizat.",
+  "successTitle": "Succes",
+  "successMessage": "Modificările au fost salvate cu succes.",
+  "warningTitle": "Avertisment",
+  "warningMessage": "Spațiul de stocare este aproape plin.",
+  "dangerTitle": "Eroare",
+  "dangerMessage": "Ceva nu a funcționat."
+}

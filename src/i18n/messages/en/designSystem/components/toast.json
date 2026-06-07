@@ -1,0 +1,15 @@
+{
+  "title": "Toast",
+  "description": "Toasts provide temporary feedback messages after user actions, such as confirmations, warnings, or errors.",
+  "usage": "Usage",
+  "preview": "Preview",
+  "variants": "Variants",
+  "infoTitle": "Information",
+  "infoMessage": "Your profile was viewed.",
+  "successTitle": "Success",
+  "successMessage": "Changes saved successfully.",
+  "warningTitle": "Warning",
+  "warningMessage": "Storage is almost full.",
+  "dangerTitle": "Error",
+  "dangerMessage": "Something went wrong."
+}

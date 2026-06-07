@@ -1,0 +1,15 @@
+{
+  "title": "Notification",
+  "description": "Les notifications affichent temporairement un retour après une action utilisateur, comme une confirmation, un avertissement ou une erreur.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "variants": "Variantes",
+  "infoTitle": "Information",
+  "infoMessage": "Votre profil a été consulté.",
+  "successTitle": "Succès",
+  "successMessage": "Les modifications ont été enregistrées avec succès.",
+  "warningTitle": "Avertissement",
+  "warningMessage": "L’espace de stockage est presque plein.",
+  "dangerTitle": "Erreur",
+  "dangerMessage": "Une erreur est survenue."
+}
