@@ -1,19 +1,60 @@
-.showcase {
+@use '@/styles/abstracts/variables' as *;
+@use '@/styles/abstracts/mixins' as *;
+
+.code {
+  margin: 0;
+  padding: $space-4;
+
+  overflow-x: auto;
+
+  border-radius: $radius-md;
+
+  background: var(--surface-hover);
+  color: var(--text);
+
+  font-family: $font-family-mono;
+  font-size: $font-size-sm;
+}
+
+.section {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: $space-3;
+}
+
+.section h3 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
 }
 
 .grid {
   display: grid;
-  gap: 1.6rem;
-
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(24rem, 1fr)
-  );
+  grid-template-columns: 1fr;
+  gap: $space-4;
 }
 
-.grid > * {
-  gap: 1.2rem;
+.cardContent {
+  gap: $space-3;
+}
+
+.cardContent p {
+  margin: 0;
+
+  color: var(--text-muted);
+  line-height: $line-height-normal;
+}
+
+.statValue {
+  color: var(--accent);
+  font-size: $font-size-2xl;
+}
+
+@include respond(md) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

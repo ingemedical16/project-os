@@ -1,53 +1,72 @@
+import { useTranslations } from 'next-intl';
+
 import {
   Badge,
   Button,
   Card,
 } from '@/components/ui';
 
+import { ShowcaseSection } from '../ShowcaseSection';
+
 import styles from './CardShowcase.module.scss';
 
 export function CardShowcase() {
+  const t = useTranslations(
+    'designSystem.components.card'
+  );
+
+  const usage = `<Card>
+  <h3>Product Card</h3>
+  <p>Card content</p>
+</Card>`;
+
   return (
-    <section className={styles.showcase}>
-      <h2>Card Primitive</h2>
+    <ShowcaseSection
+      title={t('title')}
+      description={t('description')}
+      usageTitle={t('usage')}
+      previewTitle={t('preview')}
+      usage={
+        <pre className={styles.code}>
+          <code>{usage}</code>
+        </pre>
+      }
+    >
+      <div className={styles.section}>
+        <h3>{t('examples')}</h3>
 
-      <div className={styles.grid}>
-        <Card>
-          <h3>User Profile</h3>
+        <div className={styles.grid}>
+          <Card className={styles.cardContent}>
+            <h3>{t('profileTitle')}</h3>
 
-          <p>
-            Example profile card content.
-          </p>
+            <p>{t('profileDescription')}</p>
 
-          <Badge variant="success">
-            Active
-          </Badge>
-        </Card>
+            <Badge variant="success">
+              {t('active')}
+            </Badge>
+          </Card>
 
-        <Card>
-          <h3>Product Card</h3>
+          <Card className={styles.cardContent}>
+            <h3>{t('productTitle')}</h3>
 
-          <p>
-            Example product description.
-          </p>
+            <p>{t('productDescription')}</p>
 
-          <Button>
-            Add To Cart
-          </Button>
-        </Card>
+            <Button>
+              {t('productAction')}
+            </Button>
+          </Card>
 
-        <Card>
-          <h3>Statistics</h3>
+          <Card className={styles.cardContent}>
+            <h3>{t('statsTitle')}</h3>
 
-          <p>
-            Total Users
-          </p>
+            <p>{t('statsDescription')}</p>
 
-          <strong>
-            12,456
-          </strong>
-        </Card>
+            <strong className={styles.statValue}>
+              12,456
+            </strong>
+          </Card>
+        </div>
       </div>
-    </section>
+    </ShowcaseSection>
   );
 }

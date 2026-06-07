@@ -1,0 +1,15 @@
+{
+  "title": "Card",
+  "description": "Cardurile grupează conținut și acțiuni asociate într-un container vizual clar.",
+  "usage": "Utilizare",
+  "preview": "Previzualizare",
+  "examples": "Exemple",
+  "profileTitle": "Profil utilizator",
+  "profileDescription": "Exemplu de conținut pentru un card de profil.",
+  "productTitle": "Card produs",
+  "productDescription": "Exemplu de descriere a produsului.",
+  "productAction": "Adaugă în coș",
+  "statsTitle": "Statistici",
+  "statsDescription": "Total utilizatori",
+  "active": "Activ"
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Card",
+  "description": "Cards group related content and actions inside a clear visual container.",
+  "usage": "Usage",
+  "preview": "Preview",
+  "examples": "Examples",
+  "profileTitle": "User Profile",
+  "profileDescription": "Example profile card content.",
+  "productTitle": "Product Card",
+  "productDescription": "Example product description.",
+  "productAction": "Add to cart",
+  "statsTitle": "Statistics",
+  "statsDescription": "Total users",
+  "active": "Active"
+}

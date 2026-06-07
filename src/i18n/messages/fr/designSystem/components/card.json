@@ -1,0 +1,15 @@
+{
+  "title": "Carte",
+  "description": "Les cartes regroupent du contenu et des actions liés dans un conteneur visuel clair.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "examples": "Exemples",
+  "profileTitle": "Profil utilisateur",
+  "profileDescription": "Exemple de contenu pour une carte de profil.",
+  "productTitle": "Carte produit",
+  "productDescription": "Exemple de description de produit.",
+  "productAction": "Ajouter au panier",
+  "statsTitle": "Statistiques",
+  "statsDescription": "Nombre total d’utilisateurs",
+  "active": "Actif"
+}

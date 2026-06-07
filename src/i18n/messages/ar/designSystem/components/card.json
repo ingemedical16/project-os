@@ -1,0 +1,15 @@
+{
+  "title": "بطاقة",
+  "description": "تجمع البطاقات المحتوى والإجراءات المرتبطة داخل حاوية مرئية واضحة.",
+  "usage": "الاستخدام",
+  "preview": "المعاينة",
+  "examples": "أمثلة",
+  "profileTitle": "ملف المستخدم",
+  "profileDescription": "مثال على محتوى بطاقة الملف الشخصي.",
+  "productTitle": "بطاقة منتج",
+  "productDescription": "مثال على وصف المنتج.",
+  "productAction": "إضافة إلى السلة",
+  "statsTitle": "إحصائيات",
+  "statsDescription": "إجمالي المستخدمين",
+  "active": "نشط"
+}
