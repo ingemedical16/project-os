@@ -1,70 +1,95 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 
 import {
   Button,
-  Drawer,
   Divider,
+  Drawer,
 } from '@/components/ui';
+
+import { ShowcaseSection } from '../ShowcaseSection';
 
 import styles from './DrawerShowcase.module.scss';
 
 export function DrawerShowcase() {
+  const t = useTranslations(
+    'designSystem.components.drawer'
+  );
+
   const [rightOpen, setRightOpen] = useState(false);
   const [leftOpen, setLeftOpen] = useState(false);
 
+  const usage = `<Drawer
+  isOpen={isOpen}
+  title="Settings"
+  onClose={handleClose}
+>
+  Drawer content
+</Drawer>`;
+
   return (
-    <section className={styles.showcase}>
-      <h2>Drawer Primitive</h2>
+    <ShowcaseSection
+      title={t('title')}
+      description={t('description')}
+      usageTitle={t('usage')}
+      previewTitle={t('preview')}
+      usage={
+        <pre className={styles.code}>
+          <code>{usage}</code>
+        </pre>
+      }
+    >
+      <div className={styles.section}>
+        <h3>{t('positions')}</h3>
 
-      <div className={styles.actions}>
-        <Button onClick={() => setRightOpen(true)}>
-          Open Right Drawer
-        </Button>
+        <div className={styles.actions}>
+          <Button onClick={() => setRightOpen(true)}>
+            {t('openRight')}
+          </Button>
 
-        <Button
-          variant="secondary"
-          onClick={() => setLeftOpen(true)}
+          <Button
+            variant="secondary"
+            onClick={() => setLeftOpen(true)}
+          >
+            {t('openLeft')}
+          </Button>
+        </div>
+
+        <Drawer
+          isOpen={rightOpen}
+          title={t('rightTitle')}
+          onClose={() => setRightOpen(false)}
         >
-          Open Left Drawer
-        </Button>
+          <div className={styles.drawerContent}>
+            <p>{t('rightDescription')}</p>
+
+            <Divider />
+
+            <Button onClick={() => setRightOpen(false)}>
+              {t('close')}
+            </Button>
+          </div>
+        </Drawer>
+
+        <Drawer
+          isOpen={leftOpen}
+          title={t('leftTitle')}
+          position="left"
+          onClose={() => setLeftOpen(false)}
+        >
+          <div className={styles.drawerContent}>
+            <p>{t('leftDescription')}</p>
+
+            <Divider />
+
+            <Button onClick={() => setLeftOpen(false)}>
+              {t('close')}
+            </Button>
+          </div>
+        </Drawer>
       </div>
-
-      <Drawer
-        isOpen={rightOpen}
-        title="Right Drawer"
-        onClose={() => setRightOpen(false)}
-      >
-        <p>
-          This drawer is useful for filters,
-          settings, and details panels.
-        </p>
-
-        <Divider />
-
-        <Button onClick={() => setRightOpen(false)}>
-          Close
-        </Button>
-      </Drawer>
-
-      <Drawer
-        isOpen={leftOpen}
-        title="Left Drawer"
-        position="left"
-        onClose={() => setLeftOpen(false)}
-      >
-        <p>
-          This drawer can be used for mobile
-          navigation or side menus.
-        </p>
-
-        <Divider />
-
-        <Button onClick={() => setLeftOpen(false)}>
-          Close
-        </Button>
-      </Drawer>
-    </section>
+    </ShowcaseSection>
   );
 }

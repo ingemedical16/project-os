@@ -1,0 +1,14 @@
+{
+  "title": "Panou lateral",
+  "description": "Panourile laterale glisează din marginea ecranului și sunt utile pentru navigare, filtre, setări sau detalii contextuale.",
+  "usage": "Utilizare",
+  "preview": "Previzualizare",
+  "positions": "Poziții",
+  "openRight": "Deschide panoul din dreapta",
+  "openLeft": "Deschide panoul din stânga",
+  "rightTitle": "Panou dreapta",
+  "leftTitle": "Panou stânga",
+  "rightDescription": "Acest panou este util pentru filtre, setări și panouri de detalii.",
+  "leftDescription": "Acest panou poate fi folosit pentru navigare mobilă sau meniuri laterale.",
+  "close": "Închide"
+}

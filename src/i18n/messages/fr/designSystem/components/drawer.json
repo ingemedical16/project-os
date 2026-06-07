@@ -1,0 +1,14 @@
+{
+  "title": "Tiroir",
+  "description": "Les tiroirs apparaissent depuis le côté de l’écran et sont utiles pour la navigation, les filtres, les paramètres ou les détails contextuels.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "positions": "Positions",
+  "openRight": "Ouvrir le tiroir droit",
+  "openLeft": "Ouvrir le tiroir gauche",
+  "rightTitle": "Tiroir droit",
+  "leftTitle": "Tiroir gauche",
+  "rightDescription": "Ce tiroir est utile pour les filtres, les paramètres et les panneaux de détails.",
+  "leftDescription": "Ce tiroir peut être utilisé pour la navigation mobile ou les menus latéraux.",
+  "close": "Fermer"
+}

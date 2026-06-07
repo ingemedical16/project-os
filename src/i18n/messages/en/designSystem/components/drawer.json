@@ -1,0 +1,14 @@
+{
+  "title": "Drawer",
+  "description": "Drawers slide from the side of the screen and are useful for navigation, filters, settings, or contextual details.",
+  "usage": "Usage",
+  "preview": "Preview",
+  "positions": "Positions",
+  "openRight": "Open right drawer",
+  "openLeft": "Open left drawer",
+  "rightTitle": "Right drawer",
+  "leftTitle": "Left drawer",
+  "rightDescription": "This drawer is useful for filters, settings, and details panels.",
+  "leftDescription": "This drawer can be used for mobile navigation or side menus.",
+  "close": "Close"
+}

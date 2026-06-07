@@ -36,6 +36,7 @@ export async function loadMessages(
     designSystemSpinner,
     designSystemToast,
     designSystemModal,
+    designSystemDrawer,
 
     settingsProfile,
     settingsPreferences,
@@ -70,7 +71,8 @@ export async function loadMessages(
     import(`./messages/${locale}/designSystem/components/spinner.json`),
     import(`./messages/${locale}/designSystem/components/toast.json`),
     import(`./messages/${locale}/designSystem/components/modal.json`),
-    
+    import(`./messages/${locale}/designSystem/components/drawer.json`),
+
     import(`./messages/${locale}/settings/profile.json`),
     import(`./messages/${locale}/settings/preferences.json`),
     
@@ -113,6 +115,7 @@ export async function loadMessages(
         spinner: designSystemSpinner.default,
         toast: designSystemToast.default,
         modal: designSystemModal.default,
+        drawer: designSystemDrawer.default,
       },
     },
     settings: {
