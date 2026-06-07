@@ -1,0 +1,73 @@
+@use '@/styles/abstracts/variables' as *;
+@use '@/styles/abstracts/mixins' as *;
+
+.typography {
+  margin: 0;
+  color: var(--text);
+}
+
+.display {
+  font-size: $font-size-3xl;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-tight;
+
+  @include respond(md) {
+    font-size: $font-size-4xl;
+  }
+}
+
+.heading1 {
+  font-size: $font-size-2xl;
+  font-weight: $font-weight-bold;
+}
+
+.heading2 {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-semibold;
+}
+
+.heading3 {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+}
+
+.heading4 {
+  font-size: $font-size-md;
+  font-weight: $font-weight-semibold;
+}
+
+.bodyLg {
+  font-size: $font-size-lg;
+  line-height: $line-height-relaxed;
+}
+
+.body {
+  font-size: $font-size-md;
+  line-height: $line-height-normal;
+}
+
+.bodySm {
+  font-size: $font-size-sm;
+  line-height: $line-height-normal;
+}
+
+.caption {
+  color: var(--text-muted);
+
+  font-size: $font-size-xs;
+}
+
+.label {
+  font-size: $font-size-sm;
+  font-weight: $font-weight-medium;
+}
+
+.code {
+  padding-inline: $space-1;
+
+  border-radius: $radius-sm;
+
+  background: var(--surface-hover);
+
+  font-family: $font-family-mono;
+}

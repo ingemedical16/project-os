@@ -30,4 +30,5 @@ export { TableShowcase } from './TableShowcase';
 export { BreadcrumbShowcase } from './BreadcrumbShowcase';
 export { PaginationShowcase } from './PaginationShowcase';
 export { DataTableShowcase } from './DataTableShowcase'; 
+export { TypographyShowcase } from './TypographyShowcase';
 

@@ -1,0 +1,16 @@
+{
+  "title": "Typographie",
+  "description": "La typographie fournit une hiérarchie de texte cohérente dans toute l’application.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "display": "Titre d’affichage",
+  "heading1": "Titre 1",
+  "heading2": "Titre 2",
+  "heading3": "Titre 3",
+  "heading4": "Titre 4",
+  "bodyLg": "Exemple de texte de grande taille.",
+  "body": "Exemple de texte standard.",
+  "bodySm": "Exemple de texte de petite taille.",
+  "caption": "Exemple de légende.",
+  "label": "Exemple d’étiquette"
+}

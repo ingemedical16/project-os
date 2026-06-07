@@ -1,0 +1,16 @@
+{
+  "title": "Typography",
+  "description": "Typography provides a consistent text hierarchy across the application.",
+  "usage": "Usage",
+  "preview": "Preview",
+  "display": "Display Heading",
+  "heading1": "Heading 1",
+  "heading2": "Heading 2",
+  "heading3": "Heading 3",
+  "heading4": "Heading 4",
+  "bodyLg": "Large body text example.",
+  "body": "Body text example.",
+  "bodySm": "Small body text example.",
+  "caption": "Caption text example.",
+  "label": "Label example"
+}

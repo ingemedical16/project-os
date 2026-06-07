@@ -50,6 +50,7 @@ export async function loadMessages(
     designSystemBreadcrumb,
     designSystemPagination,
     designSystemDataTable,
+    designSystemTypography,
 
     settingsProfile,
     settingsPreferences,
@@ -98,6 +99,7 @@ export async function loadMessages(
     import(`./messages/${locale}/designSystem/components/breadcrumb.json`),
     import(`./messages/${locale}/designSystem/components/pagination.json`),
     import(`./messages/${locale}/designSystem/components/dataTable.json`),
+    import(`./messages/${locale}/designSystem/components/typography.json`),
     
     import(`./messages/${locale}/settings/profile.json`),
     import(`./messages/${locale}/settings/preferences.json`),
@@ -155,6 +157,7 @@ export async function loadMessages(
         breadcrumb: designSystemBreadcrumb.default,
         pagination: designSystemPagination.default,
         dataTable: designSystemDataTable.default, 
+        typography: designSystemTypography.default,
       },
     },
     settings: {

@@ -27,6 +27,7 @@ import { TableShowcase } from './TableShowcase';
 import { BreadcrumbShowcase } from './BreadcrumbShowcase';
 import { PaginationShowcase } from './PaginationShowcase';
 import { DataTableShowcase } from './DataTableShowcase';
+import { TypographyShowcase } from './TypographyShowcase';
 
 export interface DesignSystemShowcaseItem {
   id: string;
@@ -199,6 +200,11 @@ export const DESIGN_SYSTEM_SHOWCASES: DesignSystemShowcaseGroup[] = [
         id: 'emptyState',
         title: 'Empty State',
         component: EmptyStateShowcase,
+      },
+      {
+        id: 'typography',
+        title: 'Typography',
+        component: TypographyShowcase,
       },
     ],
   },

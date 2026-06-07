@@ -1,0 +1,16 @@
+{
+  "title": "Tipografie",
+  "description": "Tipografia oferă o ierarhie consecventă a textului în întreaga aplicație.",
+  "usage": "Utilizare",
+  "preview": "Previzualizare",
+  "display": "Titlu de afișare",
+  "heading1": "Titlu 1",
+  "heading2": "Titlu 2",
+  "heading3": "Titlu 3",
+  "heading4": "Titlu 4",
+  "bodyLg": "Exemplu de text mare.",
+  "body": "Exemplu de text obișnuit.",
+  "bodySm": "Exemplu de text mic.",
+  "caption": "Exemplu de legendă.",
+  "label": "Exemplu de etichetă"
+}
