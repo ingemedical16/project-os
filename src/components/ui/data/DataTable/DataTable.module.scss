@@ -1,0 +1,9 @@
+@use '@/styles/abstracts/variables' as *;
+
+.dataTable {
+  width: 100%;
+}
+
+.emptyState {
+  margin-block: $space-4;
+}

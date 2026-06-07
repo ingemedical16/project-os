@@ -1,0 +1,20 @@
+{
+  "title": "Tableau de données",
+  "description": "Les tableaux de données affichent des jeux de données structurés à partir de définitions de colonnes et de primitives de tableau réutilisables.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "basic": "Tableau de données simple",
+  "empty": "État vide",
+  "name": "Nom",
+  "role": "Rôle",
+  "status": "Statut",
+  "email": "Email",
+  "developer": "Développeur",
+  "designer": "Designer",
+  "manager": "Manager",
+  "active": "Actif",
+  "pending": "En attente",
+  "blocked": "Bloqué",
+  "emptyTitle": "Aucun utilisateur trouvé",
+  "emptyDescription": "Il n’y a aucun utilisateur à afficher."
+}

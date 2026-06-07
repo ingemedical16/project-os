@@ -1,0 +1,20 @@
+{
+  "title": "Data Table",
+  "description": "Data tables render structured datasets using column definitions and reusable table primitives.",
+  "usage": "Usage",
+  "preview": "Preview",
+  "basic": "Basic data table",
+  "empty": "Empty state",
+  "name": "Name",
+  "role": "Role",
+  "status": "Status",
+  "email": "Email",
+  "developer": "Developer",
+  "designer": "Designer",
+  "manager": "Manager",
+  "active": "Active",
+  "pending": "Pending",
+  "blocked": "Blocked",
+  "emptyTitle": "No users found",
+  "emptyDescription": "There are no users to display."
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Tabel de date",
+  "description": "Tabelele de date afișează seturi de date structurate folosind definiții de coloane și primitive reutilizabile de tabel.",
+  "usage": "Utilizare",
+  "preview": "Previzualizare",
+  "basic": "Tabel de date de bază",
+  "empty": "Stare goală",
+  "name": "Nume",
+  "role": "Rol",
+  "status": "Stare",
+  "email": "Email",
+  "developer": "Dezvoltator",
+  "designer": "Designer",
+  "manager": "Manager",
+  "active": "Activ",
+  "pending": "În așteptare",
+  "blocked": "Blocat",
+  "emptyTitle": "Nu au fost găsiți utilizatori",
+  "emptyDescription": "Nu există utilizatori de afișat."
+}

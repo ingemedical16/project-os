@@ -26,6 +26,7 @@ import { EmptyStateShowcase } from './EmptyStateShowcase';
 import { TableShowcase } from './TableShowcase';
 import { BreadcrumbShowcase } from './BreadcrumbShowcase';
 import { PaginationShowcase } from './PaginationShowcase';
+import { DataTableShowcase } from './DataTableShowcase';
 
 export interface DesignSystemShowcaseItem {
   id: string;
@@ -210,6 +211,11 @@ export const DESIGN_SYSTEM_SHOWCASES: DesignSystemShowcaseGroup[] = [
         title: 'Table',
         component: TableShowcase,
       },
+      {
+        id: 'dataTable',
+        title: 'Data Table',
+        component: DataTableShowcase,
+      },  
     ],
   },
 ];
