@@ -1,0 +1,10 @@
+{
+  "title": "Indicateur de chargement",
+  "description": "Les indicateurs de chargement montrent qu’un processus est en cours, comme le chargement de données ou l’envoi d’un formulaire.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "sizes": "Tailles",
+  "withLabel": "Avec libellé",
+  "loading": "Chargement...",
+  "fetching": "Récupération des données..."
+}

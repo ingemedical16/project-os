@@ -1,0 +1,10 @@
+{
+  "title": "Indicator de încărcare",
+  "description": "Indicatorii de încărcare arată că un proces rulează, cum ar fi încărcarea datelor sau trimiterea unui formular.",
+  "usage": "Utilizare",
+  "preview": "Previzualizare",
+  "sizes": "Dimensiuni",
+  "withLabel": "Cu etichetă",
+  "loading": "Se încarcă...",
+  "fetching": "Se preiau datele..."
+}

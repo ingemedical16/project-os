@@ -1,0 +1,10 @@
+{
+  "title": "Spinner",
+  "description": "Spinners indicate that a process is running, such as loading data or submitting a form.",
+  "usage": "Usage",
+  "preview": "Preview",
+  "sizes": "Sizes",
+  "withLabel": "With label",
+  "loading": "Loading...",
+  "fetching": "Fetching data..."
+}

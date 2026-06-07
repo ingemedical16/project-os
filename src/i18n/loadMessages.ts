@@ -33,6 +33,7 @@ export async function loadMessages(
     designSystemForm,
     designSystemAlert,
     designSystemBadge,
+    designSystemSpinner,
 
     settingsProfile,
     settingsPreferences,
@@ -64,6 +65,7 @@ export async function loadMessages(
     import(`./messages/${locale}/designSystem/components/form.json`),
     import(`./messages/${locale}/designSystem/components/alert.json`),
     import(`./messages/${locale}/designSystem/components/badge.json`),
+    import(`./messages/${locale}/designSystem/components/spinner.json`),
 
     import(`./messages/${locale}/settings/profile.json`),
     import(`./messages/${locale}/settings/preferences.json`),
@@ -103,6 +105,7 @@ export async function loadMessages(
         form: designSystemForm.default,
         alert: designSystemAlert.default,
         badge: designSystemBadge.default,
+        spinner: designSystemSpinner.default,
       },
     },
     settings: {
