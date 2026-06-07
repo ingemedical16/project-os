@@ -1,0 +1,59 @@
+@use '@/styles/abstracts/variables' as *;
+
+.wrapper {
+  width: 100%;
+  overflow-x: auto;
+
+  border: 0.1rem solid var(--border);
+  border-radius: $radius-lg;
+
+  background: var(--surface);
+}
+
+.table {
+  width: 100%;
+  min-width: 64rem;
+
+  border-collapse: collapse;
+
+  color: var(--text);
+}
+
+.header {
+  background: var(--surface-hover);
+}
+
+.row {
+  border-block-end: 0.1rem solid var(--border);
+}
+
+.body .row:last-child {
+  border-block-end: 0;
+}
+
+.headCell,
+.cell {
+  padding-block: $space-3;
+  padding-inline: $space-4;
+
+  text-align: start;
+  vertical-align: middle;
+
+  font-size: $font-size-sm;
+}
+
+.headCell {
+  color: var(--text-muted);
+
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.cell {
+  color: var(--text);
+}
+
+.body .row:hover {
+  background: var(--surface-hover);
+}

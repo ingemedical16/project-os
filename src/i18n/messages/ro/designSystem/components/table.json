@@ -1,0 +1,17 @@
+{
+  "title": "Tabel",
+  "description": "Tabelele organizează date structurate în rânduri și coloane pentru scanare și comparație ușoară.",
+  "usage": "Utilizare",
+  "preview": "Previzualizare",
+  "basic": "Tabel de bază",
+  "name": "Nume",
+  "role": "Rol",
+  "status": "Stare",
+  "email": "Email",
+  "developer": "Dezvoltator",
+  "designer": "Designer",
+  "manager": "Manager",
+  "active": "Activ",
+  "pending": "În așteptare",
+  "blocked": "Blocat"
+}

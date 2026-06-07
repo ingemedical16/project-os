@@ -60,3 +60,6 @@ export * from './navigation/Tabs';
 export * from './display/Card';
 export * from './display/Avatar';
 export * from './display/Divider';
+
+// Data
+export * from './data/Table';

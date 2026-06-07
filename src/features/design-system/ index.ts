@@ -26,3 +26,4 @@ export { TooltipShowcase } from './TooltipShowcase';
 export { ShowcaseSection } from './ShowcaseSection';
 export { SkeletonShowcase } from './SkeletonShowcase';
 export { EmptyStateShowcase } from './EmptyStateShowcase';
+export { TableShowcase } from './TableShowcase';

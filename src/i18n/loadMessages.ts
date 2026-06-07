@@ -46,6 +46,7 @@ export async function loadMessages(
     designSystemDivider,
     designSystemSkeleton,
     designSystemEmptyState,
+    designSystemTable,
 
     settingsProfile,
     settingsPreferences,
@@ -90,6 +91,7 @@ export async function loadMessages(
     import(`./messages/${locale}/designSystem/components/divider.json`),
     import(`./messages/${locale}/designSystem/components/skeleton.json`),
     import(`./messages/${locale}/designSystem/components/emptyState.json`),
+    import(`./messages/${locale}/designSystem/components/table.json`),
 
     import(`./messages/${locale}/settings/profile.json`),
     import(`./messages/${locale}/settings/preferences.json`),
@@ -143,6 +145,7 @@ export async function loadMessages(
         divider: designSystemDivider.default,
         skeleton: designSystemSkeleton.default,
         emptyState: designSystemEmptyState.default,
+        table: designSystemTable.default,
       },
     },
     settings: {

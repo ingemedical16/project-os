@@ -1,0 +1,17 @@
+{
+  "title": "Table",
+  "description": "Tables organize structured data into rows and columns for easy scanning and comparison.",
+  "usage": "Usage",
+  "preview": "Preview",
+  "basic": "Basic table",
+  "name": "Name",
+  "role": "Role",
+  "status": "Status",
+  "email": "Email",
+  "developer": "Developer",
+  "designer": "Designer",
+  "manager": "Manager",
+  "active": "Active",
+  "pending": "Pending",
+  "blocked": "Blocked"
+}

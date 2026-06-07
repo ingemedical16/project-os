@@ -23,6 +23,7 @@ import { ToastShowcase } from './ToastShowcase';
 import { TooltipShowcase } from './TooltipShowcase';
 import { SkeletonShowcase } from './SkeletonShowcase';
 import { EmptyStateShowcase } from './EmptyStateShowcase';
+import { TableShowcase } from './TableShowcase';
 
 export interface DesignSystemShowcaseItem {
   id: string;
@@ -185,6 +186,17 @@ export const DESIGN_SYSTEM_SHOWCASES: DesignSystemShowcaseGroup[] = [
         id: 'emptyState',
         title: 'Empty State',
         component: EmptyStateShowcase,
+      },
+    ],
+  },
+  {
+    id: 'data',
+    title: 'Data',
+    items: [
+      {
+        id: 'table',
+        title: 'Table',
+        component: TableShowcase,
       },
     ],
   },

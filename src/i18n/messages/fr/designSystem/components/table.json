@@ -1,0 +1,17 @@
+{
+  "title": "Tableau",
+  "description": "Les tableaux organisent les données structurées en lignes et colonnes pour faciliter la lecture et la comparaison.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "basic": "Tableau simple",
+  "name": "Nom",
+  "role": "Rôle",
+  "status": "Statut",
+  "email": "Email",
+  "developer": "Développeur",
+  "designer": "Designer",
+  "manager": "Manager",
+  "active": "Actif",
+  "pending": "En attente",
+  "blocked": "Bloqué"
+}
