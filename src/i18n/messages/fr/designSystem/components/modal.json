@@ -1,0 +1,12 @@
+{
+  "title": "Fenêtre modale",
+  "description": "Les fenêtres modales affichent un contenu ou des actions au-dessus de la page actuelle, généralement pour attirer l’attention de l’utilisateur avant de continuer.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "basic": "Utilisation simple",
+  "openButton": "Ouvrir la modale",
+  "modalTitle": "Modale Project OS",
+  "modalDescription": "Cette modale réutilisable peut servir aux confirmations, formulaires, aperçus ou parcours ciblés.",
+  "cancel": "Annuler",
+  "confirm": "Confirmer"
+}

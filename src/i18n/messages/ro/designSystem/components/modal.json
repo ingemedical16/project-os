@@ -1,0 +1,12 @@
+{
+  "title": "Fereastră modală",
+  "description": "Ferestrele modale afișează conținut sau acțiuni deasupra paginii curente, de obicei necesitând atenția utilizatorului înainte de continuare.",
+  "usage": "Utilizare",
+  "preview": "Previzualizare",
+  "basic": "Utilizare de bază",
+  "openButton": "Deschide modala",
+  "modalTitle": "Modală Project OS",
+  "modalDescription": "Această modală reutilizabilă poate fi folosită pentru confirmări, formulare, previzualizări sau fluxuri concentrate.",
+  "cancel": "Anulează",
+  "confirm": "Confirmă"
+}

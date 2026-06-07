@@ -1,0 +1,12 @@
+{
+  "title": "Modal",
+  "description": "Modals display focused content or actions above the current page, usually requiring user attention before continuing.",
+  "usage": "Usage",
+  "preview": "Preview",
+  "basic": "Basic usage",
+  "openButton": "Open modal",
+  "modalTitle": "Project OS Modal",
+  "modalDescription": "This reusable modal can be used for confirmations, forms, previews, or focused workflows.",
+  "cancel": "Cancel",
+  "confirm": "Confirm"
+}
