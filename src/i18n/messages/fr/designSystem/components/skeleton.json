@@ -1,0 +1,9 @@
+{
+  "title": "Skeleton",
+  "description": "Les skeletons fournissent des espaces réservés de chargement pendant la récupération du contenu.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "text": "Chargement du texte",
+  "avatar": "Chargement de l’avatar",
+  "card": "Chargement de la carte"
+}

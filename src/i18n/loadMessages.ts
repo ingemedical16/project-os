@@ -44,6 +44,7 @@ export async function loadMessages(
     designSystemCard,
     designSystemAvatar,
     designSystemDivider,
+    designSystemSkeleton,
 
     settingsProfile,
     settingsPreferences,
@@ -86,6 +87,7 @@ export async function loadMessages(
     import(`./messages/${locale}/designSystem/components/card.json`),
     import(`./messages/${locale}/designSystem/components/avatar.json`),
     import(`./messages/${locale}/designSystem/components/divider.json`),
+    import(`./messages/${locale}/designSystem/components/skeleton.json`),
 
     import(`./messages/${locale}/settings/profile.json`),
     import(`./messages/${locale}/settings/preferences.json`),
@@ -137,6 +139,7 @@ export async function loadMessages(
         card: designSystemCard.default,
         avatar: designSystemAvatar.default,
         divider: designSystemDivider.default,
+        skeleton: designSystemSkeleton.default,
       },
     },
     settings: {

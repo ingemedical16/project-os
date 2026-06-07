@@ -24,3 +24,4 @@ export { TextareaShowcase } from './TextareaShowcase';
 export { ToastShowcase } from './ToastShowcase';
 export { TooltipShowcase } from './TooltipShowcase';
 export { ShowcaseSection } from './ShowcaseSection';
+export { SkeletonShowcase } from './SkeletonShowcase';

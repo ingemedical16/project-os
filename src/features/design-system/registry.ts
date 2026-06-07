@@ -21,6 +21,7 @@ import { TabsShowcase } from './TabsShowcase';
 import { TextareaShowcase } from './TextareaShowcase';
 import { ToastShowcase } from './ToastShowcase';
 import { TooltipShowcase } from './TooltipShowcase';
+import { SkeletonShowcase } from './SkeletonShowcase';
 
 export interface DesignSystemShowcaseItem {
   id: string;
@@ -173,6 +174,11 @@ export const DESIGN_SYSTEM_SHOWCASES: DesignSystemShowcaseGroup[] = [
         id: 'divider',
         title: 'Divider',
         component: DividerShowcase,
+      },
+      {
+        id: 'skeleton',
+        title: 'Skeleton',
+        component: SkeletonShowcase,
       },
     ],
   },

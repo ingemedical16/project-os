@@ -1,0 +1,9 @@
+{
+  "title": "Skeleton",
+  "description": "Skeletons provide loading placeholders while content is being fetched.",
+  "usage": "Usage",
+  "preview": "Preview",
+  "text": "Text loading",
+  "avatar": "Avatar loading",
+  "card": "Card loading"
+}
