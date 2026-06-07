@@ -28,3 +28,4 @@ export { SkeletonShowcase } from './SkeletonShowcase';
 export { EmptyStateShowcase } from './EmptyStateShowcase';
 export { TableShowcase } from './TableShowcase';
 export { BreadcrumbShowcase } from './BreadcrumbShowcase';
+import { PaginationShowcase } from './PaginationShowcase';  

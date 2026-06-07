@@ -1,0 +1,9 @@
+{
+  "title": "Pagination",
+  "description": "Pagination splits large sets of data across multiple pages and helps users move through results progressively.",
+  "usage": "Usage",
+  "preview": "Preview",
+  "basic": "Basic pagination",
+  "largeSet": "Large page set",
+  "currentPage": "Current page"
+}

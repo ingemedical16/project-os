@@ -48,6 +48,7 @@ export async function loadMessages(
     designSystemEmptyState,
     designSystemTable,
     designSystemBreadcrumb,
+    designSystemPagination,
 
     settingsProfile,
     settingsPreferences,
@@ -94,6 +95,7 @@ export async function loadMessages(
     import(`./messages/${locale}/designSystem/components/emptyState.json`),
     import(`./messages/${locale}/designSystem/components/table.json`),
     import(`./messages/${locale}/designSystem/components/breadcrumb.json`),
+    import(`./messages/${locale}/designSystem/components/pagination.json`),
 
     import(`./messages/${locale}/settings/profile.json`),
     import(`./messages/${locale}/settings/preferences.json`),
@@ -149,6 +151,7 @@ export async function loadMessages(
         emptyState: designSystemEmptyState.default,
         table: designSystemTable.default,
         breadcrumb: designSystemBreadcrumb.default,
+        pagination: designSystemPagination.default,
       },
     },
     settings: {

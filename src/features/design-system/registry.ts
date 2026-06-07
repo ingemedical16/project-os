@@ -25,6 +25,7 @@ import { SkeletonShowcase } from './SkeletonShowcase';
 import { EmptyStateShowcase } from './EmptyStateShowcase';
 import { TableShowcase } from './TableShowcase';
 import { BreadcrumbShowcase } from './BreadcrumbShowcase';
+import { PaginationShowcase } from './PaginationShowcase';
 
 export interface DesignSystemShowcaseItem {
   id: string;
@@ -161,6 +162,11 @@ export const DESIGN_SYSTEM_SHOWCASES: DesignSystemShowcaseGroup[] = [
         id: 'breadcrumb',
         title: 'Breadcrumb',
         component: BreadcrumbShowcase,
+      },
+      {
+        id: 'pagination',
+        title: 'Pagination',
+        component: PaginationShowcase,
       },
     ],
   },

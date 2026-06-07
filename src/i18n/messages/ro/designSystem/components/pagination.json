@@ -1,0 +1,9 @@
+{
+  "title": "Paginare",
+  "description": "Paginarea împarte seturile mari de date în mai multe pagini și ajută utilizatorii să parcurgă rezultatele progresiv.",
+  "usage": "Utilizare",
+  "preview": "Previzualizare",
+  "basic": "Paginare de bază",
+  "largeSet": "Set mare de pagini",
+  "currentPage": "Pagina curentă"
+}

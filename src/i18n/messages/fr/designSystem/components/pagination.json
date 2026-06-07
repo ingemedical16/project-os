@@ -1,0 +1,9 @@
+{
+  "title": "Pagination",
+  "description": "La pagination divise de grands ensembles de données en plusieurs pages et aide les utilisateurs à parcourir les résultats progressivement.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "basic": "Pagination simple",
+  "largeSet": "Grand nombre de pages",
+  "currentPage": "Page actuelle"
+}
