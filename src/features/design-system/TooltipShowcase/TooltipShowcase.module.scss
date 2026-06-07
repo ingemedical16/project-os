@@ -1,14 +1,40 @@
-.showcase {
+@use '@/styles/abstracts/variables' as *;
+
+.code {
+  margin: 0;
+  padding: $space-4;
+
+  overflow-x: auto;
+
+  border-radius: $radius-md;
+
+  background: var(--surface-hover);
+  color: var(--text);
+
+  font-family: $font-family-mono;
+  font-size: $font-size-sm;
+}
+
+.section {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: $space-3;
+}
+
+.section h3 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
 }
 
 .row {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: $space-5;
 }
 
 .icon {
@@ -19,10 +45,9 @@
   width: 3.2rem;
   height: 3.2rem;
 
-  border-radius: 50%;
+  border-radius: $radius-full;
 
   background: var(--surface-hover);
-
   color: var(--text);
 
   cursor: pointer;

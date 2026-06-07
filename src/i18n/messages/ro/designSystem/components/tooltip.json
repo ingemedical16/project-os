@@ -1,0 +1,12 @@
+{
+  "title": "Indiciu",
+  "description": "Indiciile oferă informații contextuale scurte atunci când utilizatorii trec cu cursorul sau focalizează un element.",
+  "usage": "Utilizare",
+  "preview": "Previzualizare",
+  "examples": "Exemple",
+  "createTooltip": "Creează un proiect nou",
+  "deleteTooltip": "Șterge acest element",
+  "infoTooltip": "Informații suplimentare",
+  "hoverButton": "Treci peste mine",
+  "deleteButton": "Șterge"
+}

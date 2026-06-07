@@ -1,0 +1,12 @@
+{
+  "title": "Info-bulle",
+  "description": "Les info-bulles fournissent une information contextuelle courte lorsque l’utilisateur survole ou cible un élément.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "examples": "Exemples",
+  "createTooltip": "Créer un nouveau projet",
+  "deleteTooltip": "Supprimer cet élément",
+  "infoTooltip": "Information supplémentaire",
+  "hoverButton": "Survolez-moi",
+  "deleteButton": "Supprimer"
+}

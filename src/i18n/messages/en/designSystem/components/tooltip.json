@@ -1,0 +1,12 @@
+{
+  "title": "Tooltip",
+  "description": "Tooltips provide short contextual information when users hover or focus on an element.",
+  "usage": "Usage",
+  "preview": "Preview",
+  "examples": "Examples",
+  "createTooltip": "Create a new project",
+  "deleteTooltip": "Delete this item",
+  "infoTooltip": "Additional information",
+  "hoverButton": "Hover me",
+  "deleteButton": "Delete"
+}
