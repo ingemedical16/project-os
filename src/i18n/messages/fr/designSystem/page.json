@@ -1,6 +1,6 @@
 {
   "title": "Project OS",
-  "subtitle": "Système de design",
+  "subtitle": "Design System",
   "navigationLabel": "Navigation du système de design",
   "groups": {
     "system": "Système",
@@ -9,40 +9,52 @@
     "overlay": "Superposition",
     "navigation": "Navigation",
     "display": "Affichage",
-    "data": "Données"
+    "data": "Données",
+    "layouts": "Mises en page"
   },
   "items": {
     "appearance": "Apparence",
-    "theme": "Thème",
-    "language": "Langue",
+
     "button": "Bouton",
-    "input": "Champ de saisie",
+    "input": "Champ texte",
     "textarea": "Zone de texte",
     "select": "Sélecteur",
     "checkbox": "Case à cocher",
     "radio": "Bouton radio",
     "switch": "Interrupteur",
     "form": "Formulaire",
+
     "alert": "Alerte",
     "badge": "Badge",
     "spinner": "Chargement",
     "toast": "Notification",
+
     "modal": "Fenêtre modale",
-    "drawer": "Tiroir",
+    "drawer": "Panneau latéral",
     "tooltip": "Info-bulle",
+
     "accordion": "Accordéon",
     "tabs": "Onglets",
     "breadcrumb": "Fil d’Ariane",
     "pagination": "Pagination",
+
+    "typography": "Typographie",
     "card": "Carte",
     "avatar": "Avatar",
     "divider": "Séparateur",
-    "skeleton": "Squelette",
+    "skeleton": "Chargement squelette",
     "emptyState": "État vide",
+
     "table": "Tableau",
-    "dataTable": "Tableau de données"
+    "dataTable": "Tableau de données",
+
+    "emptyLayout": "Mise en page vide",
+    "pageLayout": "Mise en page de page",
+    "sidebarLayout": "Mise en page avec barre latérale",
+    "authLayout": "Mise en page d’authentification",
+    "dashboardLayout": "Mise en page tableau de bord"
   },
-   "shared": {
+  "shared": {
     "usage": "Utilisation",
     "preview": "Aperçu"
   }

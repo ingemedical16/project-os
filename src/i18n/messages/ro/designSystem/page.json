@@ -1,20 +1,20 @@
 {
   "title": "Project OS",
-  "subtitle": "Sistem de design",
+  "subtitle": "Design System",
   "navigationLabel": "Navigare sistem de design",
   "groups": {
     "system": "Sistem",
     "forms": "Formulare",
     "feedback": "Feedback",
-    "overlay": "Suprapuneri",
+    "overlay": "Suprapunere",
     "navigation": "Navigare",
     "display": "Afișare",
-    "data": "Date"
+    "data": "Date",
+    "layouts": "Layout-uri"
   },
   "items": {
     "appearance": "Aspect",
-    "theme": "Temă",
-    "language": "Limbă",
+
     "button": "Buton",
     "input": "Câmp text",
     "textarea": "Zonă text",
@@ -23,26 +23,38 @@
     "radio": "Buton radio",
     "switch": "Comutator",
     "form": "Formular",
+
     "alert": "Alertă",
     "badge": "Insignă",
     "spinner": "Încărcare",
     "toast": "Notificare",
+
     "modal": "Fereastră modală",
     "drawer": "Panou lateral",
     "tooltip": "Indiciu",
+
     "accordion": "Acordeon",
     "tabs": "File",
     "breadcrumb": "Fir de navigare",
     "pagination": "Paginare",
+
+    "typography": "Tipografie",
     "card": "Card",
     "avatar": "Avatar",
     "divider": "Separator",
     "skeleton": "Schiță de încărcare",
     "emptyState": "Stare goală",
+
     "table": "Tabel",
-    "dataTable": "Tabel de date"
+    "dataTable": "Tabel de date",
+
+    "emptyLayout": "Layout gol",
+    "pageLayout": "Layout pagină",
+    "sidebarLayout": "Layout cu bară laterală",
+    "authLayout": "Layout autentificare",
+    "dashboardLayout": "Layout dashboard"
   },
-   "shared": {
+  "shared": {
     "usage": "Utilizare",
     "preview": "Previzualizare"
   }

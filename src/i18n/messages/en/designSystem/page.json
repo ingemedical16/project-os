@@ -9,12 +9,12 @@
     "overlay": "Overlay",
     "navigation": "Navigation",
     "display": "Display",
-    "data": "Data"
+    "data": "Data",
+    "layouts": "Layouts"
   },
   "items": {
     "appearance": "Appearance",
-    "theme": "Theme",
-    "language": "Language",
+
     "button": "Button",
     "input": "Input",
     "textarea": "Textarea",
@@ -23,26 +23,38 @@
     "radio": "Radio",
     "switch": "Switch",
     "form": "Form",
+
     "alert": "Alert",
     "badge": "Badge",
     "spinner": "Spinner",
     "toast": "Toast",
+
     "modal": "Modal",
     "drawer": "Drawer",
     "tooltip": "Tooltip",
+
     "accordion": "Accordion",
     "tabs": "Tabs",
     "breadcrumb": "Breadcrumb",
     "pagination": "Pagination",
+
+    "typography": "Typography",
     "card": "Card",
     "avatar": "Avatar",
     "divider": "Divider",
     "skeleton": "Skeleton",
     "emptyState": "Empty State",
+
     "table": "Table",
-    "dataTable": "Data Table"
+    "dataTable": "Data Table",
+
+    "emptyLayout": "Empty Layout",
+    "pageLayout": "Page Layout",
+    "sidebarLayout": "Sidebar Layout",
+    "authLayout": "Auth Layout",
+    "dashboardLayout": "Dashboard Layout"
   },
-   "shared": {
+  "shared": {
     "usage": "Usage",
     "preview": "Preview"
   }

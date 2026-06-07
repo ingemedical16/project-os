@@ -1,20 +1,20 @@
 {
   "title": "Project OS",
   "subtitle": "نظام التصميم",
-  "navigationLabel": "تنقل نظام التصميم",
+  "navigationLabel": "التنقل في نظام التصميم",
   "groups": {
     "system": "النظام",
     "forms": "النماذج",
-    "feedback": "التنبيهات",
-    "overlay": "النوافذ",
+    "feedback": "التغذية الراجعة",
+    "overlay": "العناصر العائمة",
     "navigation": "التنقل",
     "display": "العرض",
-    "data": "البيانات"
+    "data": "البيانات",
+    "layouts": "التخطيطات"
   },
   "items": {
     "appearance": "المظهر",
-    "theme": "السمة",
-    "language": "اللغة",
+
     "button": "زر",
     "input": "حقل إدخال",
     "textarea": "منطقة نص",
@@ -23,27 +23,39 @@
     "radio": "زر اختيار",
     "switch": "مفتاح تبديل",
     "form": "نموذج",
+
     "alert": "تنبيه",
     "badge": "شارة",
     "spinner": "مؤشر تحميل",
     "toast": "إشعار",
+
     "modal": "نافذة منبثقة",
-    "drawer": "درج جانبي",
+    "drawer": "لوحة جانبية",
     "tooltip": "تلميح",
+
     "accordion": "أكورديون",
-    "tabs": "تبويبات",
+    "tabs": "علامات تبويب",
     "breadcrumb": "مسار التنقل",
     "pagination": "ترقيم الصفحات",
+
+    "typography": "الطباعة",
     "card": "بطاقة",
     "avatar": "صورة رمزية",
     "divider": "فاصل",
     "skeleton": "هيكل تحميل",
     "emptyState": "حالة فارغة",
+
     "table": "جدول",
-    "dataTable": "جدول بيانات"
+    "dataTable": "جدول بيانات",
+
+    "emptyLayout": "تخطيط فارغ",
+    "pageLayout": "تخطيط الصفحة",
+    "sidebarLayout": "تخطيط الشريط الجانبي",
+    "authLayout": "تخطيط المصادقة",
+    "dashboardLayout": "تخطيط لوحة التحكم"
   },
-   "shared": {
+  "shared": {
     "usage": "الاستخدام",
-    "preview": "معاينة"
+    "preview": "المعاينة"
   }
 }
