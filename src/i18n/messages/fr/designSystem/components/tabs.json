@@ -1,0 +1,21 @@
+{
+  "title": "Onglets",
+  "description": "Les onglets organisent du contenu lié dans des vues séparées tout en gardant l’utilisateur dans le même contexte.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "basic": "Utilisation simple",
+  "overviewTab": "Vue d’ensemble",
+  "settingsTab": "Paramètres",
+  "billingTab": "Facturation",
+  "disabledTab": "Désactivé",
+  "overviewTitle": "Vue d’ensemble",
+  "overviewDescription": "Cet onglet contient les informations générales du projet.",
+  "settingsTitle": "Paramètres",
+  "settingsDescription": "Cet onglet peut contenir les paramètres utilisateur ou application.",
+  "billingTitle": "Facturation",
+  "billingDescription": "Cet onglet peut contenir les factures, paiements et abonnements.",
+  "disabledContent": "Cet onglet est désactivé.",
+  "infoBadge": "Info",
+  "activeBadge": "Actif",
+  "pendingBadge": "En attente"
+}

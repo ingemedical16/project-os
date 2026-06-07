@@ -1,0 +1,21 @@
+{
+  "title": "تبويبات",
+  "description": "تنظم التبويبات المحتوى المرتبط في عروض منفصلة مع إبقاء المستخدم في نفس السياق.",
+  "usage": "الاستخدام",
+  "preview": "المعاينة",
+  "basic": "استخدام بسيط",
+  "overviewTab": "نظرة عامة",
+  "settingsTab": "الإعدادات",
+  "billingTab": "الفوترة",
+  "disabledTab": "معطل",
+  "overviewTitle": "نظرة عامة",
+  "overviewDescription": "يحتوي هذا التبويب على معلومات عامة عن المشروع.",
+  "settingsTitle": "الإعدادات",
+  "settingsDescription": "يمكن أن يحتوي هذا التبويب على إعدادات المستخدم أو التطبيق.",
+  "billingTitle": "الفوترة",
+  "billingDescription": "يمكن أن يحتوي هذا التبويب على الفواتير والمدفوعات والخطط.",
+  "disabledContent": "هذا التبويب معطل.",
+  "infoBadge": "معلومة",
+  "activeBadge": "نشط",
+  "pendingBadge": "قيد الانتظار"
+}

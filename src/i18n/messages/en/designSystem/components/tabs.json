@@ -1,0 +1,21 @@
+{
+  "title": "Tabs",
+  "description": "Tabs organize related content into separate views while keeping users in the same context.",
+  "usage": "Usage",
+  "preview": "Preview",
+  "basic": "Basic usage",
+  "overviewTab": "Overview",
+  "settingsTab": "Settings",
+  "billingTab": "Billing",
+  "disabledTab": "Disabled",
+  "overviewTitle": "Overview",
+  "overviewDescription": "This tab contains general project information.",
+  "settingsTitle": "Settings",
+  "settingsDescription": "This tab can contain user or application settings.",
+  "billingTitle": "Billing",
+  "billingDescription": "This tab can contain invoices, payments, and plans.",
+  "disabledContent": "This tab is disabled.",
+  "infoBadge": "Info",
+  "activeBadge": "Active",
+  "pendingBadge": "Pending"
+}

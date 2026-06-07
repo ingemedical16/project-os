@@ -1,0 +1,21 @@
+{
+  "title": "File",
+  "description": "Filele organizează conținut asociat în vizualizări separate, păstrând utilizatorii în același context.",
+  "usage": "Utilizare",
+  "preview": "Previzualizare",
+  "basic": "Utilizare de bază",
+  "overviewTab": "Prezentare generală",
+  "settingsTab": "Setări",
+  "billingTab": "Facturare",
+  "disabledTab": "Dezactivat",
+  "overviewTitle": "Prezentare generală",
+  "overviewDescription": "Această filă conține informații generale despre proiect.",
+  "settingsTitle": "Setări",
+  "settingsDescription": "Această filă poate conține setări de utilizator sau aplicație.",
+  "billingTitle": "Facturare",
+  "billingDescription": "Această filă poate conține facturi, plăți și planuri.",
+  "disabledContent": "Această filă este dezactivată.",
+  "infoBadge": "Info",
+  "activeBadge": "Activ",
+  "pendingBadge": "În așteptare"
+}

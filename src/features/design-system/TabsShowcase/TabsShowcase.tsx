@@ -1,68 +1,102 @@
+import { useTranslations } from 'next-intl';
+
 import {
   Badge,
-  Card,
   Tabs,
 } from '@/components/ui';
+
+import { ShowcaseSection } from '../ShowcaseSection';
 
 import styles from './TabsShowcase.module.scss';
 
 export function TabsShowcase() {
-  return (
-    <section className={styles.showcase}>
-      <h2>Tabs Primitive</h2>
+  const t = useTranslations(
+    'designSystem.components.tabs'
+  );
 
-      <Card>
+  const usage = `<Tabs
+  defaultValue="overview"
+  tabs={[
+    {
+      label: 'Overview',
+      value: 'overview',
+      content: <p>Content</p>,
+    },
+  ]}
+/>`;
+
+  return (
+    <ShowcaseSection
+      title={t('title')}
+      description={t('description')}
+      usageTitle={t('usage')}
+      previewTitle={t('preview')}
+      usage={
+        <pre className={styles.code}>
+          <code>{usage}</code>
+        </pre>
+      }
+    >
+      <div className={styles.section}>
+        <h3>{t('basic')}</h3>
+
         <Tabs
           defaultValue="overview"
           tabs={[
             {
-              label: 'Overview',
+              label: t('overviewTab'),
               value: 'overview',
               content: (
                 <div className={styles.content}>
-                  <h3>Overview</h3>
-                  <p>
-                    This tab contains general project information.
-                  </p>
-                  <Badge variant="info">Info</Badge>
+                  <h3>{t('overviewTitle')}</h3>
+
+                  <p>{t('overviewDescription')}</p>
+
+                  <Badge variant="info">
+                    {t('infoBadge')}
+                  </Badge>
                 </div>
               ),
             },
             {
-              label: 'Settings',
+              label: t('settingsTab'),
               value: 'settings',
               content: (
                 <div className={styles.content}>
-                  <h3>Settings</h3>
-                  <p>
-                    This tab can contain user or application settings.
-                  </p>
-                  <Badge variant="success">Active</Badge>
+                  <h3>{t('settingsTitle')}</h3>
+
+                  <p>{t('settingsDescription')}</p>
+
+                  <Badge variant="success">
+                    {t('activeBadge')}
+                  </Badge>
                 </div>
               ),
             },
             {
-              label: 'Billing',
+              label: t('billingTab'),
               value: 'billing',
               content: (
                 <div className={styles.content}>
-                  <h3>Billing</h3>
-                  <p>
-                    This tab can contain invoices, payments, and plans.
-                  </p>
-                  <Badge variant="warning">Pending</Badge>
+                  <h3>{t('billingTitle')}</h3>
+
+                  <p>{t('billingDescription')}</p>
+
+                  <Badge variant="warning">
+                    {t('pendingBadge')}
+                  </Badge>
                 </div>
               ),
             },
             {
-              label: 'Disabled',
+              label: t('disabledTab'),
               value: 'disabled',
               disabled: true,
-              content: <p>Disabled content.</p>,
+              content: <p>{t('disabledContent')}</p>,
             },
           ]}
         />
-      </Card>
-    </section>
+      </div>
+    </ShowcaseSection>
   );
 }

@@ -39,6 +39,7 @@ export async function loadMessages(
     designSystemDrawer,
     designSystemTooltip,
     designSystemAccordion,
+    designSystemTabs,
 
     settingsProfile,
     settingsPreferences,
@@ -76,6 +77,7 @@ export async function loadMessages(
     import(`./messages/${locale}/designSystem/components/drawer.json`),
     import(`./messages/${locale}/designSystem/components/tooltip.json`),
     import(`./messages/${locale}/designSystem/components/accordion.json`),
+    import(`./messages/${locale}/designSystem/components/tabs.json`),
 
     import(`./messages/${locale}/settings/profile.json`),
     import(`./messages/${locale}/settings/preferences.json`),
@@ -122,6 +124,7 @@ export async function loadMessages(
         drawer: designSystemDrawer.default,
         tooltip: designSystemTooltip.default,
         accordion: designSystemAccordion.default,
+        tabs: designSystemTabs.default,
       },
     },
     settings: {
