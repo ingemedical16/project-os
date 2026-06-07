@@ -1,6 +1,6 @@
 'use client';
 
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { usePathname, useRouter } from 'next/navigation';
 
 import {
@@ -16,6 +16,8 @@ import {
 } from '@/contexts/theme/theme.types';
 import { useTheme } from '@/contexts/theme/useTheme';
 
+import { ShowcaseSection } from '../ShowcaseSection';
+
 import styles from './AppearanceShowcase.module.scss';
 
 const LANGUAGES = [
@@ -26,6 +28,10 @@ const LANGUAGES = [
 ] as const;
 
 export function AppearanceShowcase() {
+  const t = useTranslations(
+    'designSystem.components.appearance'
+  );
+
   const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
@@ -57,6 +63,12 @@ export function AppearanceShowcase() {
     label: language.label,
   }));
 
+  const usage = `<Select
+  label="Theme"
+  value={theme}
+  options={themeOptions}
+/>`;
+
   function changeLocale(nextLocale: string) {
     const segments = pathname.split('/');
 
@@ -66,15 +78,54 @@ export function AppearanceShowcase() {
   }
 
   return (
-    <section className={styles.showcase}>
-      <div className={styles.header}>
-        <div>
-          <h1 className={styles.title}>Appearance</h1>
+    <ShowcaseSection
+      title={t('title')}
+      description={t('description')}
+      usageTitle={t('usage')}
+      previewTitle={t('preview')}
+      usage={
+        <pre className={styles.code}>
+          <code>{usage}</code>
+        </pre>
+      }
+    >
+      <div className={styles.section}>
+        <h3>{t('settings')}</h3>
 
-          <p className={styles.description}>
-            Control theme, color mode, language, and text direction.
-          </p>
-        </div>
+        <Card className={styles.controls}>
+          <Select
+            label={t('theme')}
+            value={theme}
+            onChange={(event) =>
+              setTheme(event.target.value as typeof theme)
+            }
+            options={themeOptions}
+          />
+
+          <Select
+            label={t('colorMode')}
+            value={colorMode}
+            onChange={(event) =>
+              setColorMode(event.target.value as typeof colorMode)
+            }
+            options={colorModeOptions}
+          />
+
+          <Select
+            label={t('language')}
+            value={locale}
+            onChange={(event) => changeLocale(event.target.value)}
+            options={languageOptions}
+          />
+
+          <Button type="button" onClick={toggleColorMode}>
+            {t('toggleColorMode')}
+          </Button>
+        </Card>
+      </div>
+
+      <div className={styles.section}>
+        <h3>{t('currentState')}</h3>
 
         <div className={styles.badges}>
           <Badge variant="info">{theme}</Badge>
@@ -83,65 +134,36 @@ export function AppearanceShowcase() {
         </div>
       </div>
 
-      <Card className={styles.controls}>
-        <Select
-          label="Theme"
-          value={theme}
-          onChange={(event) =>
-            setTheme(event.target.value as typeof theme)
-          }
-          options={themeOptions}
-        />
+      <div className={styles.section}>
+        <h3>{t('directionPreview')}</h3>
 
-        <Select
-          label="Color mode"
-          value={colorMode}
-          onChange={(event) =>
-            setColorMode(event.target.value as typeof colorMode)
-          }
-          options={colorModeOptions}
-        />
+        <Card className={styles.preview}>
+          <div>
+            <h4 className={styles.previewTitle}>
+              {t('previewTitle')}
+            </h4>
 
-        <Select
-          label="Language"
-          value={locale}
-          onChange={(event) => changeLocale(event.target.value)}
-          options={languageOptions}
-        />
+            <p className={styles.previewText}>
+              {t('currentLanguage')}: {currentLanguage.label}
+            </p>
 
-        <Button type="button" onClick={toggleColorMode}>
-          Toggle color mode
-        </Button>
-      </Card>
+            <p className={styles.previewText}>
+              {t('direction')}: {currentLanguage.dir}
+            </p>
+          </div>
 
-      <Card className={styles.preview}>
-        <div>
-          <h2 className={styles.previewTitle}>
-            Preview
-          </h2>
+          <Divider />
 
-          <p className={styles.previewText}>
-            Current language: {currentLanguage.label}
-          </p>
+          <div
+            className={styles.rtlPreview}
+            dir={currentLanguage.dir}
+          >
+            <p>{t('directionText')}</p>
 
-          <p className={styles.previewText}>
-            Direction: {currentLanguage.dir}
-          </p>
-        </div>
-
-        <Divider />
-
-        <div
-          className={styles.rtlPreview}
-          dir={currentLanguage.dir}
-        >
-          <p>
-            This area follows the selected language direction.
-          </p>
-
-          <Button>Action</Button>
-        </div>
-      </Card>
-    </section>
+            <Button>{t('action')}</Button>
+          </div>
+        </Card>
+      </div>
+    </ShowcaseSection>
   );
 }

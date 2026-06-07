@@ -1,0 +1,18 @@
+{
+  "title": "Appearance",
+  "description": "Appearance controls allow you to test theme, color mode, language, and text direction across the entire design system.",
+  "usage": "Usage",
+  "preview": "Preview",
+  "settings": "Settings",
+  "theme": "Theme",
+  "colorMode": "Color mode",
+  "language": "Language",
+  "toggleColorMode": "Toggle color mode",
+  "currentState": "Current state",
+  "directionPreview": "Direction preview",
+  "previewTitle": "Preview card",
+  "currentLanguage": "Current language",
+  "direction": "Direction",
+  "directionText": "This area follows the selected language direction.",
+  "action": "Action"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Aspect",
+  "description": "Controalele de aspect îți permit să testezi tema, modul de culoare, limba și direcția textului în întregul sistem de design.",
+  "usage": "Utilizare",
+  "preview": "Previzualizare",
+  "settings": "Setări",
+  "theme": "Temă",
+  "colorMode": "Mod culoare",
+  "language": "Limbă",
+  "toggleColorMode": "Comută modul de culoare",
+  "currentState": "Stare curentă",
+  "directionPreview": "Previzualizare direcție",
+  "previewTitle": "Card de previzualizare",
+  "currentLanguage": "Limba curentă",
+  "direction": "Direcție",
+  "directionText": "Această zonă urmează direcția limbii selectate.",
+  "action": "Acțiune"
+}

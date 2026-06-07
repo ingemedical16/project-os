@@ -23,6 +23,7 @@ export async function loadMessages(
     dashboardAnalytics,
 
     designSystemPage,
+    designSystemAppearance,
     designSystemButton,
     designSystemInput,
     designSystemTextarea,
@@ -64,6 +65,7 @@ export async function loadMessages(
     import(`./messages/${locale}/dashboard/analytics.json`),
 
     import(`./messages/${locale}/designSystem/page.json`),
+    import(`./messages/${locale}/designSystem/components/appearance.json`), 
     import(`./messages/${locale}/designSystem/components/button.json`),
     import(`./messages/${locale}/designSystem/components/input.json`),
     import(`./messages/${locale}/designSystem/components/textarea.json`),
@@ -114,6 +116,7 @@ export async function loadMessages(
     designSystem: {
       page: designSystemPage.default,
       components: {
+        appearance: designSystemAppearance.default,
         button: designSystemButton.default,
         input: designSystemInput.default,
         textarea: designSystemTextarea.default,

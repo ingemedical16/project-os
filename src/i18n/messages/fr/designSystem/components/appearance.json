@@ -1,0 +1,18 @@
+{
+  "title": "Apparence",
+  "description": "Les contrôles d’apparence permettent de tester le thème, le mode couleur, la langue et la direction du texte dans tout le système de design.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "settings": "Paramètres",
+  "theme": "Thème",
+  "colorMode": "Mode couleur",
+  "language": "Langue",
+  "toggleColorMode": "Changer le mode couleur",
+  "currentState": "État actuel",
+  "directionPreview": "Aperçu de la direction",
+  "previewTitle": "Carte de prévisualisation",
+  "currentLanguage": "Langue actuelle",
+  "direction": "Direction",
+  "directionText": "Cette zone suit la direction de la langue sélectionnée.",
+  "action": "Action"
+}

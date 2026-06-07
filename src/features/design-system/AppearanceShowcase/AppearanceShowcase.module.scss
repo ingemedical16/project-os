@@ -1,59 +1,79 @@
-.showcase {
+@use '@/styles/abstracts/variables' as *;
+@use '@/styles/abstracts/mixins' as *;
+
+.code {
+  margin: 0;
+  padding: $space-4;
+
+  overflow-x: auto;
+
+  border-radius: $radius-md;
+
+  background: var(--surface-hover);
+  color: var(--text);
+
+  font-family: $font-family-mono;
+  font-size: $font-size-sm;
+}
+
+.section {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: $space-3;
 }
 
-.header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.title {
+.section h3 {
   margin: 0;
+
   color: var(--text);
+
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
 }
 
-.description {
-  margin: 0.8rem 0 0;
-  color: var(--text-muted);
+.controls,
+.preview {
+  gap: $space-4;
 }
 
 .badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.8rem;
-}
-
-.controls {
-  gap: 1.6rem;
-}
-
-.preview {
-  gap: 1.6rem;
+  gap: $space-2;
 }
 
 .previewTitle {
   margin: 0;
   color: var(--accent);
+  font-size: $font-size-lg;
 }
 
 .previewText {
-  margin: 0.8rem 0 0;
+  margin-block: $space-2 0;
   color: var(--text-muted);
 }
 
 .rtlPreview {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.6rem;
+  flex-direction: column;
+  gap: $space-4;
 
-  padding: 1.6rem;
+  padding: $space-4;
 
   background: var(--surface-hover);
   border: 0.1rem solid var(--border);
-  border-radius: 0.8rem;
+  border-radius: $radius-md;
+}
+
+.rtlPreview p {
+  margin: 0;
+  color: var(--text);
+}
+
+@include respond(md) {
+  .rtlPreview {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
