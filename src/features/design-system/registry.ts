@@ -24,6 +24,7 @@ import { TooltipShowcase } from './TooltipShowcase';
 import { SkeletonShowcase } from './SkeletonShowcase';
 import { EmptyStateShowcase } from './EmptyStateShowcase';
 import { TableShowcase } from './TableShowcase';
+import { BreadcrumbShowcase } from './BreadcrumbShowcase';
 
 export interface DesignSystemShowcaseItem {
   id: string;
@@ -155,6 +156,11 @@ export const DESIGN_SYSTEM_SHOWCASES: DesignSystemShowcaseGroup[] = [
         id: 'tabs',
         title: 'Tabs',
         component: TabsShowcase,
+      },
+      {
+        id: 'breadcrumb',
+        title: 'Breadcrumb',
+        component: BreadcrumbShowcase,
       },
     ],
   },

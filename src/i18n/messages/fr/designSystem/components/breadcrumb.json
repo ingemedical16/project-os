@@ -1,0 +1,14 @@
+{
+  "title": "Fil d’Ariane",
+  "description": "Le fil d’Ariane indique la position actuelle de l’utilisateur dans la hiérarchie de navigation et l’aide à revenir aux pages parentes.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "basic": "Fil d’Ariane simple",
+  "customSeparator": "Séparateur personnalisé",
+  "home": "Accueil",
+  "products": "Produits",
+  "details": "Détails",
+  "dashboard": "Tableau de bord",
+  "settings": "Paramètres",
+  "profile": "Profil"
+}

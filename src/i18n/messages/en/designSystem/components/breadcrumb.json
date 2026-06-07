@@ -1,0 +1,14 @@
+{
+  "title": "Breadcrumb",
+  "description": "Breadcrumbs show the user’s current location in the navigation hierarchy and help them move back to parent pages.",
+  "usage": "Usage",
+  "preview": "Preview",
+  "basic": "Basic breadcrumb",
+  "customSeparator": "Custom separator",
+  "home": "Home",
+  "products": "Products",
+  "details": "Details",
+  "dashboard": "Dashboard",
+  "settings": "Settings",
+  "profile": "Profile"
+}

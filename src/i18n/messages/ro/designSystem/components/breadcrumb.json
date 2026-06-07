@@ -1,0 +1,14 @@
+{
+  "title": "Fir de navigare",
+  "description": "Firul de navigare arată poziția curentă a utilizatorului în ierarhia de navigare și îl ajută să revină la paginile părinte.",
+  "usage": "Utilizare",
+  "preview": "Previzualizare",
+  "basic": "Fir de navigare simplu",
+  "customSeparator": "Separator personalizat",
+  "home": "Acasă",
+  "products": "Produse",
+  "details": "Detalii",
+  "dashboard": "Tablou de bord",
+  "settings": "Setări",
+  "profile": "Profil"
+}

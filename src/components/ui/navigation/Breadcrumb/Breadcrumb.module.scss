@@ -1,0 +1,54 @@
+@use '@/styles/abstracts/variables' as *;
+
+.breadcrumb {
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: $space-2;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-2;
+
+  color: var(--text-muted);
+
+  font-size: $font-size-sm;
+}
+
+.link {
+  color: var(--text-muted);
+  text-decoration: none;
+
+  transition: color $transition-fast;
+}
+
+.link:hover {
+  color: var(--accent);
+}
+
+.link:focus-visible {
+  outline: 0.2rem solid var(--accent);
+  outline-offset: 0.2rem;
+  border-radius: $radius-sm;
+}
+
+.current {
+  color: var(--text);
+  font-weight: $font-weight-medium;
+}
+
+.separator {
+  color: var(--text-muted);
+  user-select: none;
+}
