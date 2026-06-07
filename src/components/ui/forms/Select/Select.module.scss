@@ -1,45 +1,59 @@
+@use '@/styles/abstracts/variables' as *;
+@use '@/styles/abstracts/mixins' as *;
+
 .field {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: $space-2;
+
   width: 100%;
 }
 
 .label {
   color: var(--text);
-  font-size: 1.4rem;
-  font-weight: 600;
+
+  font-size: $font-size-sm;
+  font-weight: $font-weight-semibold;
 }
 
 .select {
   width: 100%;
   min-height: 4rem;
-  padding-inline: 1.2rem 3.6rem;
+
+  padding-inline: $space-3 3.6rem;
 
   appearance: none;
 
   background:
-    linear-gradient(45deg, transparent 50%, var(--text-muted) 50%)
-      calc(100% - 2rem) 50% / 0.6rem 0.6rem no-repeat,
-    linear-gradient(135deg, var(--text-muted) 50%, transparent 50%)
-      calc(100% - 1.6rem) 50% / 0.6rem 0.6rem no-repeat,
+    linear-gradient(
+      45deg,
+      transparent 50%,
+      var(--text-muted) 50%
+    )
+    calc(100% - 2rem) 50% / 0.6rem 0.6rem no-repeat,
+    linear-gradient(
+      135deg,
+      var(--text-muted) 50%,
+      transparent 50%
+    )
+    calc(100% - 1.6rem) 50% / 0.6rem 0.6rem no-repeat,
     var(--surface);
 
   color: var(--text);
 
   border: 0.1rem solid var(--border);
-  border-radius: 0.8rem;
+  border-radius: $radius-md;
 
   font: inherit;
-  font-size: 1.6rem;
+  font-size: $font-size-md;
 
   cursor: pointer;
 
   transition:
-    border-color 0.2s ease,
-    background-color 0.2s ease,
-    color 0.2s ease,
-    outline-color 0.2s ease;
+    border-color $transition-fast,
+    background-color $transition-fast,
+    color $transition-fast,
+    outline-color $transition-fast;
 
   &:hover:not(:disabled) {
     border-color: var(--border-hover);
@@ -54,15 +68,15 @@
     cursor: not-allowed;
     opacity: 0.6;
   }
-}
 
-html[dir='rtl'] .select {
-  padding-inline: 3.6rem 1.2rem;
+  @include rtl {
+    padding-inline: 3.6rem $space-3;
 
-  background-position:
-    2rem 50%,
-    1.6rem 50%,
-    0 0;
+    background-position:
+      2rem 50%,
+      1.6rem 50%,
+      0 0;
+  }
 }
 
 .error {
@@ -75,12 +89,16 @@ html[dir='rtl'] .select {
 
 .helperText {
   margin: 0;
+
   color: var(--text-muted);
-  font-size: 1.3rem;
+
+  font-size: $font-size-xs;
 }
 
 .errorMessage {
   margin: 0;
+
   color: var(--danger);
-  font-size: 1.3rem;
+
+  font-size: $font-size-xs;
 }

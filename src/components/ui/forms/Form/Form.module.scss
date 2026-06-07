@@ -1,7 +1,9 @@
+@use '@/styles/abstracts/variables' as *;
+
 .form {
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: $space-4;
 
   width: 100%;
 }
@@ -9,13 +11,13 @@
 .field {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: $space-2;
 }
 
 .actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: $space-3;
 
   align-items: center;
   justify-content: flex-end;

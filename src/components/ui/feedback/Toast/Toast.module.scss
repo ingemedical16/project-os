@@ -1,29 +1,32 @@
+@use '@/styles/abstracts/variables' as *;
+
 .toast {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: $space-2;
 
+  width: 100%;
   min-width: 28rem;
   max-width: 40rem;
 
-  padding: 1.6rem;
+  padding: $space-4;
 
-  border-radius: 0.8rem;
   border: 0.1rem solid transparent;
+  border-radius: $radius-md;
 
   background: var(--surface);
 
-  box-shadow:
-    0 0.4rem 1.2rem rgba(0, 0, 0, 0.12);
+  box-shadow: $shadow-md;
 }
 
 .title {
-  font-size: 1.4rem;
-  font-weight: 700;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-bold;
 }
 
 .content {
-  font-size: 1.4rem;
+  font-size: $font-size-sm;
+  line-height: $line-height-normal;
 }
 
 .info {

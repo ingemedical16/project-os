@@ -1,35 +1,40 @@
+@use '@/styles/abstracts/variables' as *;
+
 .field {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: $space-2;
+
   width: 100%;
 }
 
 .label {
   color: var(--text);
-  font-size: 1.4rem;
-  font-weight: 600;
+
+  font-size: $font-size-sm;
+  font-weight: $font-weight-semibold;
 }
 
 .input {
   width: 100%;
   min-height: 4rem;
-  padding-inline: 1.2rem;
+
+  padding-inline: $space-3;
 
   background: var(--surface);
   color: var(--text);
 
   border: 0.1rem solid var(--border);
-  border-radius: 0.8rem;
+  border-radius: $radius-md;
 
   font: inherit;
-  font-size: 1.6rem;
+  font-size: $font-size-md;
 
   transition:
-    border-color 0.2s ease,
-    background-color 0.2s ease,
-    color 0.2s ease,
-    outline-color 0.2s ease;
+    border-color $transition-fast,
+    background-color $transition-fast,
+    color $transition-fast,
+    outline-color $transition-fast;
 
   &::placeholder {
     color: var(--text-muted);
@@ -60,12 +65,16 @@
 
 .helperText {
   margin: 0;
+
   color: var(--text-muted);
-  font-size: 1.3rem;
+
+  font-size: $font-size-xs;
 }
 
 .errorMessage {
   margin: 0;
+
   color: var(--danger);
-  font-size: 1.3rem;
+
+  font-size: $font-size-xs;
 }

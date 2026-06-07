@@ -1,7 +1,11 @@
+@use '@/styles/abstracts/variables' as *;
+@use '@/styles/abstracts/mixins' as *;
+
 .overlay {
   position: fixed;
   inset: 0;
-  z-index: 1000;
+
+  z-index: $z-modal-backdrop;
 
   display: flex;
 
@@ -12,24 +16,34 @@
   width: min(100%, 36rem);
   height: 100%;
 
+  display: flex;
+  flex-direction: column;
+
   background: var(--surface);
   color: var(--text);
 
   border-color: var(--surface-border);
   border-style: solid;
 
-  display: flex;
-  flex-direction: column;
+  box-shadow: $shadow-lg;
 }
 
 .left {
-  margin-right: auto;
+  margin-inline-end: auto;
   border-width: 0 0.1rem 0 0;
+
+  @include rtl {
+    border-width: 0 0 0 0.1rem;
+  }
 }
 
 .right {
-  margin-left: auto;
+  margin-inline-start: auto;
   border-width: 0 0 0 0.1rem;
+
+  @include rtl {
+    border-width: 0 0.1rem 0 0;
+  }
 }
 
 .header {
@@ -37,26 +51,33 @@
   align-items: center;
   justify-content: space-between;
 
-  padding: 1.6rem;
+  padding: $space-4;
 
-  border-bottom: 0.1rem solid var(--border);
+  border-block-end: 0.1rem solid var(--border);
 }
 
 .title {
   margin: 0;
-  font-size: 1.8rem;
+
+  color: var(--text);
+
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
 }
 
 .closeButton {
   border: 0;
+
   background: transparent;
   color: var(--text);
 
-  font-size: 2rem;
+  font-size: $font-size-xl;
+
   cursor: pointer;
 }
 
 .content {
-  padding: 1.6rem;
+  padding: $space-4;
+
   overflow-y: auto;
 }

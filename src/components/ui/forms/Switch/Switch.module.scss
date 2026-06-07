@@ -1,19 +1,23 @@
+@use '@/styles/abstracts/variables' as *;
+@use '@/styles/abstracts/mixins' as *;
+
 .field {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: $space-2;
 }
 
 .switchWrapper {
   display: inline-flex;
   align-items: center;
-  gap: 1rem;
+  gap: $space-3;
 
   cursor: pointer;
 }
 
 .switch {
   position: absolute;
+
   opacity: 0;
   pointer-events: none;
 }
@@ -26,27 +30,27 @@
 
   flex-shrink: 0;
 
-  border-radius: 999rem;
+  border-radius: $radius-full;
 
   background: var(--border);
 
-  transition: background-color 0.2s ease;
+  transition: background-color $transition-fast;
 }
 
 .thumb {
   position: absolute;
 
-  top: 0.3rem;
-  left: 0.3rem;
+  inset-block-start: 0.3rem;
+  inset-inline-start: 0.3rem;
 
   width: 2rem;
   height: 2rem;
 
-  border-radius: 50%;
+  border-radius: $radius-full;
 
   background: var(--surface);
 
-  transition: transform 0.2s ease;
+  transition: transform $transition-fast;
 }
 
 .switch:checked + .track {
@@ -55,6 +59,10 @@
 
 .switch:checked + .track .thumb {
   transform: translateX(2.2rem);
+
+  @include rtl {
+    transform: translateX(-2.2rem);
+  }
 }
 
 .switch:focus-visible + .track {
@@ -70,17 +78,22 @@
 
 .label {
   color: var(--text);
-  font-size: 1.4rem;
+
+  font-size: $font-size-sm;
 }
 
 .helperText {
   margin: 0;
+
   color: var(--text-muted);
-  font-size: 1.3rem;
+
+  font-size: $font-size-xs;
 }
 
 .errorMessage {
   margin: 0;
+
   color: var(--danger);
-  font-size: 1.3rem;
+
+  font-size: $font-size-xs;
 }

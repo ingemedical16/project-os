@@ -1,47 +1,51 @@
+@use '@/styles/abstracts/variables' as *;
+
 .tabs {
+  width: 100%;
+
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
-  width: 100%;
+  gap: $space-4;
 }
 
 .list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.8rem;
+  gap: $space-2;
 
-  border-bottom: 0.1rem solid var(--border);
+  border-block-end: 0.1rem solid var(--border);
 }
 
 .trigger,
 .activeTrigger {
-  padding: 1rem 1.4rem;
+  padding-block: $space-3;
+  padding-inline: $space-4;
 
   border: 0;
-  border-bottom: 0.2rem solid transparent;
+  border-block-end: 0.2rem solid transparent;
 
   background: transparent;
   color: var(--text-muted);
 
   font: inherit;
-  font-weight: 600;
+  font-weight: $font-weight-semibold;
 
   cursor: pointer;
 
   transition:
-    color 0.2s ease,
-    border-color 0.2s ease,
-    background-color 0.2s ease;
+    color $transition-fast,
+    border-color $transition-fast,
+    background-color $transition-fast;
 }
 
 .trigger:hover:not(:disabled) {
-  color: var(--text);
   background: var(--surface-hover);
+  color: var(--text);
 }
 
 .activeTrigger {
   color: var(--accent);
-  border-bottom-color: var(--accent);
+  border-block-end-color: var(--accent);
 }
 
 .trigger:focus-visible,
@@ -58,4 +62,5 @@
 
 .panel {
   color: var(--text);
+  line-height: $line-height-normal;
 }

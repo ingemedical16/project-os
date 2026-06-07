@@ -33,7 +33,8 @@
   transition:
     background-color $transition-fast,
     border-color $transition-fast,
-    color $transition-fast;
+    color $transition-fast,
+    opacity $transition-fast;
 }
 
 .button:hover:not(:disabled) {

@@ -1,13 +1,15 @@
+@use '@/styles/abstracts/variables' as *;
+
 .wrapper {
   display: inline-flex;
   align-items: center;
-  gap: 1rem;
+  gap: $space-3;
 }
 
 .spinner {
-  border-radius: 50%;
-
   border-style: solid;
+  border-radius: $radius-full;
+
   border-color: var(--border);
   border-top-color: var(--accent);
 
@@ -37,7 +39,8 @@
 
 .label {
   color: var(--text);
-  font-size: 1.4rem;
+
+  font-size: $font-size-sm;
 }
 
 @keyframes spin {

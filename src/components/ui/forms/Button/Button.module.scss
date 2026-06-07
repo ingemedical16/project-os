@@ -1,23 +1,25 @@
+@use '@/styles/abstracts/variables' as *;
+
 .button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.8rem;
+  gap: $space-2;
 
   border: 0.1rem solid transparent;
-  border-radius: 0.8rem;
+  border-radius: $radius-md;
 
   font-family: inherit;
-  font-weight: 600;
+  font-weight: $font-weight-semibold;
   line-height: 1;
 
   cursor: pointer;
 
   transition:
-    background-color 0.2s ease,
-    color 0.2s ease,
-    border-color 0.2s ease,
-    opacity 0.2s ease;
+    background-color $transition-fast,
+    color $transition-fast,
+    border-color $transition-fast,
+    opacity $transition-fast;
 
   &:focus-visible {
     outline: 0.2rem solid var(--accent);
@@ -61,20 +63,23 @@
 
 .sm {
   min-height: 3.2rem;
-  padding-inline: 1.2rem;
-  font-size: 1.4rem;
+  padding-inline: $space-3;
+
+  font-size: $font-size-sm;
 }
 
 .md {
   min-height: 4rem;
-  padding-inline: 1.6rem;
-  font-size: 1.6rem;
+  padding-inline: $space-4;
+
+  font-size: $font-size-md;
 }
 
 .lg {
   min-height: 4.8rem;
-  padding-inline: 2rem;
-  font-size: 1.8rem;
+  padding-inline: $space-5;
+
+  font-size: $font-size-lg;
 }
 
 .fullWidth {

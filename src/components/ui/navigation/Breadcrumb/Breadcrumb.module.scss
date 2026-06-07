@@ -1,4 +1,5 @@
 @use '@/styles/abstracts/variables' as *;
+@use '@/styles/abstracts/mixins' as *;
 
 .breadcrumb {
   width: 100%;
@@ -28,6 +29,7 @@
 
 .link {
   color: var(--text-muted);
+
   text-decoration: none;
 
   transition: color $transition-fast;
@@ -40,15 +42,22 @@
 .link:focus-visible {
   outline: 0.2rem solid var(--accent);
   outline-offset: 0.2rem;
+
   border-radius: $radius-sm;
 }
 
 .current {
   color: var(--text);
+
   font-weight: $font-weight-medium;
 }
 
 .separator {
   color: var(--text-muted);
+
   user-select: none;
+
+  @include rtl {
+    transform: rotate(180deg);
+  }
 }

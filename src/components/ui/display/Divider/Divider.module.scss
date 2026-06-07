@@ -1,8 +1,11 @@
-.divider {
-  border: 0;
-  background: var(--border);
+@use '@/styles/abstracts/variables' as *;
 
+.divider {
   flex-shrink: 0;
+
+  border: 0;
+
+  background: var(--border);
 }
 
 .horizontal {
@@ -13,5 +16,6 @@
 .vertical {
   width: 0.1rem;
   height: 100%;
+
   min-height: 2rem;
 }

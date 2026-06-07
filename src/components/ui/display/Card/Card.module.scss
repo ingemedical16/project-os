@@ -1,18 +1,20 @@
+@use '@/styles/abstracts/variables' as *;
+
 .card {
   display: flex;
   flex-direction: column;
 
+  padding: $space-4;
+
   background: var(--surface);
 
   border: 0.1rem solid var(--surface-border);
-  border-radius: 1.2rem;
-
-  padding: 1.6rem;
+  border-radius: $radius-lg;
 
   transition:
-    border-color 0.2s ease,
-    background-color 0.2s ease,
-    transform 0.2s ease;
+    border-color $transition-fast,
+    background-color $transition-fast,
+    transform $transition-fast;
 }
 
 .card:hover {

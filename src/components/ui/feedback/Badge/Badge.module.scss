@@ -1,3 +1,5 @@
+@use '@/styles/abstracts/variables' as *;
+
 .badge {
   display: inline-flex;
   align-items: center;
@@ -5,39 +7,46 @@
 
   width: fit-content;
   min-height: 2.4rem;
-  padding: 0.4rem 0.8rem;
 
-  border-radius: 999rem;
-
-  font-size: 1.2rem;
-  font-weight: 600;
-  line-height: 1;
+  padding-block: $space-1;
+  padding-inline: $space-2;
 
   border: 0.1rem solid transparent;
+  border-radius: $radius-full;
+
+  font-size: $font-size-xs;
+  font-weight: $font-weight-semibold;
+  line-height: 1;
 }
 
 .default {
   background: var(--surface-hover);
+
   color: var(--text);
+
   border-color: var(--border);
 }
 
 .success {
   background: var(--success);
-  color: #ffffff;
+
+  color: var(--success-text, #ffffff);
 }
 
 .warning {
   background: var(--warning);
-  color: #111827;
+
+  color: var(--warning-text, #111827);
 }
 
 .danger {
   background: var(--danger);
-  color: #ffffff;
+
+  color: var(--danger-text, #ffffff);
 }
 
 .info {
   background: var(--accent);
+
   color: var(--accent-text);
 }

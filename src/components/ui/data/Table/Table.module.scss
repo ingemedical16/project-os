@@ -2,12 +2,13 @@
 
 .wrapper {
   width: 100%;
+
   overflow-x: auto;
+
+  background: var(--surface);
 
   border: 0.1rem solid var(--border);
   border-radius: $radius-lg;
-
-  background: var(--surface);
 }
 
 .table {

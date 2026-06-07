@@ -1,3 +1,5 @@
+@use '@/styles/abstracts/variables' as *;
+
 .wrapper {
   position: relative;
 
@@ -7,21 +9,22 @@
 .tooltip {
   position: absolute;
 
-  left: 50%;
-  bottom: calc(100% + 0.8rem);
+  inset-inline-start: 50%;
+  inset-block-end: calc(100% + $space-2);
 
   transform: translateX(-50%);
 
   white-space: nowrap;
 
-  padding: 0.8rem 1rem;
+  padding-block: $space-2;
+  padding-inline: $space-3;
+
+  border-radius: $radius-sm;
 
   background: var(--text);
   color: var(--bg);
 
-  border-radius: 0.6rem;
-
-  font-size: 1.2rem;
+  font-size: $font-size-xs;
 
   opacity: 0;
   visibility: hidden;
@@ -29,8 +32,8 @@
   pointer-events: none;
 
   transition:
-    opacity 0.2s ease,
-    visibility 0.2s ease;
+    opacity $transition-fast,
+    visibility $transition-fast;
 }
 
 .wrapper:hover .tooltip,
@@ -44,13 +47,13 @@
 
   position: absolute;
 
-  left: 50%;
-  top: 100%;
+  inset-inline-start: 50%;
+  inset-block-start: 100%;
 
   transform: translateX(-50%);
 
-  border-width: 0.5rem;
   border-style: solid;
+  border-width: 0.5rem;
 
   border-color:
     var(--text)
