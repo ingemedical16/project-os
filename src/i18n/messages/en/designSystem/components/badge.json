@@ -1,0 +1,17 @@
+{
+  "title": "Badge",
+  "description": "Badges display compact status, category, or metadata information inside interfaces.",
+  "usage": "Usage",
+  "preview": "Preview",
+  "variants": "Variants",
+  "useCases": "Common use cases",
+  "default": "Default",
+  "info": "Info",
+  "success": "Success",
+  "warning": "Warning",
+  "danger": "Danger",
+  "active": "Active",
+  "pending": "Pending",
+  "blocked": "Blocked",
+  "new": "New"
+}

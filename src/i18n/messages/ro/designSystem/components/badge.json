@@ -1,0 +1,17 @@
+{
+  "title": "Insignă",
+  "description": "Insignele afișează informații compacte despre stare, categorie sau metadate în interfață.",
+  "usage": "Utilizare",
+  "preview": "Previzualizare",
+  "variants": "Variante",
+  "useCases": "Cazuri de utilizare comune",
+  "default": "Implicit",
+  "info": "Info",
+  "success": "Succes",
+  "warning": "Avertisment",
+  "danger": "Pericol",
+  "active": "Activ",
+  "pending": "În așteptare",
+  "blocked": "Blocat",
+  "new": "Nou"
+}

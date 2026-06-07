@@ -1,0 +1,17 @@
+{
+  "title": "Badge",
+  "description": "Les badges affichent des informations compactes comme un statut, une catégorie ou une métadonnée dans l’interface.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "variants": "Variantes",
+  "useCases": "Cas d’utilisation courants",
+  "default": "Par défaut",
+  "info": "Info",
+  "success": "Succès",
+  "warning": "Avertissement",
+  "danger": "Danger",
+  "active": "Actif",
+  "pending": "En attente",
+  "blocked": "Bloqué",
+  "new": "Nouveau"
+}
