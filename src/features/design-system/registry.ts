@@ -22,6 +22,7 @@ import { TextareaShowcase } from './TextareaShowcase';
 import { ToastShowcase } from './ToastShowcase';
 import { TooltipShowcase } from './TooltipShowcase';
 import { SkeletonShowcase } from './SkeletonShowcase';
+import { EmptyStateShowcase } from './EmptyStateShowcase';
 
 export interface DesignSystemShowcaseItem {
   id: string;
@@ -179,6 +180,11 @@ export const DESIGN_SYSTEM_SHOWCASES: DesignSystemShowcaseGroup[] = [
         id: 'skeleton',
         title: 'Skeleton',
         component: SkeletonShowcase,
+      },
+      {
+        id: 'emptyState',
+        title: 'Empty State',
+        component: EmptyStateShowcase,
       },
     ],
   },

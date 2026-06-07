@@ -1,0 +1,66 @@
+@use '@/styles/abstracts/variables' as *;
+
+.emptyState {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $space-4;
+
+  padding: $space-8;
+
+  text-align: center;
+
+  background: var(--surface);
+  border: 0.1rem solid var(--border);
+  border-radius: $radius-lg;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 5.6rem;
+  height: 5.6rem;
+
+  border-radius: $radius-full;
+
+  background: var(--surface-hover);
+  color: var(--text-muted);
+
+  font-size: $font-size-2xl;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+}
+
+.title {
+  margin: 0;
+
+  color: var(--text);
+
+  font-size: $font-size-xl;
+  font-weight: $font-weight-semibold;
+}
+
+.description {
+  max-width: 48rem;
+  margin: 0;
+
+  color: var(--text-muted);
+
+  font-size: $font-size-md;
+  line-height: $line-height-normal;
+}
+
+.action {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: $space-3;
+}

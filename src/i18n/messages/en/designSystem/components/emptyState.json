@@ -1,0 +1,18 @@
+{
+  "title": "Empty State",
+  "description": "Empty states explain why content is missing and guide users toward the next useful action.",
+  "usage": "Usage",
+  "preview": "Preview",
+  "basic": "Basic empty state",
+  "withAction": "With action",
+  "withMultipleActions": "With multiple actions",
+  "basicTitle": "No data available",
+  "basicDescription": "There is currently no content to display.",
+  "searchTitle": "No results found",
+  "searchDescription": "Try adjusting your search terms or filters.",
+  "resetFilters": "Reset filters",
+  "productsTitle": "No products yet",
+  "productsDescription": "Create your first product or import an existing catalog.",
+  "createProduct": "Create product",
+  "importProducts": "Import products"
+}

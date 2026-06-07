@@ -25,3 +25,4 @@ export { ToastShowcase } from './ToastShowcase';
 export { TooltipShowcase } from './TooltipShowcase';
 export { ShowcaseSection } from './ShowcaseSection';
 export { SkeletonShowcase } from './SkeletonShowcase';
+export { EmptyStateShowcase } from './EmptyStateShowcase';

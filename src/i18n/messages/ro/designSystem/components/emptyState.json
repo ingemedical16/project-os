@@ -1,0 +1,18 @@
+{
+  "title": "Stare goală",
+  "description": "Stările goale explică de ce lipsește conținutul și ghidează utilizatorii către următoarea acțiune utilă.",
+  "usage": "Utilizare",
+  "preview": "Previzualizare",
+  "basic": "Stare goală de bază",
+  "withAction": "Cu acțiune",
+  "withMultipleActions": "Cu acțiuni multiple",
+  "basicTitle": "Nu există date disponibile",
+  "basicDescription": "Momentan nu există conținut de afișat.",
+  "searchTitle": "Nu s-au găsit rezultate",
+  "searchDescription": "Încearcă să modifici termenii de căutare sau filtrele.",
+  "resetFilters": "Resetează filtrele",
+  "productsTitle": "Nu există produse încă",
+  "productsDescription": "Creează primul produs sau importă un catalog existent.",
+  "createProduct": "Creează produs",
+  "importProducts": "Importă produse"
+}

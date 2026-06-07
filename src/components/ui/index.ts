@@ -29,6 +29,7 @@ export * from './display/Card';
 export * from './display/Avatar';
 export * from './display/Divider';
 export * from './display/Skeleton';
+export * from './display/EmptyState';
 // Forms
 export * from './forms/Button';
 export * from './forms/Input';

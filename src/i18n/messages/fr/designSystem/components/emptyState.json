@@ -1,0 +1,18 @@
+{
+  "title": "État vide",
+  "description": "Les états vides expliquent pourquoi le contenu est absent et guident l’utilisateur vers la prochaine action utile.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "basic": "État vide simple",
+  "withAction": "Avec action",
+  "withMultipleActions": "Avec plusieurs actions",
+  "basicTitle": "Aucune donnée disponible",
+  "basicDescription": "Il n’y a actuellement aucun contenu à afficher.",
+  "searchTitle": "Aucun résultat trouvé",
+  "searchDescription": "Essayez de modifier vos termes de recherche ou vos filtres.",
+  "resetFilters": "Réinitialiser les filtres",
+  "productsTitle": "Aucun produit pour le moment",
+  "productsDescription": "Créez votre premier produit ou importez un catalogue existant.",
+  "createProduct": "Créer un produit",
+  "importProducts": "Importer des produits"
+}
