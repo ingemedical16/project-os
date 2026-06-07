@@ -1,0 +1,13 @@
+{
+  "title": "Accordéon",
+  "description": "Les accordéons organisent le contenu lié en sections repliables, afin d’aider les utilisateurs à parcourir et révéler les informations progressivement.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "basic": "Utilisation simple",
+  "firstTitle": "Qu’est-ce que Project OS ?",
+  "firstContent": "Project OS est une architecture de démarrage réutilisable pour les applications web modernes.",
+  "secondTitle": "Pourquoi utiliser un système de design ?",
+  "secondContent": "Un système de design garantit la cohérence, l’évolutivité et la réutilisabilité entre les projets.",
+  "thirdTitle": "Où utiliser un accordéon ?",
+  "thirdContent": "Les accordéons peuvent être utilisés pour les FAQ, les paramètres, la documentation et les barres latérales."
+}

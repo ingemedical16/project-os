@@ -1,0 +1,13 @@
+{
+  "title": "Acordeon",
+  "description": "Acordeoanele organizează conținutul asociat în secțiuni pliabile, ajutând utilizatorii să scaneze și să descopere informația progresiv.",
+  "usage": "Utilizare",
+  "preview": "Previzualizare",
+  "basic": "Utilizare de bază",
+  "firstTitle": "Ce este Project OS?",
+  "firstContent": "Project OS este o arhitectură reutilizabilă de pornire pentru aplicații web moderne.",
+  "secondTitle": "De ce să folosești un sistem de design?",
+  "secondContent": "Un sistem de design asigură consistență, scalabilitate și reutilizare între proiecte.",
+  "thirdTitle": "Unde poate fi folosit Acordeonul?",
+  "thirdContent": "Acordeoanele pot fi folosite pentru FAQ, setări, documentație și bare laterale."
+}

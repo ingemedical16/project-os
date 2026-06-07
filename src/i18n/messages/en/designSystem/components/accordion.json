@@ -1,0 +1,13 @@
+{
+  "title": "Accordion",
+  "description": "Accordions organize related content into collapsible sections, helping users scan and reveal information progressively.",
+  "usage": "Usage",
+  "preview": "Preview",
+  "basic": "Basic usage",
+  "firstTitle": "What is Project OS?",
+  "firstContent": "Project OS is a reusable starter architecture for modern web applications.",
+  "secondTitle": "Why use a design system?",
+  "secondContent": "A design system ensures consistency, scalability, and reusability across projects.",
+  "thirdTitle": "Where can Accordion be used?",
+  "thirdContent": "Accordions can be used for FAQs, settings panels, documentation sections, and sidebars."
+}

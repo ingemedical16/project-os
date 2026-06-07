@@ -1,37 +1,57 @@
+import { useTranslations } from 'next-intl';
+
 import {
   Accordion,
   AccordionItem,
 } from '@/components/ui';
 
+import { ShowcaseSection } from '../ShowcaseSection';
+
 import styles from './AccordionShowcase.module.scss';
 
 export function AccordionShowcase() {
+  const t = useTranslations(
+    'designSystem.components.accordion'
+  );
+
+  const usage = `<Accordion>
+  <AccordionItem title="What is Project OS?">
+    Project OS is a reusable starter.
+  </AccordionItem>
+</Accordion>`;
+
   return (
-    <section className={styles.showcase}>
-      <h2>Accordion Primitive</h2>
+    <ShowcaseSection
+      title={t('title')}
+      description={t('description')}
+      usageTitle={t('usage')}
+      previewTitle={t('preview')}
+      usage={
+        <pre className={styles.code}>
+          <code>{usage}</code>
+        </pre>
+      }
+    >
+      <div className={styles.section}>
+        <h3>{t('basic')}</h3>
 
-      <Accordion>
-        <AccordionItem
-          title="What is Project OS?"
-          defaultOpen
-        >
-          Project OS is a reusable starter
-          architecture for modern web
-          applications.
-        </AccordionItem>
+        <Accordion>
+          <AccordionItem
+            title={t('firstTitle')}
+            defaultOpen
+          >
+            {t('firstContent')}
+          </AccordionItem>
 
-        <AccordionItem title="Why use a design system?">
-          A design system ensures consistency,
-          scalability, and reusability across
-          projects.
-        </AccordionItem>
+          <AccordionItem title={t('secondTitle')}>
+            {t('secondContent')}
+          </AccordionItem>
 
-        <AccordionItem title="Is Accordion reusable?">
-          Yes, it can be used for FAQs,
-          settings, documentation, sidebars,
-          and more.
-        </AccordionItem>
-      </Accordion>
-    </section>
+          <AccordionItem title={t('thirdTitle')}>
+            {t('thirdContent')}
+          </AccordionItem>
+        </Accordion>
+      </div>
+    </ShowcaseSection>
   );
 }
