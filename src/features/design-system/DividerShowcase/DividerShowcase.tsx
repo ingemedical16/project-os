@@ -1,44 +1,64 @@
+import { useTranslations } from 'next-intl';
+
 import {
   Card,
   Divider,
 } from '@/components/ui';
 
+import { ShowcaseSection } from '../ShowcaseSection';
+
 import styles from './DividerShowcase.module.scss';
 
 export function DividerShowcase() {
+  const t = useTranslations(
+    'designSystem.components.divider'
+  );
+
+  const usage = `<Divider />
+
+<Divider orientation="vertical" />`;
+
   return (
-    <section className={styles.showcase}>
-      <h2>Divider Primitive</h2>
+    <ShowcaseSection
+      title={t('title')}
+      description={t('description')}
+      usageTitle={t('usage')}
+      previewTitle={t('preview')}
+      usage={
+        <pre className={styles.code}>
+          <code>{usage}</code>
+        </pre>
+      }
+    >
+      <div className={styles.section}>
+        <h3>{t('horizontal')}</h3>
 
-      <Card>
-        <h3>Horizontal Divider</h3>
+        <Card className={styles.cardContent}>
+          <p>{t('contentAbove')}</p>
 
-        <p>
-          Content above divider.
-        </p>
+          <Divider />
 
-        <Divider />
+          <p>{t('contentBelow')}</p>
+        </Card>
+      </div>
 
-        <p>
-          Content below divider.
-        </p>
-      </Card>
+      <div className={styles.section}>
+        <h3>{t('vertical')}</h3>
 
-      <Card>
-        <h3>Vertical Divider</h3>
+        <Card>
+          <div className={styles.verticalExample}>
+            <span>{t('left')}</span>
 
-        <div className={styles.verticalExample}>
-          <span>Left</span>
+            <Divider orientation="vertical" />
 
-          <Divider orientation="vertical" />
+            <span>{t('center')}</span>
 
-          <span>Center</span>
+            <Divider orientation="vertical" />
 
-          <Divider orientation="vertical" />
-
-          <span>Right</span>
-        </div>
-      </Card>
-    </section>
+            <span>{t('right')}</span>
+          </div>
+        </Card>
+      </div>
+    </ShowcaseSection>
   );
 }

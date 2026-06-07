@@ -1,0 +1,13 @@
+{
+  "title": "Divider",
+  "description": "Dividers visually separate related or unrelated content sections in a layout.",
+  "usage": "Usage",
+  "preview": "Preview",
+  "horizontal": "Horizontal divider",
+  "vertical": "Vertical divider",
+  "contentAbove": "Content above divider.",
+  "contentBelow": "Content below divider.",
+  "left": "Left",
+  "center": "Center",
+  "right": "Right"
+}

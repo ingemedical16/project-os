@@ -1,0 +1,13 @@
+{
+  "title": "Separator",
+  "description": "Separatoarele delimitează vizual secțiuni de conținut într-un layout.",
+  "usage": "Utilizare",
+  "preview": "Previzualizare",
+  "horizontal": "Separator orizontal",
+  "vertical": "Separator vertical",
+  "contentAbove": "Conținut deasupra separatorului.",
+  "contentBelow": "Conținut sub separator.",
+  "left": "Stânga",
+  "center": "Centru",
+  "right": "Dreapta"
+}

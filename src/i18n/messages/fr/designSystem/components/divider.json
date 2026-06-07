@@ -1,0 +1,13 @@
+{
+  "title": "Séparateur",
+  "description": "Les séparateurs permettent de distinguer visuellement des sections de contenu dans une mise en page.",
+  "usage": "Utilisation",
+  "preview": "Aperçu",
+  "horizontal": "Séparateur horizontal",
+  "vertical": "Séparateur vertical",
+  "contentAbove": "Contenu au-dessus du séparateur.",
+  "contentBelow": "Contenu en dessous du séparateur.",
+  "left": "Gauche",
+  "center": "Centre",
+  "right": "Droite"
+}
