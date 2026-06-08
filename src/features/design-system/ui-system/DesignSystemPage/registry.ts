@@ -1,58 +1,67 @@
 import type { ComponentType } from 'react';
 
-import { AppearanceShowcase } from './AppearanceShowcase';
-import { AccordionShowcase } from './AccordionShowcase';
-import { AlertShowcase } from './AlertShowcase';
-import { AvatarShowcase } from './AvatarShowcase';
-import { BadgeShowcase } from './BadgeShowcase';
-import { ButtonShowcase } from './ButtonShowcase';
-import { CardShowcase } from './CardShowcase';
-import { CheckboxShowcase } from './CheckboxShowcase';
-import { DividerShowcase } from './DividerShowcase';
-import { DrawerShowcase } from './DrawerShowcase';
-import { FormShowcase } from './FormShowcase';
-import { InputShowcase } from './InputShowcase';
-import { ModalShowcase } from './ModalShowcase';
-import { RadioShowcase } from './RadioShowcase';
-import { SelectShowcase } from './SelectShowcase';
-import { SpinnerShowcase } from './SpinnerShowcase';
-import { SwitchShowcase } from './SwitchShowcase';
-import { TabsShowcase } from './TabsShowcase';
-import { TextareaShowcase } from './TextareaShowcase';
-import { ToastShowcase } from './ToastShowcase';
-import { TooltipShowcase } from './TooltipShowcase';
-import { SkeletonShowcase } from './SkeletonShowcase';
-import { EmptyStateShowcase } from './EmptyStateShowcase';
-import { TableShowcase } from './TableShowcase';
-import { BreadcrumbShowcase } from './BreadcrumbShowcase';
-import { PaginationShowcase } from './PaginationShowcase';
-import { DataTableShowcase } from './DataTableShowcase';
-import { TypographyShowcase } from './TypographyShowcase';
+import { DataTableShowcase, TableShowcase } from '../data';
+import {
+  AvatarShowcase,
+  CardShowcase,
+  DividerShowcase,
+  EmptyStateShowcase,
+  SkeletonShowcase,
+  TypographyShowcase,
+} from '../display';
+import {
+  AlertShowcase,
+  BadgeShowcase,
+  SpinnerShowcase,
+  ToastShowcase,
+} from '../feedback';
+import {
+  ButtonShowcase,
+  CheckboxShowcase,
+  FormShowcase,
+  InputShowcase,
+  RadioShowcase,
+  SelectShowcase,
+  SwitchShowcase,
+  TextareaShowcase,
+} from '../forms';
+import {
+  AccordionShowcase,
+  BreadcrumbShowcase,
+  PaginationShowcase,
+  TabsShowcase,
+} from '../navigation';
+import {
+  DrawerShowcase,
+  ModalShowcase,
+  TooltipShowcase,
+} from '../overlay';
+import { AppearanceShowcase } from '../theme';
 
-export interface DesignSystemShowcaseItem {
+export interface ShowcaseItem {
   id: string;
   title: string;
   component: ComponentType;
 }
 
-export interface DesignSystemShowcaseGroup {
+export interface ShowcaseGroup {
   id: string;
   title: string;
-  items: DesignSystemShowcaseItem[];
+  items: ShowcaseItem[];
 }
 
-export const DESIGN_SYSTEM_SHOWCASES: DesignSystemShowcaseGroup[] = [
+export const UI_SYSTEM_SHOWCASES: ShowcaseGroup[] = [
   {
-  id: 'system',
-  title: 'System',
-  items: [
-    {
-      id: 'appearance',
-      title: 'Appearance',
-      component: AppearanceShowcase,
-    },
-  ],
-},
+    id: 'theme',
+    title: 'Theme',
+    items: [
+      {
+        id: 'appearance',
+        title: 'Appearance',
+        component: AppearanceShowcase,
+      },
+    ],
+  },
   {
     id: 'forms',
     title: 'Forms',
@@ -221,7 +230,7 @@ export const DESIGN_SYSTEM_SHOWCASES: DesignSystemShowcaseGroup[] = [
         id: 'dataTable',
         title: 'Data Table',
         component: DataTableShowcase,
-      },  
+      },
     ],
   },
 ];
