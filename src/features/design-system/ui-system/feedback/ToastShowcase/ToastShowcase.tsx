@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 
 import { Toast } from '@/components/ui';
 
-import { ShowcaseSection } from '../ShowcaseSection';
+import { ShowcaseSection } from '../../../shared/ShowcaseSection';
 
 import styles from './ToastShowcase.module.scss';
 

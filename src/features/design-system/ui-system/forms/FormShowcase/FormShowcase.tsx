@@ -16,7 +16,7 @@ import {
   Textarea,
 } from '@/components/ui';
 
-import { ShowcaseSection } from '../ShowcaseSection';
+import { ShowcaseSection } from '../../../shared/ShowcaseSection';
 
 import styles from './FormShowcase.module.scss';
 

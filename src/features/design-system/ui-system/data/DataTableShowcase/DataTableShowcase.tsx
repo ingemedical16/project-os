@@ -5,7 +5,7 @@ import {
   DataTable,
 } from '@/components/ui';
 
-import { ShowcaseSection } from '../ShowcaseSection';
+import { ShowcaseSection } from '../../../shared/ShowcaseSection';
 
 import styles from './DataTableShowcase.module.scss';
 

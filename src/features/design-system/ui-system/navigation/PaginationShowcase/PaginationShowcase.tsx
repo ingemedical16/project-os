@@ -8,7 +8,7 @@ import {
   Pagination,
 } from '@/components/ui';
 
-import { ShowcaseSection } from '../ShowcaseSection';
+import { ShowcaseSection } from '../../../shared/ShowcaseSection';
 
 import styles from './PaginationShowcase.module.scss';
 

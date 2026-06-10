@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 
 import { Spinner } from '@/components/ui';
 
-import { ShowcaseSection } from '../ShowcaseSection';
+import { ShowcaseSection } from '../../../shared/ShowcaseSection';
 
 import styles from './SpinnerShowcase.module.scss';
 

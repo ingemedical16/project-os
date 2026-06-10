@@ -16,7 +16,7 @@ import {
 } from '@/contexts/theme/theme.types';
 import { useTheme } from '@/contexts/theme/useTheme';
 
-import { ShowcaseSection } from '../ShowcaseSection';
+import { ShowcaseSection } from '../../../shared/ShowcaseSection';
 
 import styles from './AppearanceShowcase.module.scss';
 

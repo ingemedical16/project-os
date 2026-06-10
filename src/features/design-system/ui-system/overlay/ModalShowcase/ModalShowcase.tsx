@@ -8,7 +8,7 @@ import {
   Modal,
 } from '@/components/ui';
 
-import { ShowcaseSection } from '../ShowcaseSection';
+import { ShowcaseSection } from '../../../shared/ShowcaseSection';
 
 import styles from './ModalShowcase.module.scss';
 

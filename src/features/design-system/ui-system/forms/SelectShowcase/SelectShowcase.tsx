@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 import { Select } from '@/components/ui';
 
-import { ShowcaseSection } from '../ShowcaseSection';
+import { ShowcaseSection } from '../../../shared/ShowcaseSection';
 
 import styles from './SelectShowcase.module.scss';
 
