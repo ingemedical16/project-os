@@ -1,0 +1,124 @@
+@use '@/styles/abstracts/variables' as *;
+@use '@/styles/abstracts/mixins' as *;
+
+.page {
+  min-height: 100dvh;
+  padding: $space-4;
+
+  background:
+    radial-gradient(circle at top left, var(--surface-hover), transparent 32rem),
+    var(--background);
+  color: var(--text);
+
+  @include respond(md) {
+    padding: $space-8;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 112rem;
+  margin-inline: auto;
+  padding-block: $space-8;
+}
+
+.badge {
+  width: fit-content;
+  margin-block-end: $space-3;
+  padding-block: $space-1;
+  padding-inline: $space-3;
+
+  border: 0.1rem solid var(--border);
+  border-radius: $radius-full;
+
+  color: var(--text-muted);
+  background: var(--surface);
+
+  font-size: $font-size-sm;
+  font-weight: $font-weight-bold;
+}
+
+.title {
+  margin: 0;
+
+  font-size: clamp(3.2rem, 6vw, 6.4rem);
+  line-height: 1;
+}
+
+.subtitle {
+  max-width: 64rem;
+  margin-block-start: $space-4;
+
+  color: var(--text-muted);
+
+  font-size: $font-size-lg;
+  line-height: 1.7;
+}
+
+.grid {
+  display: grid;
+  gap: $space-4;
+
+  max-width: 112rem;
+  margin-inline: auto;
+
+  @include respond(md) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.card {
+  display: flex;
+  min-height: 24rem;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding: $space-6;
+
+  border: 0.1rem solid var(--border);
+  border-radius: $radius-xl;
+
+  color: inherit;
+  background: var(--surface);
+  text-decoration: none;
+
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease;
+
+  &:hover {
+    transform: translateY(-0.4rem);
+    border-color: var(--primary);
+    background: var(--surface-hover);
+  }
+
+  h2 {
+    margin: 0;
+    font-size: $font-size-2xl;
+  }
+
+  p {
+    margin-block: $space-3 0;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+}
+
+.cardLabel {
+  width: fit-content;
+  margin-block-end: auto;
+  padding-block: $space-1;
+  padding-inline: $space-3;
+
+  border-radius: $radius-full;
+
+  color: var(--primary);
+  background: var(--primary-soft);
+
+  font-size: $font-size-sm;
+  font-weight: $font-weight-bold;
+}
