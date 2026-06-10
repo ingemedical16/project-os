@@ -1,5 +1,6 @@
 {
   "title": "Project OS",
+  "subtitle": "Architecture frontend réutilisable pour des applications évolutives.",
   "systems": {
     "ui": {
       "title": "Système de Design UI",

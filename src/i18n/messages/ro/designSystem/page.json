@@ -1,5 +1,6 @@
 {
   "title": "Project OS",
+  "subtitle": "Arhitectură frontend reutilizabilă pentru aplicații scalabile.",
   "systems": {
     "ui": {
       "title": "Sistem de Design UI",
