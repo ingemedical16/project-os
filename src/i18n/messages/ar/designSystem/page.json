@@ -1,12 +1,26 @@
 {
   "title": "Project OS",
-  "subtitle": "نظام التصميم",
-  "navigationLabel": "التنقل في نظام التصميم",
+  "systems": {
+    "ui": {
+      "title": "نظام تصميم واجهة المستخدم",
+      "subtitle": "مكونات واجهة مستخدم قابلة لإعادة الاستخدام لبناء واجهات متناسقة."
+    },
+    "layouts": {
+      "title": "نظام التخطيطات",
+      "subtitle": "مكونات تخطيط قابلة لإعادة الاستخدام للصفحات ولوحات التحكم وشاشات المصادقة وهياكل التطبيقات."
+    }
+  },
+  "systemLinks": {
+    "ui": "نظام الواجهة",
+    "layouts": "نظام التخطيطات"
+  },
+  "navigationLabel": "تنقل العرض",
+  "systemNavigationLabel": "أقسام نظام التصميم",
   "groups": {
-    "system": "النظام",
+    "theme": "السمة",
     "forms": "النماذج",
     "feedback": "التغذية الراجعة",
-    "overlay": "العناصر العائمة",
+    "overlay": "التراكب",
     "navigation": "التنقل",
     "display": "العرض",
     "data": "البيانات",
@@ -14,7 +28,6 @@
   },
   "items": {
     "appearance": "المظهر",
-
     "button": "زر",
     "input": "حقل إدخال",
     "textarea": "منطقة نص",
@@ -23,31 +36,25 @@
     "radio": "زر اختيار",
     "switch": "مفتاح تبديل",
     "form": "نموذج",
-
     "alert": "تنبيه",
     "badge": "شارة",
     "spinner": "مؤشر تحميل",
     "toast": "إشعار",
-
     "modal": "نافذة منبثقة",
-    "drawer": "لوحة جانبية",
+    "drawer": "درج جانبي",
     "tooltip": "تلميح",
-
     "accordion": "أكورديون",
     "tabs": "علامات تبويب",
     "breadcrumb": "مسار التنقل",
     "pagination": "ترقيم الصفحات",
-
     "typography": "الطباعة",
     "card": "بطاقة",
     "avatar": "صورة رمزية",
     "divider": "فاصل",
-    "skeleton": "هيكل تحميل",
+    "skeleton": "هيكل التحميل",
     "emptyState": "حالة فارغة",
-
     "table": "جدول",
     "dataTable": "جدول بيانات",
-
     "emptyLayout": "تخطيط فارغ",
     "pageLayout": "تخطيط الصفحة",
     "sidebarLayout": "تخطيط الشريط الجانبي",
@@ -56,6 +63,6 @@
   },
   "shared": {
     "usage": "الاستخدام",
-    "preview": "المعاينة"
+    "preview": "معاينة"
   }
 }

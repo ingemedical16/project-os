@@ -1,11 +1,25 @@
 {
   "title": "Project OS",
-  "subtitle": "Design System",
-  "navigationLabel": "Navigation du système de design",
+  "systems": {
+    "ui": {
+      "title": "Système de Design UI",
+      "subtitle": "Composants UI réutilisables pour créer des interfaces cohérentes."
+    },
+    "layouts": {
+      "title": "Système de Mise en Page",
+      "subtitle": "Composants de mise en page réutilisables pour les pages, tableaux de bord, écrans d’authentification et structures d’application."
+    }
+  },
+  "systemLinks": {
+    "ui": "Système UI",
+    "layouts": "Système de Mise en Page"
+  },
+  "navigationLabel": "Navigation de démonstration",
+  "systemNavigationLabel": "Sections du système de design",
   "groups": {
-    "system": "Système",
+    "theme": "Thème",
     "forms": "Formulaires",
-    "feedback": "Retour utilisateur",
+    "feedback": "Retour",
     "overlay": "Superposition",
     "navigation": "Navigation",
     "display": "Affichage",
@@ -14,40 +28,33 @@
   },
   "items": {
     "appearance": "Apparence",
-
     "button": "Bouton",
-    "input": "Champ texte",
+    "input": "Champ de saisie",
     "textarea": "Zone de texte",
-    "select": "Sélecteur",
+    "select": "Sélection",
     "checkbox": "Case à cocher",
     "radio": "Bouton radio",
     "switch": "Interrupteur",
     "form": "Formulaire",
-
     "alert": "Alerte",
     "badge": "Badge",
-    "spinner": "Chargement",
+    "spinner": "Indicateur de chargement",
     "toast": "Notification",
-
     "modal": "Fenêtre modale",
     "drawer": "Panneau latéral",
     "tooltip": "Info-bulle",
-
     "accordion": "Accordéon",
     "tabs": "Onglets",
     "breadcrumb": "Fil d’Ariane",
     "pagination": "Pagination",
-
     "typography": "Typographie",
     "card": "Carte",
     "avatar": "Avatar",
     "divider": "Séparateur",
-    "skeleton": "Chargement squelette",
+    "skeleton": "Skeleton",
     "emptyState": "État vide",
-
     "table": "Tableau",
     "dataTable": "Tableau de données",
-
     "emptyLayout": "Mise en page vide",
     "pageLayout": "Mise en page de page",
     "sidebarLayout": "Mise en page avec barre latérale",

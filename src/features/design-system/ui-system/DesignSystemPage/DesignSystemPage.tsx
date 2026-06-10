@@ -1,80 +1,87 @@
-'use client';
-
 import { useTranslations } from 'next-intl';
-import { useMemo, useState } from 'react';
 
-import {
-  Button,
-  Divider,
-} from '@/components/ui';
-
-import { DESIGN_SYSTEM_SHOWCASES } from '../registry';
-
-import styles from './DesignSystemPage.module.scss';
-
-const firstShowcaseId =
-  DESIGN_SYSTEM_SHOWCASES[0]?.items[0]?.id ?? '';
+import { ShowcaseShell } from '../../shared';
+import { UI_SYSTEM_SHOWCASES } from './registry';
 
 export function DesignSystemPage() {
   const t = useTranslations('designSystem.page');
 
-  const [activeId, setActiveId] = useState(firstShowcaseId);
-
-  const activeShowcase = useMemo(() => {
-    return DESIGN_SYSTEM_SHOWCASES
-      .flatMap((group) => group.items)
-      .find((item) => item.id === activeId);
-  }, [activeId]);
-
-  const ActiveComponent = activeShowcase?.component;
-
   return (
-    <main className={styles.page}>
-      <aside className={styles.sidebar}>
-        <div className={styles.sidebarHeader}>
-          <h1 className={styles.title}>{t('title')}</h1>
-          <p className={styles.subtitle}>{t('subtitle')}</p>
-        </div>
+    <ShowcaseShell
+      activeSystemId="ui"
+      groups={UI_SYSTEM_SHOWCASES}
+      labels={{
+        title: t('systems.ui.title'),
+        description: t('systems.ui.subtitle'),
+        navigationLabel: t('navigationLabel'),
+        systemNavigationLabel: t('systemNavigationLabel'),
+        systemLinks: {
+          ui: t('systemLinks.ui'),
+          layouts: t('systemLinks.layouts'),
+        },
+        groups: {
+          theme: t('groups.theme'),
+          forms: t('groups.forms'),
+          feedback: t('groups.feedback'),
+          overlay: t('groups.overlay'),
+          navigation: t('groups.navigation'),
+          display: t('groups.display'),
+          data: t('groups.data'),
+          layouts: t('groups.layouts'),
+        },
+        items: {
+          appearance: t('items.appearance'),
 
-        <Divider />
+          button: t('items.button'),
+          input: t('items.input'),
+          textarea: t('items.textarea'),
+          select: t('items.select'),
+          checkbox: t('items.checkbox'),
+          radio: t('items.radio'),
+          switch: t('items.switch'),
+          form: t('items.form'),
 
-        <nav
-          className={styles.navigation}
-          aria-label={t('navigationLabel')}
-        >
-          {DESIGN_SYSTEM_SHOWCASES.map((group, groupIndex) => (
-            <div key={group.id} className={styles.group}>
-              {groupIndex > 0 ? <Divider /> : null}
+          alert: t('items.alert'),
+          badge: t('items.badge'),
+          spinner: t('items.spinner'),
+          toast: t('items.toast'),
 
-              <h2 className={styles.groupTitle}>
-                {t(`groups.${group.id}`)}
-              </h2>
+          modal: t('items.modal'),
+          drawer: t('items.drawer'),
+          tooltip: t('items.tooltip'),
 
-              <div className={styles.items}>
-                {group.items.map((item) => (
-                  <Button
-                    key={item.id}
-                    type="button"
-                    variant={
-                      item.id === activeId
-                        ? 'primary'
-                        : 'ghost'
-                    }
-                    fullWidth
-                    onClick={() => setActiveId(item.id)}
-                  >
-                    {t(`items.${item.id}`)}
-                  </Button>
-                ))}
-              </div>
-            </div>
-          ))}
-        </nav>
-      </aside>
+          accordion: t('items.accordion'),
+          tabs: t('items.tabs'),
+          breadcrumb: t('items.breadcrumb'),
+          pagination: t('items.pagination'),
 
-      <section className={styles.content}>
-        {ActiveComponent ? <ActiveComponent /> : null}
-      </section>
-    </main>
+          typography: t('items.typography'),
+          card: t('items.card'),
+          avatar: t('items.avatar'),
+          divider: t('items.divider'),
+          skeleton: t('items.skeleton'),
+          emptyState: t('items.emptyState'),
+
+          table: t('items.table'),
+          dataTable: t('items.dataTable'),
+
+          emptyLayout: t('items.emptyLayout'),
+          pageLayout: t('items.pageLayout'),
+          sidebarLayout: t('items.sidebarLayout'),
+          authLayout: t('items.authLayout'),
+          dashboardLayout: t('items.dashboardLayout'),
+        },
+      }}
+      systemLinks={[
+        {
+          id: 'ui',
+          href: '/design-system',
+        },
+        {
+          id: 'layouts',
+          href: '/layout-system',
+        },
+      ]}
+    />
   );
 }

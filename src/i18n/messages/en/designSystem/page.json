@@ -1,9 +1,23 @@
 {
   "title": "Project OS",
-  "subtitle": "Design System",
-  "navigationLabel": "Design system navigation",
+  "systems": {
+    "ui": {
+      "title": "UI Design System",
+      "subtitle": "Reusable UI components for building consistent interfaces."
+    },
+    "layouts": {
+      "title": "Layout System",
+      "subtitle": "Reusable layout components for pages, dashboards, auth screens, and application shells."
+    }
+  },
+  "systemLinks": {
+    "ui": "UI System",
+    "layouts": "Layout System"
+  },
+  "navigationLabel": "Showcase navigation",
+  "systemNavigationLabel": "Design system sections",
   "groups": {
-    "system": "System",
+    "theme": "Theme",
     "forms": "Forms",
     "feedback": "Feedback",
     "overlay": "Overlay",
@@ -14,7 +28,6 @@
   },
   "items": {
     "appearance": "Appearance",
-
     "button": "Button",
     "input": "Input",
     "textarea": "Textarea",
@@ -23,31 +36,25 @@
     "radio": "Radio",
     "switch": "Switch",
     "form": "Form",
-
     "alert": "Alert",
     "badge": "Badge",
     "spinner": "Spinner",
     "toast": "Toast",
-
     "modal": "Modal",
     "drawer": "Drawer",
     "tooltip": "Tooltip",
-
     "accordion": "Accordion",
     "tabs": "Tabs",
     "breadcrumb": "Breadcrumb",
     "pagination": "Pagination",
-
     "typography": "Typography",
     "card": "Card",
     "avatar": "Avatar",
     "divider": "Divider",
     "skeleton": "Skeleton",
     "emptyState": "Empty State",
-
     "table": "Table",
     "dataTable": "Data Table",
-
     "emptyLayout": "Empty Layout",
     "pageLayout": "Page Layout",
     "sidebarLayout": "Sidebar Layout",

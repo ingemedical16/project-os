@@ -1,9 +1,23 @@
 {
   "title": "Project OS",
-  "subtitle": "Design System",
-  "navigationLabel": "Navigare sistem de design",
+  "systems": {
+    "ui": {
+      "title": "Sistem de Design UI",
+      "subtitle": "Componente UI reutilizabile pentru construirea unor interfețe consistente."
+    },
+    "layouts": {
+      "title": "Sistem de Layout-uri",
+      "subtitle": "Componente de layout reutilizabile pentru pagini, dashboard-uri, ecrane de autentificare și structuri de aplicație."
+    }
+  },
+  "systemLinks": {
+    "ui": "Sistem UI",
+    "layouts": "Sistem de Layout-uri"
+  },
+  "navigationLabel": "Navigare demonstrație",
+  "systemNavigationLabel": "Secțiuni ale sistemului de design",
   "groups": {
-    "system": "Sistem",
+    "theme": "Temă",
     "forms": "Formulare",
     "feedback": "Feedback",
     "overlay": "Suprapunere",
@@ -14,40 +28,33 @@
   },
   "items": {
     "appearance": "Aspect",
-
     "button": "Buton",
-    "input": "Câmp text",
+    "input": "Câmp de introducere",
     "textarea": "Zonă text",
-    "select": "Selector",
+    "select": "Selecție",
     "checkbox": "Casetă de bifare",
     "radio": "Buton radio",
     "switch": "Comutator",
     "form": "Formular",
-
     "alert": "Alertă",
     "badge": "Insignă",
-    "spinner": "Încărcare",
+    "spinner": "Indicator de încărcare",
     "toast": "Notificare",
-
     "modal": "Fereastră modală",
     "drawer": "Panou lateral",
-    "tooltip": "Indiciu",
-
+    "tooltip": "Tooltip",
     "accordion": "Acordeon",
     "tabs": "File",
-    "breadcrumb": "Fir de navigare",
+    "breadcrumb": "Breadcrumb",
     "pagination": "Paginare",
-
     "typography": "Tipografie",
     "card": "Card",
     "avatar": "Avatar",
     "divider": "Separator",
-    "skeleton": "Schiță de încărcare",
+    "skeleton": "Skeleton",
     "emptyState": "Stare goală",
-
     "table": "Tabel",
     "dataTable": "Tabel de date",
-
     "emptyLayout": "Layout gol",
     "pageLayout": "Layout pagină",
     "sidebarLayout": "Layout cu bară laterală",

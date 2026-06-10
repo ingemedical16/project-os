@@ -1,0 +1,161 @@
+@use '@/styles/abstracts/variables' as *;
+@use '@/styles/abstracts/mixins' as *;
+
+.shell {
+  display: grid;
+  min-height: 100dvh;
+
+  background: var(--background);
+  color: var(--text);
+
+  @include respond(lg) {
+    grid-template-columns: 28rem 1fr;
+  }
+}
+
+.sidebar {
+  border-block-end: 0.1rem solid var(--border);
+  background: var(--surface);
+  padding: $space-4;
+
+  @include respond(lg) {
+    position: sticky;
+    inset-block-start: 0;
+
+    height: 100dvh;
+    overflow-y: auto;
+
+    border-block-end: 0;
+    border-inline-end: 0.1rem solid var(--border);
+  }
+}
+
+.header {
+  margin-block-end: $space-4;
+}
+
+.title {
+  margin: 0;
+
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+}
+
+.description {
+  margin-block-start: $space-2;
+  margin-block-end: 0;
+
+  color: var(--text-muted);
+
+  font-size: $font-size-sm;
+  line-height: 1.5;
+}
+
+.systemNav {
+  display: grid;
+  gap: $space-2;
+
+  margin-block-end: $space-5;
+  padding-block-end: $space-4;
+
+  border-block-end: 0.1rem solid var(--border);
+}
+
+.systemLink {
+  display: block;
+
+  border-radius: $radius-md;
+  padding-block: $space-2;
+  padding-inline: $space-3;
+
+  color: var(--text-muted);
+  text-decoration: none;
+
+  font-size: $font-size-sm;
+  font-weight: $font-weight-medium;
+
+  &:hover {
+    background: var(--surface-hover);
+    color: var(--text);
+  }
+}
+
+.systemLinkActive {
+  background: var(--primary);
+  color: var(--primary-contrast);
+
+  &:hover {
+    background: var(--primary);
+    color: var(--primary-contrast);
+  }
+}
+
+.nav {
+  display: grid;
+  gap: $space-5;
+}
+
+.group {
+  display: grid;
+  gap: $space-2;
+}
+
+.groupTitle {
+  margin: 0;
+
+  color: var(--text-muted);
+
+  font-size: $font-size-xs;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.list {
+  display: grid;
+  gap: $space-1;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.navItem {
+  width: 100%;
+
+  border: 0;
+  border-radius: $radius-md;
+  padding-block: $space-2;
+  padding-inline: $space-3;
+
+  background: transparent;
+  color: var(--text-muted);
+
+  text-align: start;
+  cursor: pointer;
+
+  font: inherit;
+  font-size: $font-size-sm;
+
+  &:hover {
+    background: var(--surface-hover);
+    color: var(--text);
+  }
+}
+
+.navItemActive {
+  background: var(--surface-hover);
+  color: var(--text);
+
+  font-weight: $font-weight-bold;
+}
+
+.content {
+  min-width: 0;
+  padding: $space-4;
+
+  @include respond(md) {
+    padding: $space-6;
+  }
+}
