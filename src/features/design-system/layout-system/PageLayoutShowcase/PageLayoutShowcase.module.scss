@@ -1,0 +1,11 @@
+@use '@/styles/abstracts/variables' as *;
+@use '@/styles/abstracts/mixins' as *;
+
+.grid {
+  display: grid;
+  gap: $space-4;
+
+  @include respond(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
